@@ -1,0 +1,73 @@
+# L.E.A.R.N's GitHub Pages Publishing Workflow
+# ============================================
+#
+# Author: Akshay Mestry (XAMES3) <xa@mes3.dev>
+# Created on: Monday, May 08 2023
+# Last updated on: Monday, May 08 2023
+
+# The name of the workflow.
+# GitHub displays the names of the workflows in learn's "Actions" tab.
+name: build-learn-docs
+
+# A workflow with the following "on" value will run when a "push"
+# is made to the "main" branch in the workflow's repository. For example,
+# the "push" event has a branches filter that causes this workflow to
+# run only when a push to a branch that matches the branches filter occurs,
+# in this case, the "main" branch.
+on:
+  push:
+    branches: main
+
+# We're using permissions to modify the default permissions granted to
+# the ``GITHUB_TOKEN``, adding or removing access as required, so that we
+# only allow the minimum required access.
+permissions:
+  contents: write
+
+# A map of variables that are available to the steps of all jobs in the workflow.
+env:
+  OUTPUT_DIR: docs/build/
+  SOURCE_DIR: docs/source/
+  PUBLISH_BRANCH: gh-pages
+  PY_BUILD: 3.11.3
+
+# We're using concurrency to ensure that only a single job or workflow
+# using the same concurrency group will run at a time.
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+# A workflow run is made up of one or more jobs, which run in parallel by default.
+# The ``ubuntu-latest`` label currently uses the Ubuntu 22.04 runner image.
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out L.E.A.R.N's code so the workflow can access it
+        uses: actions/checkout@v3
+
+      - name: Set up python v${{ env.PY_BUILD }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PY_BUILD }}
+
+      - name: Install L.E.A.R.N's python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements/dev.txt
+
+      - name: Build Sphinx documentation pages
+        run: sphinx-build -W -b html ${{ env.SOURCE_DIR }} ${{ env.OUTPUT_DIR }}
+
+      - name: Publish L.E.A.R.N's static files to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+        with:
+          publish_branch: ${{ env.PUBLISH_BRANCH }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ${{ env.OUTPUT_DIR }}
+          force_orphan: false
+          enable_jekyll: false
+          user_email: "github-actions[bot]@users.noreply.github.com"
+          user_name: "github-actions[bot]"
+          full_commit_message: ${{ github.event.head_commit.message }}
