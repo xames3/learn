@@ -17,6 +17,7 @@ name: build-learn-docs
 on:
   push:
     branches: main
+  workflow_dispatch:
 
 # We're using permissions to modify the default permissions granted to
 # the ``GITHUB_TOKEN``, adding or removing access as required, so that we
