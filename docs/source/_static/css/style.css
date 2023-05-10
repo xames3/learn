@@ -256,6 +256,22 @@ irrespective of the content */
   width: 100%;
   padding: 0 1rem;
 }
+/* Table of content, ``At a glance`` */
+.toctree-wrapper p.caption {
+  font-size: 1.7em;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-indent: 0 !important;
+}
+/* Table of content indentation */
+.toctree-wrapper > ul {
+  padding-left: 2rem;
+}
+/* Sidebar ToC text properties */
+nav.bd-links p.caption {
+  text-indent: 0 !important;
+  font-weight: bold;
+}
 /* Custom L.E.A.R.N extension CSS classes and properties */
 /* Authors list class */
 .learn-authors {
@@ -283,13 +299,14 @@ irrespective of the content */
   margin-bottom: 50;
   font-size: 1.1em;
   font-family: var(--pst-font-family-monospace-system);
-  font-style: normal;
+  font-weight: bold;
   color: #000;
   text-decoration: none;
 }
 /* Abstract div class */
 .learn-abstract {
-  text-align: left;
+  margin: 2.5rem auto;
+  width: 65%;
 }
 /* Abstract text */
 .abstract {

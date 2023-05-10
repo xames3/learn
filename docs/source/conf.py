@@ -195,7 +195,6 @@ html_title = _project.short_title
 html_theme_options = {
     # "announcement": "The website is currently in the build stage, sorry!",
     "article_header_end": ["search-button"],
-    "home_page_in_toc": True,
     "launch_buttons": {"colab_url": "https://colab.research.google.com"},
     "logo": {"image_light": "_static/logo.png", "alt_text": "Home"},
     "navigation_with_keys": True,
