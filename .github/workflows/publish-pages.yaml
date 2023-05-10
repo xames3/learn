@@ -57,7 +57,7 @@ jobs:
           pip install -r requirements/dev.txt
 
       - name: Build Sphinx documentation pages
-        run: sphinx-build -W -b html ${{ env.SOURCE_DIR }} ${{ env.OUTPUT_DIR }}
+        run: sphinx-build -E -W -a -b html ${{ env.SOURCE_DIR }} ${{ env.OUTPUT_DIR }}
 
       - name: Publish L.E.A.R.N's static files to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
