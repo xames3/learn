@@ -1,13 +1,17 @@
+/* Import default values which are defined in the
+defaults.css file. This holds the general values
+which are used all across the theme */
 @import url(defaults.css);
 
+/* Overide the base margin settings for bootstrap */
 body,
 h1,
 h2,
 h3,
 h4,
 p,
-ul[class],
 ol[class],
+ul[class],
 li {
   margin: 0;
 }
@@ -23,6 +27,7 @@ h1 {
   margin-top: 3.5rem;
   margin-bottom: 1.625rem;
   font-size: 2.5rem;
+  text-align: center;
 }
 
 h2 {
@@ -97,19 +102,64 @@ ul p {
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
-
-h1:first-child {
-  text-align: center;
+/* Disable navbar shadow */
+.scrolled .bd-header-article {
+  box-shadow: 0;
 }
-
+/* Disable primary sidebar toggle hamburger menu */
+label.sidebar-toggle.primary-toggle {
+  display: none;
+}
+/* Searchbar font size, ``Search on...`` */
+.search-button__wrapper.show i,
+.search-button__wrapper.show input {
+  font-size: 1.3rem;
+}
+/* Searchbar magnifying glass left margin */
+.bd-search i.fa-solid.fa-magnifying-glass {
+  margin-left: 0.5rem;
+}
+/* Searchbar rounded radius setting */
+.bd-search input {
+  padding-left: 3.5rem;
+  border-radius: 3rem;
+}
+/* Keep footer in center with minimal padding
+and slightly larger font */
 footer.bd-footer-content {
-  border-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  border: 0;
+  font-size: 1.3rem;
 }
 
-.bd-page-width {
-  max-width: 1456px;
+footer.bd-footer-content .bd-footer-content__inner {
+  display: flex;
+  justify-content: center;
 }
 
+.bd-footer {
+  border-top: 0;
+}
+
+.bd-footer .bd-footer__inner {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 1rem;
+}
+
+.footer-item p {
+  font-size: 1rem;
+  line-height: 1rem;
+  text-indent: 0 !important;
+}
+/* Do not show author name ``By Akshay...`` in footer */
+.component-author {
+  display: none;
+}
+/* FontAwesome settings -- Not sure if they're needed now */
 .fas::before,
 .fa-solid::before {
   text-rendering: auto;
@@ -118,27 +168,27 @@ footer.bd-footer-content {
   font-style: normal;
   font-variant: normal;
 }
-
+/* LEGACY - Not required anymore */
 .fa-download::before {
   content: var(--pst-icon-download) !important;
   font-family: FontAwesome !important;
 }
-
+/* LEGACY - Not required anymore */
 .fa-expand::before {
   content: var(--pst-icon-expand) !important;
   font-family: FontAwesome !important;
 }
-
+/* LEGACY - Not required anymore */
 .fa-square-github::before {
   content: var(--pst-icon-github) !important;
   font-family: FontAwesome !important;
 }
-
+/* LEGACY - Not required anymore */
 .bd-article-container h1,
 .bd-article-container h2 {
   font-weight: bolder;
 }
-
+/* Sidebar settings */
 .bd-sidebar-primary {
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -149,34 +199,63 @@ footer.bd-footer-content {
   position: sticky;
   top: var(--pst-header-height);
   overflow-y: scroll;
-  width: 25%;
+  width: 300;
   max-height: calc(100vh - var(--pst-header-height));
   padding: 2rem 1rem 1rem;
   background-color: var(--pst-color-background);
-  border-right: 0px solid var(--pst-color-muted);
+  border-right: 0;
   font-size: var(--pst-sidebar-font-size-mobile);
 }
-
-.bd-sidebar-primary::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
-
-.sidebar-secondary-item {
-  padding-left: 1rem;
-  border-left: 0px solid var(--pst-color-border);
-}
-
+/* Sidebar logo size settings */
 .navbar-brand img {
   width: auto;
-  max-width: 50%;
+  max-width: 30%;
 }
-
-.footer-item p {
-  font-size: 1.2rem;
-  line-height: 1rem;
+/* Bold Previous and Next buttons */
+.prev-next-area a .prev-next-info .prev-next-subtitle {
+  font-weight: bold;
+  text-transform: capitalize;
 }
-
+/* Disable # URL reference in the title */
+.headerlink {
+  display: none;
+}
+/* Main container which holds the primary section,
+overriding it to keep footer at the bottom of the
+page */
+.bd-container {
+  flex-grow: 1;
+}
+/* Override width from base theme to use whole screen */
+.bd-main {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+/* Override width from base theme to use whole screen */
+.bd-main .bd-content .bd-article-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  overflow-x: auto;
+  width: 100%;
+  max-width: 100%;
+  padding: 0rem;
+}
+/* Make position relative to make Previous-Next buttons
+div stick at the bottom */
+.bd-main .bd-content {
+  position: relative;
+}
+/* Keep Previous-Next buttons at bottom
+irrespective of the content */
+.bd-footer-article {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0 1rem;
+}
+/* Custom L.E.A.R.N extension CSS classes and properties */
+/* Authors list class */
 .learn-authors {
   display: flex;
   flex-direction: row;
@@ -185,50 +264,41 @@ footer.bd-footer-content {
   line-height: 1rem;
   color: var(--pst-color-text-muted);
 }
-
+/* Author class */
 .author {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto 1.5rem;
 }
-
+/* Author's name and affiliation */
 .author p {
   text-indent: 0 !important;
 }
-
+/* Author's email */
 .author a.email-link {
   margin-top: 1rem;
-  margin-bottom: 50px;
+  margin-bottom: 50;
   font-size: 1.1em;
   font-family: var(--pst-font-family-monospace-system);
   font-style: normal;
   color: #000;
   text-decoration: none;
 }
-
+/* Abstract div class */
 .learn-abstract {
   text-align: left;
 }
-
+/* Abstract text */
 .abstract {
-  max-width: 650px;
+  max-width: 650;
   margin: auto auto 2.5rem auto;
   font-weight: 400 !important;
   text-indent: 0 !important;
 }
+/* Abstract prefix */
 .abstract::before {
   content: "Abstract. ";
   font-weight: bold;
   color: var(--pst-color-text-muted);
-}
-
-.chapter-title {
-  margin-bottom: 1.625rem;
-  font-size: 2.5rem;
-  text-align: center;
-}
-
-.headerlink {
-  display: none;
 }
