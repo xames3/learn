@@ -12,15 +12,13 @@
 @import url(../fonts/cmun-upright-italic.css);
 
 html {
-  --pst-header-height: 4rem;
-  --pst-header-article-height: calc(var(--pst-header-height) * 2 / 3);
-  --pst-sidebar-secondary: 17rem;
+  --pst-admonition-font-weight-heading: 600;
+  --pst-breadcrumb-divider: "\f105";
   --pst-font-family-base-system: "Computer Modern Serif", serif;
-  --pst-font-family-monospace-system: "Computer Modern Typewriter", serif;
   --pst-font-family-base: var(--pst-font-family-base-system);
   --pst-font-family-heading: var(--pst-font-family-base-system);
+  --pst-font-family-monospace-system: "Computer Modern Typewriter", serif;
   --pst-font-family-monospace: var(--pst-font-family-monospace-system);
-  --pst-admonition-font-weight-heading: 600;
   --pst-font-size-base: 1rem;
   --pst-font-size-h1: 2.1875rem;
   --pst-font-size-h2: 1.875rem;
@@ -32,10 +30,20 @@ html {
   --pst-font-size-milli: 0.9rem;
   --pst-font-weight-caption: 300;
   --pst-font-weight-heading: 600;
-  --pst-sidebar-font-size-mobile: 1.1rem;
-  --pst-sidebar-font-size: 1.03rem;
-  --pst-sidebar-header-font-size: 1.2rem;
-  --pst-sidebar-header-font-weight: 600;
+  --pst-header-article-height: calc(var(--pst-header-height) * 2 / 3);
+  --pst-header-height: 4rem;
+  --pst-icon-admonition-attention: var(--pst-icon-exclamation-circle);
+  --pst-icon-admonition-caution: var(--pst-icon-exclamation-triangle);
+  --pst-icon-admonition-danger: var(--pst-icon-exclamation-triangle);
+  --pst-icon-admonition-default: var(--pst-icon-bell);
+  --pst-icon-admonition-error: var(--pst-icon-times-circle);
+  --pst-icon-admonition-hint: var(--pst-icon-lightbulb);
+  --pst-icon-admonition-important: var(--pst-icon-exclamation-circle);
+  --pst-icon-admonition-note: var(--pst-icon-info-circle);
+  --pst-icon-admonition-seealso: var(--pst-icon-share);
+  --pst-icon-admonition-tip: var(--pst-icon-lightbulb);
+  --pst-icon-admonition-todo: var(--pst-icon-pencil);
+  --pst-icon-admonition-warning: var(--pst-icon-exclamation-triangle);
   --pst-icon-angle-left: "\f104"; /* fa-solid fa-angle-left */
   --pst-icon-angle-right: "\f105"; /* fa-solid fa-angle-right */
   --pst-icon-bars: "\e24e"; /* fa-solid fa-bars */
@@ -54,31 +62,26 @@ html {
   --pst-icon-search-minus: "\f010"; /* fa-solid fa-magnifying-glass-minus */
   --pst-icon-share: "\f064"; /* fa-solid fa-share */
   --pst-icon-times-circle: "\f057"; /* fa-solid fa-circle-xmark */
-  --pst-breadcrumb-divider: "\f105";
-  --pst-icon-admonition-attention: var(--pst-icon-exclamation-circle);
-  --pst-icon-admonition-caution: var(--pst-icon-exclamation-triangle);
-  --pst-icon-admonition-danger: var(--pst-icon-exclamation-triangle);
-  --pst-icon-admonition-default: var(--pst-icon-bell);
-  --pst-icon-admonition-error: var(--pst-icon-times-circle);
-  --pst-icon-admonition-hint: var(--pst-icon-lightbulb);
-  --pst-icon-admonition-important: var(--pst-icon-exclamation-circle);
-  --pst-icon-admonition-note: var(--pst-icon-info-circle);
-  --pst-icon-admonition-seealso: var(--pst-icon-share);
-  --pst-icon-admonition-tip: var(--pst-icon-lightbulb);
-  --pst-icon-admonition-todo: var(--pst-icon-pencil);
-  --pst-icon-admonition-warning: var(--pst-icon-exclamation-triangle);
   --pst-icon-versionmodified-added: var(--pst-icon-exclamation-circle);
   --pst-icon-versionmodified-changed: var(--pst-icon-exclamation-circle);
   --pst-icon-versionmodified-default: var(--pst-icon-exclamation-circle);
   --pst-icon-versionmodified-deprecated: var(--pst-icon-exclamation-circle);
+  --pst-sidebar-font-size-mobile: 1.1rem;
+  --pst-sidebar-font-size: 1.03rem;
+  --pst-sidebar-header-font-size: 1.2rem;
+  --pst-sidebar-header-font-weight: 600;
+  --pst-sidebar-secondary: 17rem;
   scroll-padding-top: calc(var(--pst-header-height) + 1rem);
   font-size: var(--pst-font-size-base);
 }
 
 html[data-theme="light"] {
+  --pst-color-attention: #ffc107;
+  --pst-color-background: #fff;
   --pst-color-black-highlight: #000;
   --pst-color-black-text: #fff;
   --pst-color-black: #000;
+  --pst-color-border: #c9c9c9;
   --pst-color-danger-highlight: #a71d2a;
   --pst-color-danger-text: #fff;
   --pst-color-danger: #dc3545;
@@ -88,21 +91,31 @@ html[data-theme="light"] {
   --pst-color-info-highlight: #306e81;
   --pst-color-info-text: #fff;
   --pst-color-info: #459db9;
+  --pst-color-inline-code: #e83e8c;
   --pst-color-light-highlight: #a3a3a3;
   --pst-color-light-text: #000;
   --pst-color-light: #c9c9c9;
+  --pst-color-link-hover: var(--pst-color-warning);
+  --pst-color-link: var(--pst-color-primary);
   --pst-color-muted-highlight: #3e3e3e;
   --pst-color-muted-text: #fff;
   --pst-color-muted: #000;
+  --pst-color-on-background: #fff;
+  --pst-color-on-surface: #e1e1e1;
   --pst-color-primary-highlight: #306e81;
   --pst-color-primary-text: #fff;
   --pst-color-primary: #3380b2;
   --pst-color-secondary-highlight: #cf6912;
   --pst-color-secondary-text: #fff;
   --pst-color-secondary: #ee9040;
+  --pst-color-shadow: #d8d8d8;
   --pst-color-success-highlight: #19692c;
   --pst-color-success-text: #fff;
   --pst-color-success: #28a745;
+  --pst-color-surface: #f5f5f5;
+  --pst-color-target: #fbe54e;
+  --pst-color-text-base: #000;
+  --pst-color-text-muted: #000;
   --pst-color-warning-highlight: #cf6912;
   --pst-color-warning-text: #fff;
   --pst-color-warning: #ee9040;
@@ -142,17 +155,4 @@ html[data-theme="light"] {
   --sd-color-white-highlight: var(--pst-color-white-highlight);
   --sd-color-white-text: var(--pst-color-white-text);
   --sd-color-white: var(--pst-color-white);
-  --pst-color-attention: #ffc107;
-  --pst-color-text-base: #000;
-  --pst-color-text-muted: #000;
-  --pst-color-shadow: #d8d8d8;
-  --pst-color-border: #c9c9c9;
-  --pst-color-inline-code: #e83e8c;
-  --pst-color-target: #fbe54e;
-  --pst-color-background: #fff;
-  --pst-color-on-background: #fff;
-  --pst-color-surface: #f5f5f5;
-  --pst-color-on-surface: #e1e1e1;
-  --pst-color-link: var(--pst-color-primary);
-  --pst-color-link-hover: var(--pst-color-warning);
 }
