@@ -4,7 +4,7 @@ L.E.A.R.N Sphinx Configuration
 
 Author: Akshay "XA" Mestry <xa@mes3.dev>
 Created on: Wednesday, April 12 2023
-Last updated on: Monday, May 08 2023
+Last updated on: Wednesday, May 10 2023
 
 This file contains the configuration settings for building the L.E.A.R.N
 documentation using Sphinx, a popular Python documentation tool. Sphinx
@@ -128,7 +128,7 @@ class LearnProject(t.NamedTuple):
 
     # Project metadata
     author: str = 'Akshay "XA" Mestry'
-    copyright: str = '2023, Akshay "XA" Mestry. All rights reserved.'
+    copyright: str = '2023, Akshay "XA" Mestry. All rights reserved'
     default_language: str = "en"
     main_title: str = "Learning & Exploring AI and its Real-world Networks"
     release: str = "1.0.0"
@@ -201,6 +201,7 @@ html_theme_options = {
     "navigation_with_keys": True,
     "repository_url": _project.url,
     "search_bar_text": "Search on L.E.A.R.N...",
+    "secondary_sidebar_items": [],
     "use_download_button": True,
     "use_edit_page_button": True,
     "use_repository_button": True,
