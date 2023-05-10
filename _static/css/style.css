@@ -98,9 +98,14 @@ ol p,
 ul p {
   text-indent: 0;
 }
-
+/* Disable underlining of hyperlinks */
 a:not([class]) {
   text-decoration-skip-ink: auto;
+}
+/* Disable scrollbars but retain their functionality */
+.bd-sidebar-primary::-webkit-scrollbar {
+  height: 0;
+  width: 0;
 }
 /* Disable navbar shadow */
 .scrolled .bd-header-article {
@@ -190,8 +195,6 @@ footer.bd-footer-content .bd-footer-content__inner {
 }
 /* Sidebar settings */
 .bd-sidebar-primary {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -201,7 +204,6 @@ footer.bd-footer-content .bd-footer-content__inner {
   overflow-y: scroll;
   width: 300;
   max-height: calc(100vh - var(--pst-header-height));
-  padding: 2rem 1rem 1rem;
   background-color: var(--pst-color-background);
   border-right: 0;
   font-size: var(--pst-sidebar-font-size-mobile);
