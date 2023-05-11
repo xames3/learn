@@ -109,7 +109,7 @@ a:not([class]) {
 }
 /* Disable navbar shadow */
 .scrolled .bd-header-article {
-  box-shadow: 0;
+  box-shadow: 0 0 0 0 var(--pst-color-shadow);
 }
 /* Disable primary sidebar toggle hamburger menu */
 label.sidebar-toggle.primary-toggle {
@@ -202,7 +202,7 @@ footer.bd-footer-content .bd-footer-content__inner {
   position: sticky;
   top: var(--pst-header-height);
   overflow-y: scroll;
-  width: 300;
+  width: 300px;
   max-height: calc(100vh - var(--pst-header-height));
   background-color: var(--pst-color-background);
   border-right: 0;
@@ -222,31 +222,35 @@ footer.bd-footer-content .bd-footer-content__inner {
 .headerlink {
   display: none;
 }
-/* Main container which holds the primary section,
-overriding it to keep footer at the bottom of the
-page */
+/* Maximum width of the content to be shown */
 .bd-container {
-  flex-grow: 1;
+  max-width: 1500px;
+  margin: auto;
+}
+.bd-page-width {
+  max-width: 100% !important;
 }
 /* Override width from base theme to use whole screen */
 .bd-main {
-  width: 100%;
   padding-bottom: 1rem;
+}
+/* Make position relative to make Previous-Next buttons
+div stick at the bottom */
+.bd-main .bd-content {
+  position: relative;
+  min-height: 100vh;
 }
 /* Override width from base theme to use whole screen */
 .bd-main .bd-content .bd-article-container {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  overflow-x: auto;
-  width: 100%;
-  max-width: 100%;
-  padding: 0rem;
+  max-width: 1200px !important;
 }
-/* Make position relative to make Previous-Next buttons
-div stick at the bottom */
-.bd-main .bd-content {
-  position: relative;
+/* Main article width */
+.bd-main .bd-content .bd-article-container .bd-article {
+  width: 1200px;
+  padding-bottom: 6.5rem;
 }
 /* Keep Previous-Next buttons at bottom
 irrespective of the content */
@@ -306,11 +310,11 @@ nav.bd-links p.caption {
 /* Abstract div class */
 .learn-abstract {
   margin: 2.5rem auto;
-  width: 65%;
+  max-width: 1032px;
 }
 /* Abstract text */
 .abstract {
-  max-width: 650;
+  max-width: 1032px;
   margin: auto auto 2.5rem auto;
   font-weight: 400 !important;
   text-indent: 0 !important;
