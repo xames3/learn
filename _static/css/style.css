@@ -202,11 +202,12 @@ footer.bd-footer-content .bd-footer-content__inner {
   position: sticky;
   top: var(--pst-header-height);
   overflow-y: scroll;
-  width: 300px;
+  width: 280px;
   max-height: calc(100vh - var(--pst-header-height));
   background-color: var(--pst-color-background);
   border-right: 0;
   font-size: var(--pst-sidebar-font-size-mobile);
+  padding: 1rem 0;
 }
 /* Sidebar logo size settings */
 .navbar-brand img {
@@ -224,7 +225,7 @@ footer.bd-footer-content .bd-footer-content__inner {
 }
 /* Maximum width of the content to be shown */
 .bd-container {
-  max-width: 1500px;
+  max-width: 1240px;
   margin: auto;
 }
 .bd-page-width {
@@ -245,11 +246,11 @@ div stick at the bottom */
   display: flex;
   flex-direction: column;
   justify-content: start;
-  max-width: 1200px !important;
+  max-width: 960px !important;
 }
 /* Main article width */
 .bd-main .bd-content .bd-article-container .bd-article {
-  width: 1200px;
+  width: 960px;
   padding-bottom: 6.5rem;
 }
 /* Keep Previous-Next buttons at bottom
@@ -310,11 +311,11 @@ nav.bd-links p.caption {
 /* Abstract div class */
 .learn-abstract {
   margin: 2.5rem auto;
-  max-width: 1032px;
+  max-width: 824px;
 }
 /* Abstract text */
 .abstract {
-  max-width: 1032px;
+  max-width: 824px;
   margin: auto auto 2.5rem auto;
   font-weight: 400 !important;
   text-indent: 0 !important;
