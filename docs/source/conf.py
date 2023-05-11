@@ -4,7 +4,7 @@ L.E.A.R.N Sphinx Configuration
 
 Author: Akshay "XA" Mestry <xa@mes3.dev>
 Created on: Wednesday, April 12 2023
-Last updated on: Wednesday, May 10 2023
+Last updated on: Thursday, May 11 2023
 
 This file contains the configuration settings for building the L.E.A.R.N
 documentation using Sphinx, a popular Python documentation tool. Sphinx
@@ -193,17 +193,13 @@ html_show_sourcelink = False
 html_theme = _project.theme
 html_title = _project.short_title
 html_theme_options = {
-    # "announcement": "The website is currently in the build stage, sorry!",
     "article_header_end": ["search-button"],
-    "launch_buttons": {"colab_url": "https://colab.research.google.com"},
     "logo": {"image_light": "_static/logo.png", "alt_text": "Home"},
     "navigation_with_keys": True,
     "repository_url": _project.url,
     "search_bar_text": "Search on L.E.A.R.N...",
     "secondary_sidebar_items": [],
-    "use_download_button": True,
-    "use_edit_page_button": True,
-    "use_repository_button": True,
+    "show_prev_next": False,
 }
 language = _project.default_language
 
