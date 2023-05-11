@@ -18,10 +18,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam expedita inventore
 
 .. toctree::
   :caption: At a glance
-  :glob:
   :hidden:
   :maxdepth: 4
 
   _documentation/exclude/preface
   _documentation/exclude/introduction
-  _documentation/*
