@@ -2,8 +2,8 @@
 defaults.css file. This holds the general values
 which are used all across the theme */
 @import url(defaults.css);
-
-/* Overide the base margin settings for bootstrap */
+/* Overide the base margin settings for bootstrap
+This overide affects the whole page-wide layout */
 body,
 h1,
 h2,
@@ -15,69 +15,57 @@ ul[class],
 li {
   margin: 0;
 }
-
 body {
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
   margin: 0 auto;
   line-height: 1.5;
 }
-
 h1 {
   margin-top: 3.5rem;
   margin-bottom: 1.625rem;
   font-size: 2.5rem;
   text-align: center;
 }
-
 h2 {
   margin-top: 3rem;
   font-size: 1.7rem;
 }
-
 h3 {
   margin-top: 2.5rem;
   font-size: 1.4rem;
 }
-
 h4 {
   margin-top: 2rem;
   font-size: 1.2rem;
 }
-
 h5 {
   margin-top: 1.8rem;
   font-size: 1rem;
 }
-
 h6 {
   margin-top: 2.5rem;
   font-size: 1rem;
   font-style: italic;
   font-weight: normal;
 }
-
 h3,
 h4,
 h5,
 h6 {
   line-height: 1.625rem;
 }
-
 h1 + h2 {
   margin-top: 1.625rem;
 }
-
 h2 + h3,
 h3 + h4,
 h4 + h5 {
   margin-top: 0.8rem;
 }
-
 h5 + h6 {
   margin-top: -0.8rem;
 }
-
 h2,
 h3,
 h4,
@@ -85,7 +73,6 @@ h5,
 h6 {
   margin-bottom: 0.8rem;
 }
-
 p {
   margin-top: 1rem;
   font-size: 1.375rem;
@@ -93,7 +80,6 @@ p {
   text-align: justify;
   text-indent: 1.4375rem;
 }
-
 ol p,
 ul p {
   text-indent: 0;
@@ -102,18 +88,15 @@ ul p {
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
-/* Disable scrollbars but retain their functionality */
-.bd-sidebar-primary::-webkit-scrollbar {
-  height: 0;
-  width: 0;
-}
 /* Disable navbar shadow */
 .scrolled .bd-header-article {
   box-shadow: 0 0 0 0 var(--pst-color-shadow);
 }
-/* Disable primary sidebar toggle hamburger menu */
-label.sidebar-toggle.primary-toggle {
-  display: none;
+/* Hide toggle button when not on mobile */
+@media (min-width: 768px) {
+  label.sidebar-toggle.primary-toggle {
+    display: none;
+  }
 }
 /* Searchbar font size, ``Search on...`` */
 .search-button__wrapper.show i,
@@ -129,144 +112,24 @@ label.sidebar-toggle.primary-toggle {
   padding-left: 3.5rem;
   border-radius: 3rem;
 }
-/* Keep footer in center with minimal padding
-and slightly larger font */
-footer.bd-footer-content {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  border: 0;
-  font-size: 1.3rem;
-}
-
-footer.bd-footer-content .bd-footer-content__inner {
-  display: flex;
-  justify-content: center;
-}
-
-.bd-footer {
-  border-top: 0;
-}
-
-.bd-footer .bd-footer__inner {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  padding: 1rem;
-}
-
-.footer-item p {
-  font-size: 1rem;
-  line-height: 1rem;
-  text-indent: 0 !important;
-}
-/* Do not show author name ``By Akshay...`` in footer */
-.component-author {
-  display: none;
-}
-/* FontAwesome settings -- Not sure if they're needed now */
-.fas::before,
-.fa-solid::before {
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-}
-/* LEGACY - Not required anymore */
-.fa-download::before {
-  content: var(--pst-icon-download) !important;
-  font-family: FontAwesome !important;
-}
-/* LEGACY - Not required anymore */
-.fa-expand::before {
-  content: var(--pst-icon-expand) !important;
-  font-family: FontAwesome !important;
-}
-/* LEGACY - Not required anymore */
-.fa-square-github::before {
-  content: var(--pst-icon-github) !important;
-  font-family: FontAwesome !important;
-}
-/* LEGACY - Not required anymore */
-.bd-article-container h1,
-.bd-article-container h2 {
-  font-weight: bolder;
-}
-/* Sidebar settings */
+/* Disable sidebar border */
 .bd-sidebar-primary {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  flex: 0 0 auto;
-  position: sticky;
-  top: var(--pst-header-height);
-  overflow-y: scroll;
-  width: 280px;
-  max-height: calc(100vh - var(--pst-header-height));
-  background-color: var(--pst-color-background);
-  border-right: 0;
-  font-size: var(--pst-sidebar-font-size-mobile);
-  padding: 1rem 0;
+  border-right: 0px;
+}
+/* Disable sidebar scrollbars but retain their functionality */
+.bd-sidebar-primary::-webkit-scrollbar {
+  height: 0;
+  width: 0;
 }
 /* Sidebar logo size settings */
 .navbar-brand img {
   width: auto;
   max-width: 30%;
 }
-/* Bold Previous and Next buttons */
-.prev-next-area a .prev-next-info .prev-next-subtitle {
-  font-weight: bold;
-  text-transform: capitalize;
-}
-/* Disable # URL reference in the title */
-.headerlink {
-  display: none;
-}
-/* Maximum width of the content to be shown */
-.bd-container {
-  max-width: 1240px;
-  margin: auto;
-}
-.bd-page-width {
-  max-width: 100% !important;
-}
-/* Override width from base theme to use whole screen */
-.bd-main {
-  padding-bottom: 1rem;
-}
-/* Make position relative to make Previous-Next buttons
-div stick at the bottom */
-.bd-main .bd-content {
-  position: relative;
-  min-height: 100vh;
-}
-/* Override width from base theme to use whole screen */
-.bd-main .bd-content .bd-article-container {
+/* Align sidebar icons in center */
+.bd-sidebar-primary .navbar-icon-links {
   display: flex;
-  flex-direction: column;
-  justify-content: start;
-  max-width: 960px !important;
-}
-/* Main article width */
-.bd-main .bd-content .bd-article-container .bd-article {
-  width: 960px;
-  padding-bottom: 6.5rem;
-}
-/* Keep Previous-Next buttons at bottom
-irrespective of the content */
-.bd-footer-article {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 0 1rem;
-}
-/* Table of content, ``At a glance`` */
-.toctree-wrapper p.caption {
-  font-size: 1.7em;
-  font-weight: bold;
-  margin-bottom: 0;
-  text-indent: 0 !important;
+  justify-content: center;
 }
 /* Table of content indentation */
 .toctree-wrapper > ul {
@@ -274,8 +137,32 @@ irrespective of the content */
 }
 /* Sidebar ToC text properties */
 nav.bd-links p.caption {
-  text-indent: 0 !important;
+  text-indent: 0;
   font-weight: bold;
+}
+/* Make titles bolder */
+.bd-article-container h1,
+.bd-article-container h2 {
+  font-weight: bolder;
+}
+/* Disable # URL reference in the title */
+.headerlink {
+  display: none;
+}
+/* Disable footer border */
+footer.bd-footer-content {
+  border-top: 0px;
+  font-size: 1.3rem;
+}
+/* Do not show author name ``By Akshay...`` in footer */
+.component-author {
+  display: none;
+}
+/* Center copyright information */
+footer.bd-footer-content .bd-footer-content__inner {
+  display: flex;
+  justify-content: center;
+  padding: 0;
 }
 /* Custom L.E.A.R.N extension CSS classes and properties */
 /* Authors list class */
@@ -311,11 +198,10 @@ nav.bd-links p.caption {
 /* Abstract div class */
 .learn-abstract {
   margin: 2.5rem auto;
-  max-width: 824px;
+  max-width: 86%;
 }
 /* Abstract text */
 .abstract {
-  max-width: 824px;
   margin: auto auto 2.5rem auto;
   font-weight: 400 !important;
   text-indent: 0 !important;
