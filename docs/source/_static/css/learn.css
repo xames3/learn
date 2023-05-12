@@ -98,7 +98,7 @@ a:not([class]) {
     display: none;
   }
 }
-/* Searchbar font size, ``Search on...`` */
+/* Searchbar font size */
 .search-button__wrapper.show i,
 .search-button__wrapper.show input {
   font-size: 1.3rem;
@@ -112,6 +112,11 @@ a:not([class]) {
   padding-left: 3.5rem;
   border-radius: 3rem;
 }
+/* Change highlighted text color */
+dt:target,
+span.highlighted {
+  background-color: var(--pst-color-info);
+}
 /* Disable sidebar border */
 .bd-sidebar-primary {
   border-right: 0px;
@@ -120,6 +125,33 @@ a:not([class]) {
 .bd-sidebar-primary::-webkit-scrollbar {
   height: 0;
   width: 0;
+}
+/* Center the hide search button */
+div#searchbox p.highlight-link {
+  box-shadow: 0 0 0 0 var(--pst-color-shadow) !important;
+  margin: 0;
+  width: auto;
+  justify-content: center;
+  display: flex;
+  text-indent: 0 !important;
+}
+/* Keep font size consistent on mobile */
+@media (min-width: 768px) {
+  div#searchbox p.highlight-link a {
+    font-size: 1rem;
+  }
+}
+/* Contents inside the hide search button */
+div#searchbox p.highlight-link a {
+  background-color: var(--pst-color-primary);
+  border-radius: 3rem;
+  color: #fff;
+  padding: 1rem;
+  transition: box-shadow .25s ease-out;
+}
+/* FontAwesome glass before inside the hide search button */
+div#searchbox p.highlight-link a::before {
+  content: none;
 }
 /* Sidebar logo size settings */
 .navbar-brand img {
@@ -192,7 +224,7 @@ footer.bd-footer-content .bd-footer-content__inner {
   font-size: 1.1em;
   font-family: var(--pst-font-family-monospace-system);
   font-weight: bold;
-  color: #000;
+  color: var(--pst-color-text-base);
   text-decoration: none;
 }
 /* Abstract div class */
