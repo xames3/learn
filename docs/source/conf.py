@@ -128,7 +128,7 @@ class LearnProject(t.NamedTuple):
 
     # Project metadata
     author: str = 'Akshay "XA" Mestry'
-    copyright: str = '2023, Akshay "XA" Mestry. All rights reserved'
+    copyright: str = '2023, Akshay "XA" Mestry'
     default_language: str = "en"
     main_title: str = "Learning & Exploring AI and its Real-world Networks"
     release: str = "1.0.0"
@@ -197,7 +197,6 @@ html_theme_options = {
     "logo": {"image_light": "_static/logo.png", "alt_text": "Home"},
     "navigation_with_keys": True,
     "repository_url": _project.url,
-    "search_bar_text": "Search on L.E.A.R.N...",
     "secondary_sidebar_items": [],
     "show_prev_next": False,
 }
@@ -210,7 +209,10 @@ language = _project.default_language
 html_static_path = ["_static"]
 html_css_files = [
     "css/defaults.css",
-    "css/style.css",
+    "css/learn.css",
+]
+html_js_files = [
+    "js/learn.js",
 ]
 
 # Miscellaneous options
