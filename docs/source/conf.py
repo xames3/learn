@@ -4,7 +4,7 @@ L.E.A.R.N Sphinx Configuration
 
 Author: Akshay "XA" Mestry <xa@mes3.dev>
 Created on: Wednesday, April 12 2023
-Last updated on: Thursday, May 11 2023
+Last updated on: Friday, June 16 2023
 
 This file contains the configuration settings for building the L.E.A.R.N
 documentation using Sphinx, a popular Python documentation tool. Sphinx
@@ -26,7 +26,7 @@ Usage::
         ``sphinx-build -W -b html SOURCE-DIR OUTPUT-DIR``
 
 For more information on configuring Sphinx and building documentation,
-see the official Sphinx documentation here: https://www.sphinx-doc.org/en/master/usage/configuration.html
+see the official Sphinx documentation here: https://shorturl.at/iwBZ5
 """
 
 from __future__ import annotations
@@ -59,16 +59,16 @@ def build_module() -> ModuleType:
     return module
 
 
-def load_learn_extension(self, app: Sphinx, extname: str) -> None:
+def load_extension(self, app: Sphinx, extname: str) -> None:
     """Monkey-patched ``SphinxComponentRegistry.load_extension``."""
     if extname in app.extensions:
         return
     if extname in EXTENSION_BLACKLIST:
         logger.warning(
             __(
-                f"the extension {extname} was already merged with Sphinx since "
-                f"version {EXTENSION_BLACKLIST[extname]}; this extension is"
-                " ignored."
+                f"the extension {extname} was already merged with Sphinx "
+                f"since version {EXTENSION_BLACKLIST[extname]}; this extension"
+                " is ignored."
             )
         )
         return
@@ -80,7 +80,9 @@ def load_learn_extension(self, app: Sphinx, extname: str) -> None:
             else:
                 mod = import_module(extname)
         except ImportError as err:
-            logger.verbose(__("Original exception:\n") + traceback.format_exc())
+            logger.verbose(
+                __("Original exception:\n") + traceback.format_exc()
+            )
             raise ExtensionError(
                 __(f"Could not import extension {extname}"), err
             ) from err
@@ -120,7 +122,7 @@ def load_learn_extension(self, app: Sphinx, extname: str) -> None:
         app.extensions[extname] = Extension(extname, mod, **metadata)
 
 
-SphinxComponentRegistry.load_extension = load_learn_extension  # type: ignore[method-assign]
+SphinxComponentRegistry.load_extension = load_extension  # type: ignore
 
 
 class LearnProject(t.NamedTuple):
