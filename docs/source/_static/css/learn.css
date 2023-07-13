@@ -2,6 +2,7 @@
 defaults.css file. This holds the general values
 which are used all across the theme */
 @import url(defaults.css);
+
 /* Overide the base margin settings for bootstrap
 This overide affects the whole page-wide layout */
 body,
@@ -15,57 +16,69 @@ ul[class],
 li {
   margin: 0;
 }
+
 body {
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
   margin: 0 auto;
   line-height: 1.5;
 }
+
 h1 {
   margin-top: 3.5rem;
   margin-bottom: 1.625rem;
   font-size: 2.5rem;
   text-align: center;
 }
+
 h2 {
   margin-top: 3rem;
   font-size: 1.7rem;
 }
+
 h3 {
   margin-top: 2.5rem;
   font-size: 1.4rem;
 }
+
 h4 {
   margin-top: 2rem;
   font-size: 1.2rem;
 }
+
 h5 {
   margin-top: 1.8rem;
   font-size: 1rem;
 }
+
 h6 {
   margin-top: 2.5rem;
   font-size: 1rem;
   font-style: italic;
   font-weight: normal;
 }
+
 h3,
 h4,
 h5,
 h6 {
   line-height: 1.625rem;
 }
-h1 + h2 {
+
+h1+h2 {
   margin-top: 1.625rem;
 }
-h2 + h3,
-h3 + h4,
-h4 + h5 {
+
+h2+h3,
+h3+h4,
+h4+h5 {
   margin-top: 0.8rem;
 }
-h5 + h6 {
+
+h5+h6 {
   margin-top: -0.8rem;
 }
+
 h2,
 h3,
 h4,
@@ -73,129 +86,169 @@ h5,
 h6 {
   margin-bottom: 0.8rem;
 }
+
 p {
   margin-top: 1rem;
   font-size: 1.375rem;
   color: var(--pst-color-text-base);
   text-align: justify;
+  text-align-last: left;
   text-indent: 1.4375rem;
+  text-justify: distribute;
+  word-spacing: -2px;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
+
 ol p,
 ul p {
   text-indent: 0;
 }
+
 /* Disable underlining of hyperlinks */
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
+
 /* Disable navbar shadow */
 .scrolled .bd-header-article {
   box-shadow: 0 0 0 0 var(--pst-color-shadow);
 }
+
 /* Hide toggle button when not on mobile */
-@media (min-width: 768px) {
-  label.sidebar-toggle.primary-toggle {
-    display: none;
-  }
+@media (min-width: 768px) {}
+
+label.sidebar-toggle.primary-toggle {
+  display: none;
 }
+
 /* Searchbar font size */
 .search-button__wrapper.show i,
 .search-button__wrapper.show input {
   font-size: 1.3rem;
 }
+
 /* Searchbar magnifying glass left margin */
 .bd-search i.fa-solid.fa-magnifying-glass {
   margin-left: 0.5rem;
 }
+
 /* Searchbar rounded radius setting */
 .bd-search input {
   padding-left: 3.5rem;
   border-radius: 3rem;
 }
+
 /* Change highlighted text color */
 dt:target,
 span.highlighted {
   background-color: var(--pst-color-info);
 }
+
 /* Disable sidebar border */
 .bd-sidebar-primary {
   border-right: 0px;
 }
+
 /* Disable sidebar scrollbars but retain their functionality */
 .bd-sidebar-primary::-webkit-scrollbar {
-  height: 0;
   width: 0;
+  height: 0;
 }
+
 /* Center the hide search button */
 div#searchbox p.highlight-link {
   box-shadow: 0 0 0 0 var(--pst-color-shadow) !important;
-  margin: 0;
-  width: auto;
-  justify-content: center;
   display: flex;
+  justify-content: center;
+  width: auto;
+  margin: 0;
   text-indent: 0 !important;
 }
+
 /* Keep font size consistent on mobile */
-@media (min-width: 768px) {
-  div#searchbox p.highlight-link a {
-    font-size: 1rem;
-  }
+@media (min-width: 768px) {}
+
+div#searchbox p.highlight-link a {
+  font-size: 1rem;
 }
+
 /* Contents inside the hide search button */
 div#searchbox p.highlight-link a {
+  padding: 1rem;
+  transition: box-shadow .25s ease-out;
   background-color: var(--pst-color-primary);
   border-radius: 3rem;
   color: #fff;
-  padding: 1rem;
-  transition: box-shadow .25s ease-out;
 }
+
 /* FontAwesome glass before inside the hide search button */
 div#searchbox p.highlight-link a::before {
   content: none;
 }
+
 /* Sidebar logo size settings */
 .navbar-brand img {
   width: auto;
   max-width: 30%;
 }
+
 /* Align sidebar icons in center */
 .bd-sidebar-primary .navbar-icon-links {
   display: flex;
   justify-content: center;
 }
+
 /* Table of content indentation */
-.toctree-wrapper > ul {
+.toctree-wrapper>ul {
   padding-left: 2rem;
 }
+
 /* Sidebar ToC text properties */
 nav.bd-links p.caption {
-  text-indent: 0;
   font-weight: bold;
+  text-indent: 0;
 }
+
 /* Make titles bolder */
 .bd-article-container h1,
 .bd-article-container h2 {
   font-weight: bolder;
 }
+
+/* Hide page title section number */
+h1 span.section-number {
+  display: none;
+}
+
 /* Disable # URL reference in the title */
 .headerlink {
   display: none;
 }
+
 /* Disable footer border */
 footer.bd-footer-content {
   border-top: 0px;
   font-size: 1.3rem;
 }
+
+/* Increase code block font size */
+pre {
+  font-size: 1rem;
+}
+
 /* Do not show author name ``By Akshay...`` in footer */
 .component-author {
   display: none;
 }
+
 /* Center copyright information */
 footer.bd-footer-content .bd-footer-content__inner {
   display: flex;
   justify-content: center;
   padding: 0;
 }
+
 /* Custom L.E.A.R.N extension CSS classes and properties */
 /* Authors list class */
 .learn-authors {
@@ -206,6 +259,7 @@ footer.bd-footer-content .bd-footer-content__inner {
   line-height: 1rem;
   color: var(--pst-color-text-muted);
 }
+
 /* Author class */
 .author {
   display: flex;
@@ -213,31 +267,36 @@ footer.bd-footer-content .bd-footer-content__inner {
   align-items: center;
   margin: auto 1.5rem;
 }
+
 /* Author's name and affiliation */
 .author p {
   text-indent: 0 !important;
 }
+
 /* Author's email */
 .author a.email-link {
   margin-top: 1rem;
-  margin-bottom: 50;
+  margin-bottom: 3rem;
   font-size: 1.1em;
   font-family: var(--pst-font-family-monospace-system);
   font-weight: bold;
   color: var(--pst-color-text-base);
   text-decoration: none;
 }
+
 /* Abstract div class */
 .learn-abstract {
-  margin: 2.5rem auto;
   max-width: 86%;
+  margin: 2.5rem auto;
 }
+
 /* Abstract text */
 .abstract {
   margin: auto auto 2.5rem auto;
   font-weight: 400 !important;
   text-indent: 0 !important;
 }
+
 /* Abstract prefix */
 .abstract::before {
   content: "Abstract. ";
