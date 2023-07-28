@@ -1,9 +1,9 @@
 # L.E.A.R.N's GitHub Pages Publishing Workflow
 # ============================================
 #
-# Author: Akshay Mestry (XAMES3) <xa@mes3.dev>
+# Author: Akshay Mestry <xa@mes3.dev>
 # Created on: Monday, May 08 2023
-# Last updated on: Monday, May 08 2023
+# Last updated on: Friday, July 28 2023
 
 # The name of the workflow.
 # GitHub displays the names of the workflows in learn's "Actions" tab.
@@ -58,7 +58,7 @@ jobs:
           pip install -r requirements/dev.txt
 
       - name: Build Sphinx documentation pages
-        run: sphinx-build -E -W -a -b html ${{ env.SOURCE_DIR }} ${{ env.OUTPUT_DIR }}
+        run: sphinx-build -EWa -b html ${{ env.SOURCE_DIR }} ${{ env.OUTPUT_DIR }}
 
       - name: Publish L.E.A.R.N's static files to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

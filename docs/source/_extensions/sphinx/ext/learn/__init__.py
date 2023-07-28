@@ -2,9 +2,9 @@
 L.E.A.R.N's Sphinx Extension
 ============================
 
-Author: Akshay "XA" Mestry <xa@mes3.dev>
+Author: Akshay Mestry <xa@mes3.dev>
 Created on: Wednesday, May 03 2023
-Last updated on: Saturday, July 22 2023
+Last updated on: Friday, July 28 2023
 
 This module contains Sphinx's custom extension for L.E.A.R.N. Since
 L.E.A.R.N uses a special ``research paper-esque`` aesthetics for it's UI
