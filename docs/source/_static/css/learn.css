@@ -92,17 +92,9 @@ p {
   font-size: 1.375rem;
   color: var(--pst-color-text-base);
   text-align: justify;
-  text-align-last: left;
-  text-indent: 1.4375rem;
-  text-justify: distribute;
-  word-spacing: -2px;
-  -webkit-hyphens: auto;
-  hyphens: auto;
-}
-
-ol p,
-ul p {
-  text-indent: 0;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    word-spacing: -0.05em;
 }
 
 /* Disable underlining of hyperlinks */
@@ -163,7 +155,6 @@ div#searchbox p.highlight-link {
   justify-content: center;
   width: auto;
   margin: 0;
-  text-indent: 0 !important;
 }
 
 /* Keep font size consistent on mobile */
@@ -193,6 +184,12 @@ div#searchbox p.highlight-link a::before {
   max-width: 30%;
 }
 
+/* Sidebar logo area */
+.navbar-brand {
+  font-size: 1.25rem;
+  align-items: start;
+}
+
 /* Align sidebar icons in center */
 .bd-sidebar-primary .navbar-icon-links {
   display: flex;
@@ -207,18 +204,12 @@ div#searchbox p.highlight-link a::before {
 /* Sidebar ToC text properties */
 nav.bd-links p.caption {
   font-weight: bold;
-  text-indent: 0;
 }
 
 /* Make titles bolder */
 .bd-article-container h1,
 .bd-article-container h2 {
   font-weight: bolder;
-}
-
-/* Hide page title section number */
-h1 span.section-number {
-  display: none;
 }
 
 /* Disable # URL reference in the title */
@@ -249,6 +240,22 @@ footer.bd-footer-content .bd-footer-content__inner {
   padding: 0;
 }
 
+/* Inline code block section */
+code.literal {
+  border-radius: 0.5rem;
+  padding: .2rem .5rem;
+}
+
+/* Code block section */
+pre {
+  border-radius: .5rem;
+}
+
+/* Epigraph section */
+blockquote {
+  font-style: italic;
+}
+
 /* Custom L.E.A.R.N extension CSS classes and properties */
 /* Authors list class */
 .learn-authors {
@@ -256,7 +263,7 @@ footer.bd-footer-content .bd-footer-content__inner {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  line-height: 1rem;
+  line-height: 0.5rem;
   color: var(--pst-color-text-muted);
 }
 
@@ -268,15 +275,25 @@ footer.bd-footer-content .bd-footer-content__inner {
   margin: auto 1.5rem;
 }
 
-/* Author's name and affiliation */
-.author p {
-  text-indent: 0 !important;
+/* Author's name */
+.author a.name-link {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  color: var(--pst-color-text-base);
+  text-decoration: none;
+}
+
+/* Author's name */
+.author p.affiliation-link {
+  font-size: 1.2rem;
+  color: var(--pst-color-text-base);
 }
 
 /* Author's email */
 .author a.email-link {
   margin-top: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   font-size: 1.1em;
   font-family: var(--pst-font-family-monospace-system);
   font-weight: bold;
@@ -294,7 +311,6 @@ footer.bd-footer-content .bd-footer-content__inner {
 .abstract {
   margin: auto auto 2.5rem auto;
   font-weight: 400 !important;
-  text-indent: 0 !important;
 }
 
 /* Abstract prefix */
