@@ -2,9 +2,9 @@
 L.E.A.R.N Sphinx Configuration
 ==============================
 
-Author: Akshay "XA" Mestry <xa@mes3.dev>
+Author: Akshay Mestry <xa@mes3.dev>
 Created on: Wednesday, April 12 2023
-Last updated on: Friday, June 16 2023
+Last updated on: Thursday, July 27 2023
 
 This file contains the configuration settings for building the L.E.A.R.N
 documentation using Sphinx, a popular Python documentation tool. Sphinx
@@ -23,10 +23,17 @@ Usage::
     the settings as needed. You can then run the Sphinx build process by
     running the command:
 
-        ``sphinx-build -W -b html SOURCE-DIR OUTPUT-DIR``
+        ``sphinx-build -EWaq -b html SOURCE-DIR OUTPUT-DIR``
 
 For more information on configuring Sphinx and building documentation,
 see the official Sphinx documentation here: https://shorturl.at/iwBZ5
+
+.. versionadded:: 1.0.1
+    Support for adding external links using ``_urls.txt`` and HTML tags
+    using ``raw-html`` docutils role.
+
+.. versionchanged:: 1.0.1
+    Section numbering now skip the chapter title while enumerating.
 """
 
 from __future__ import annotations
@@ -36,6 +43,10 @@ import sys
 import typing as t
 from os import path as p
 
+from docutils import nodes
+from docutils.transforms import Transform
+from docutils.transforms import parts
+from docutils.writers import _html_base
 from sphinx.locale import __
 from sphinx.registry import *
 
@@ -48,6 +59,7 @@ this = p.dirname(__file__)
 
 MODULE_NAME: str = "learn"
 EXTENSION_PATH: str = p.join(this, "_extensions/sphinx/ext/learn/__init__.py")
+RAW_LINKS_PATH: str = p.join(this, "_extensions/_urls.txt")
 
 
 def build_module() -> ModuleType:
@@ -122,23 +134,88 @@ def load_extension(self, app: Sphinx, extname: str) -> None:
         app.extensions[extname] = Extension(extname, mod, **metadata)
 
 
+class NoTitleSectNum(Transform):
+    """Automatically assigns numbers to the titles of document sections
+    except the main title.
+
+    .. versionadded:: 1.0.1
+        Section numbering now skip the chapter title while enumerating.
+    """
+
+    def update_section_numbers(
+        self, node: nodes.section, prefix: tuple = (), depth: int = 0
+    ) -> None:
+        """Add and update section title numbering recursively.
+
+        :param node: Doctree node element.
+        :param prefix: Tuple of string(s) to be prefixed, defaults to
+                      ``()``.
+        :param depth: Depth to recursively iterate over the section
+                      titles, defaults to ``0``.
+        """
+        depth += 1
+        if prefix:
+            sectnum = 1
+        else:
+            sectnum = self.startvalue
+        for child in node:
+            if isinstance(child, nodes.section):
+                numbers = prefix + (str(sectnum),)
+                title = child[0]
+                generated = nodes.generated(
+                    "",
+                    (
+                        self.prefix
+                        + ".".join(numbers[1:])
+                        + self.suffix
+                        + "\u00a0" * 3
+                    ),
+                    classes=["sectnum"],
+                )
+                title.insert(0, generated)
+                title["auto"] = 1
+                if depth < self.maxdepth:
+                    self.update_section_numbers(child, numbers, depth)
+                sectnum += 1
+
+
+class MoreSpacedHTMLTranslator(nodes.NodeVisitor):
+    """More spaced section number translator.
+
+    .. versionadded:: 1.0.1
+        Section numbering now skip the chapter title while enumerating.
+    """
+
+    def padding(self, node: nodes.generated) -> None:
+        """Add padding to the section numbering.
+
+        :param node: Doctree node element.
+        :raises nodes.SkipNode
+        """
+        if "sectnum" in node["classes"]:
+            sectnum = node.astext().rstrip(" ")
+            section = self.encode(sectnum) if len(sectnum) != 3 else ""
+            self.body.append(f'<span class="sectnum">{section}</span>')
+            raise nodes.SkipNode
+
+
 SphinxComponentRegistry.load_extension = load_extension  # type: ignore
+_html_base.HTMLTranslator.visit_generated = MoreSpacedHTMLTranslator.padding
+parts.SectNum.update_section_numbers = NoTitleSectNum.update_section_numbers
 
 
 class LearnProject(t.NamedTuple):
     """Configuration and metadata about the project."""
 
     # Project metadata
-    author: str = 'Akshay "XA" Mestry'
-    copyright: str = '2023, Akshay "XA" Mestry'
+    author: str = "Akshay Mestry"
+    copyright: str = "2023, Akshay Mestry"
     default_language: str = "en"
-    main_title: str = "Learning & Exploring AI and its Real-world Networks"
-    release: str = "1.0.0"
+    main_title: str = "Learning the Essence of AI, Research, and Notations"
+    release: str = build_module().__version__
     short_title: str = "L.E.A.R.N"
-    url: str = "https://github.com/xames3/learn"
-
-    # Theme metadata
     theme: str = "sphinx_book_theme"
+    url: str = "https://github.com/xames3/learn"
 
 
 _project = LearnProject()
@@ -179,6 +256,7 @@ templates_path = ["_templates"]
 # NOTE: This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = [
     "_build",
+    "_urls.txt",
     ".DS_Store",
     "Thumbs.db",
 ]
@@ -188,9 +266,8 @@ exclude_patterns = [
 # The theme to use for HTML and HTML help pages along with page-wide
 # settings.
 favicons = [
-    "favicon-16x16.png",
-    "favicon-32x32.png",
-    "logo.svg",
+    "img/favicon-16x16.png",
+    "img/favicon-32x32.png",
 ]
 html_context = {"default_mode": "light"}
 html_show_sourcelink = False
@@ -198,7 +275,6 @@ html_theme = _project.theme
 html_title = _project.short_title
 html_theme_options = {
     "article_header_end": ["search-button"],
-    "logo": {"image_light": "_static/logo.png", "alt_text": "Home"},
     "navigation_with_keys": True,
     "repository_url": _project.url,
     "secondary_sidebar_items": [],
@@ -222,7 +298,10 @@ html_js_files = [
 # Miscellaneous options
 # =====================
 # Extra configurations that are used throughout the build process.
-todo_include_todos = True
+copybutton_prompt_is_regexp = True
+copybutton_prompt_text = (
+    r">>> |\.\.\. |\$ |In \[\d*\]: | {2,5}\.\.\.: | {5,8}: "
+)
 intersphinx_mapping = {
     "Sphinx": ("https://www.sphinx-doc.org/en/stable/", None),
     "matplotlib": ("https://matplotlib.org/stable/", None),
@@ -232,7 +311,7 @@ intersphinx_mapping = {
     "scikit-learn": ("https://scikit-learn.org/stable/", None),
     "scipy": ("https://docs.scipy.org/doc/scipy/reference/", None),
 }
-copybutton_prompt_is_regexp = True
-copybutton_prompt_text = (
-    r">>> |\.\.\. |\$ |In \[\d*\]: | {2,5}\.\.\.: | {5,8}: "
-)
+todo_include_todos = True
+rst_epilog = ""
+with open(RAW_LINKS_PATH) as f:
+    rst_epilog += f.read()

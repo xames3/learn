@@ -1,0 +1,13 @@
+.. role:: raw-html(raw)
+   :format: html
+
+.. |br| replace:: :raw-html:`<br/>`
+.. |tab| replace:: :raw-html:`&emsp;`
+
+.. _github pr: https://github.com/xames3/learn/pulls
+
+.. _recent arxiv: https://arxiv.org/list/cs.AI/recent
+.. _depaul college of communication: https://communication.depaul.edu/Pages/default.aspx
+.. _feynman technique: https://fs.blog/feynman-technique/
+.. _richard feynman: https://en.wikipedia.org/wiki/Richard_Feynman
+.. _nick higham: https://nhigham.com
