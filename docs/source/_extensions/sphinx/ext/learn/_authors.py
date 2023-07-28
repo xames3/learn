@@ -85,11 +85,11 @@ AUTHORS_TEMPLATE: t.Final[jinja2.Template] = jinja2.Template(
     {% for name, email, affiliation, link in content %}
         <div class="author">
             {% if link != "#" %}
-                <a href="{{ link }}" class="name-link"><b>{{ name }}</b></a>
+                <a href="{{ link }}" class="name-link">{{ name }}</a>
             {% else %}
-                <p><b>{{ name }}</b></p>
+                <p>{{ name }}</p>
             {% endif %}
-            <p>{{ affiliation }}</p>
+            <p class="affiliation-link">{{ affiliation }}</p>
             <a href="mailto:{{ email }}" class="email-link">{{ email }}</a>
         </div>
     {% endfor %}
