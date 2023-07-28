@@ -2,9 +2,9 @@
 L.E.A.R.N's Sphinx Extension
 ============================
 
-Author: Akshay Mestry (XAMES3) <xa@mes3.dev>
+Author: Akshay "XA" Mestry <xa@mes3.dev>
 Created on: Wednesday, May 03 2023
-Last updated on: Wednesday, May 03 2023
+Last updated on: Saturday, July 22 2023
 
 This module contains Sphinx's custom extension for L.E.A.R.N. Since
 L.E.A.R.N uses a special ``research paper-esque`` aesthetics for it's UI
@@ -42,6 +42,11 @@ For more information on how to use this extension, please refer to the
 documentation. The extension is fully documented with examples and usage
 instructions to help future/fellow authors and contributors get started
 quickly.
+
+.. versionadded:: 1.0.1
+    Added support for embedding links to author's profile. This allows
+    us to link author's profile/url/resume to it's name in the author
+    section itself.
 """
 
 from __future__ import annotations
@@ -60,9 +65,13 @@ from ._authors import visit_authors_html
 if t.TYPE_CHECKING:
     from sphinx.application import Sphinx
 
+__version__: str = "1.0.1"
+
 
 def setup(app: Sphinx) -> dict[str, t.Any]:
-    app.add_node(AbstractNode, html=(visit_abstract_html, depart_abstract_html))
+    app.add_node(
+        AbstractNode, html=(visit_abstract_html, depart_abstract_html)
+    )
     app.add_node(AuthorsNode, html=(visit_authors_html, depart_authors_html))
     app.add_directive("abstract", Abstract)
     app.add_directive("authors", Authors)

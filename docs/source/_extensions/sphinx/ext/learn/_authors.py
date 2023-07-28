@@ -2,9 +2,9 @@
 Authors Directive for L.E.A.R.N
 ===============================
 
-Author: Akshay Mestry (XAMES3) <xa@mes3.dev>
+Author: Akshay "XA" Mestry <xa@mes3.dev>
 Created on: Wednesday, May 03 2023
-Last updated on: Wednesday, May 03 2023
+Last updated on: Saturday, July 22 2023
 
 This module provides a custom directive for L.E.A.R.N's custom theme,
 that allows authors and contributors to add list of authors or
@@ -54,6 +54,11 @@ authors is ``learn-authors``, the author's name and affiliation is
     }
 
 This will style the authors list with required fonts and alignments.
+
+.. versionadded:: 1.0.1
+    Added support for embedding links to author's profile. This allows
+    us to link author's profile/url/resume to it's name in the author
+    section itself.
 """
 
 from __future__ import annotations
@@ -77,9 +82,13 @@ __all__ = [
 
 AUTHORS_TEMPLATE: t.Final[jinja2.Template] = jinja2.Template(
     """\
-    {% for name, email, affiliation in content %}
+    {% for name, email, affiliation, link in content %}
         <div class="author">
-            <p><b>{{ name }}</b></p>
+            {% if link != "#" %}
+                <a href="{{ link }}" class="name-link"><b>{{ name }}</b></a>
+            {% else %}
+                <p><b>{{ name }}</b></p>
+            {% endif %}
             <p>{{ affiliation }}</p>
             <a href="mailto:{{ email }}" class="email-link">{{ email }}</a>
         </div>
@@ -106,9 +115,10 @@ class Authors(Directive):
     Example::
 
         .. authors::
-            :names: John Wick%Winston Scott
-            :emails: babayaga@hightable.biz%themanager.ny@hightable.biz
-            :affiliations: The Boogeyman%The Manager - NY Continental
+            :names: John Wick[%]Winston Scott
+            :emails: babayaga@hightable.biz[%]themanager.ny@hightable.biz
+            :affiliations: The Boogeyman[%]The Manager - NY Continental
+            :links: https://linkedin.com/in/JW[%]https://ht.com/winston
 
     :var has_content: A boolean flag to allow content in the directive,
                       defaults to ``True``.
@@ -116,6 +126,9 @@ class Authors(Directive):
                                     argument contain whitespace, set to
                                     ``True``.
     :var option_spec: A mapping of option names to validator functions.
+
+    .. versionadded:: 1.0.1
+        Added support for links options to embed links in the name.
     """
 
     has_content: bool = True
@@ -124,6 +137,7 @@ class Authors(Directive):
         "names": directives.unchanged_required,
         "emails": directives.unchanged_required,
         "affiliations": directives.unchanged,
+        "links": directives.unchanged,
     }
 
     def run(self) -> list[Node]:
@@ -152,16 +166,19 @@ def visit_authors_html(self: HTMLTranslator, node: AuthorsNode) -> None:
     webpage. It relies on ``Jinja`` templating to perform the expansion
     and rendering of the HTML source code.
     """
-    raw = {"names": None, "emails": None, "affiliations": None}
-    interested_attributes = ["names", "emails", "affiliations"]
+    raw = {"names": None, "emails": None, "affiliations": None, "links": None}
+    interested_attributes = ["names", "emails", "affiliations", "links"]
     for attribute in interested_attributes:
-        raw[attribute] = node.attributes.pop(attribute).split("%")
-    names, emails, affiliations = (
+        raw[attribute] = node.attributes.pop(attribute).split("[%]")
+    names, emails, affiliations, links = (
         raw["names"],
         raw["emails"],
         raw["affiliations"],
+        raw["links"],
     )
-    content = map(lambda n, e, a: (n, e, a), names, emails, affiliations)  # type: ignore[call-overload]
+    content = map(
+        lambda n, e, a, l: (n, e, a, l), names, emails, affiliations, links
+    )  # type: ignore[call-overload]
     html_src = AUTHORS_TEMPLATE.render(content=content)
     self.body.append(f"{self.starttag(node, 'div')}{html_src}")
 
