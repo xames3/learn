@@ -92,9 +92,9 @@ p {
   font-size: 1.375rem;
   color: var(--pst-color-text-base);
   text-align: justify;
-    hyphens: auto;
-    -webkit-hyphens: auto;
-    word-spacing: -0.05em;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  word-spacing: -0.05em;
 }
 
 /* Disable underlining of hyperlinks */
