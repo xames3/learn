@@ -4,7 +4,7 @@ Abstract Directive for L.E.A.R.N
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: Wednesday, May 03 2023
-Last updated on: Friday, July 28 2023
+Last updated on: Monday, July 31 2023
 
 This module provides a custom directive for L.E.A.R.N's custom theme,
 that allows authors and contributors to add an abstract to their
@@ -52,6 +52,10 @@ abstract is ``learn-abstract`` and the abstract itself is ``abstract``.
     }
 
 This will style the abstract with required colors and format.
+
+.. versionchanged:: 1.0.2
+    Directive extensions are now called with their names, no underscore
+    prefixes are used.
 """
 
 from __future__ import annotations

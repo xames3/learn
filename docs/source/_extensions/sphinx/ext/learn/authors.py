@@ -4,7 +4,7 @@ Authors Directive for L.E.A.R.N
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: Wednesday, May 03 2023
-Last updated on: Friday, July 28 2023
+Last updated on: Monday, July 31 2023
 
 This module provides a custom directive for L.E.A.R.N's custom theme,
 that allows authors and contributors to add list of authors or
@@ -59,6 +59,10 @@ This will style the authors list with required fonts and alignments.
     Added support for embedding links to author's profile. This allows
     us to link author's profile/url/resume to it's name in the author
     section itself.
+
+.. versionchanged:: 1.0.2
+    Directive extensions are now called with their names, no underscore
+    prefixes are used.
 """
 
 from __future__ import annotations
