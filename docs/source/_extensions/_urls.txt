@@ -2,12 +2,16 @@
    :format: html
 
 .. |br| replace:: :raw-html:`<br/>`
+.. |dash| replace:: :raw-html:`&mdash;`
 .. |tab| replace:: :raw-html:`&emsp;`
 
 .. _github pr: https://github.com/xames3/learn/pulls
+
+.. _python website: https://python.org
 
 .. _recent arxiv: https://arxiv.org/list/cs.AI/recent
 .. _depaul college of communication: https://communication.depaul.edu/Pages/default.aspx
 .. _feynman technique: https://fs.blog/feynman-technique/
 .. _richard feynman: https://en.wikipedia.org/wiki/Richard_Feynman
 .. _nick higham: https://nhigham.com
+.. _scientic american post about arxiv: https://www.scientificamerican.com/article/arxiv-org-reaches-a-milestone-and-a-reckoning/
