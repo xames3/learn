@@ -4,7 +4,7 @@ L.E.A.R.N's Sphinx Extension
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: Wednesday, May 03 2023
-Last updated on: Friday, July 28 2023
+Last updated on: Monday, July 31 2023
 
 This module contains Sphinx's custom extension for L.E.A.R.N. Since
 L.E.A.R.N uses a special ``research paper-esque`` aesthetics for it's UI
@@ -47,32 +47,69 @@ quickly.
     Added support for embedding links to author's profile. This allows
     us to link author's profile/url/resume to it's name in the author
     section itself.
+
+.. versionadded:: 1.0.2
+    Added support for creating a dedicated references section through
+    the ``references`` directive. The directive handles all the
+    external links used in the current document and puts them together
+    as a list.
+
+.. versionchanged:: 1.0.2
+    Directive extensions are now called with their names, no underscore
+    prefixes are used.
+
+.. versionchanged:: 1.0.2
+    Major refactoring of the ``__init__`` module. The module now
+    supports dynamic object (class and functions) generation rather
+    than importing each object explicitly from the module.
 """
 
 from __future__ import annotations
 
+import importlib
+import sys
 import typing as t
-
-from ._abstract import Abstract
-from ._abstract import AbstractNode
-from ._abstract import depart_abstract_html
-from ._abstract import visit_abstract_html
-from ._authors import Authors
-from ._authors import AuthorsNode
-from ._authors import depart_authors_html
-from ._authors import visit_authors_html
+from os import path as p
 
 if t.TYPE_CHECKING:
     from sphinx.application import Sphinx
 
-__version__: str = "1.0.1"
+__version__: str = "1.0.2"
+
+this = p.dirname(__file__)
+directives: list[str] = [
+    "Abstract",
+    "Authors",
+    "References",
+]
 
 
 def setup(app: Sphinx) -> dict[str, t.Any]:
-    app.add_node(
-        AbstractNode, html=(visit_abstract_html, depart_abstract_html)
-    )
-    app.add_node(AuthorsNode, html=(visit_authors_html, depart_authors_html))
-    app.add_directive("abstract", Abstract)
-    app.add_directive("authors", Authors)
+    """Bootstrapping L.E.A.R.N directives.
+
+    .. versionchanged:: 1.0.2
+        The ``setup`` function supports dynamic object (class and
+        functions) generation rather than importing each object
+        explicitly from the module.
+    """
+    # TODO (xames3): Check implementation of lazy module import to
+    # minimize the overhead of importing larger directive modules in
+    # future.
+    for directive in directives:
+        title = directive
+        directive = directive.lower()
+        spec = importlib.util.spec_from_file_location(
+            directive, p.join(this, f"{directive}.py")
+        )
+        module = importlib.util.module_from_spec(spec)  # type: ignore[arg-type]
+        sys.modules[directive] = module
+        spec.loader.exec_module(module)  # type: ignore[union-attr]
+        directive_class = getattr(module, f"{title}")
+        directive_node = getattr(module, f"{title}Node")
+        directive_visit_node = getattr(module, f"visit_{directive}_html")
+        directive_depart_node = getattr(module, f"depart_{directive}_html")
+        app.add_node(
+            directive_node, html=(directive_visit_node, directive_depart_node)
+        )
+        app.add_directive(directive, directive_class)
     return {"parallel_read_safe": True, "parallel_write_safe": True}
