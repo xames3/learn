@@ -84,22 +84,24 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 p {
-  margin-top: 1rem;
+  margin: 1rem 0;
   font-size: 1.375rem;
   color: var(--pst-color-text-base);
   text-align: justify;
+  word-spacing: -0.05em;
   hyphens: auto;
   -webkit-hyphens: auto;
-  word-spacing: -0.05em;
 }
 
 /* Disable underlining of hyperlinks */
-a:not([class]) {
+a:not([class]),
+a:hover {
   text-decoration-skip-ink: auto;
+  text-decoration: none;
 }
 
 /* Disable navbar shadow */
@@ -108,10 +110,15 @@ a:not([class]) {
 }
 
 /* Hide toggle button when not on mobile */
-@media (min-width: 768px) {}
-
 label.sidebar-toggle.primary-toggle {
   display: none;
+}
+
+/* Show toggle button when on mobile */
+@media screen and (max-width: 960px) {
+  label.sidebar-toggle.primary-toggle {
+    display: block;
+  }
 }
 
 /* Searchbar font size */
@@ -134,12 +141,13 @@ label.sidebar-toggle.primary-toggle {
 /* Change highlighted text color */
 dt:target,
 span.highlighted {
-  background-color: var(--pst-color-info);
+  background-color: transparent;
+  border: 0.125rem solid var(--pst-color-success);
 }
 
 /* Disable sidebar border */
 .bd-sidebar-primary {
-  border-right: 0px;
+  border-right: 0;
 }
 
 /* Disable sidebar scrollbars but retain their functionality */
@@ -158,18 +166,19 @@ div#searchbox p.highlight-link {
 }
 
 /* Keep font size consistent on mobile */
-@media (min-width: 768px) {}
-
-div#searchbox p.highlight-link a {
-  font-size: 1rem;
+@media screen and (max-width: 960px) {
+  div#searchbox p.highlight-link a {
+    font-size: 1rem;
+  }
 }
+
 
 /* Contents inside the hide search button */
 div#searchbox p.highlight-link a {
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   transition: box-shadow .25s ease-out;
-  background-color: var(--pst-color-primary);
-  border-radius: 3rem;
+  background-color: var(--pst-color-danger);
+  border-radius: 0;
   color: #fff;
 }
 
@@ -186,8 +195,8 @@ div#searchbox p.highlight-link a::before {
 
 /* Sidebar logo area */
 .navbar-brand {
-  font-size: 1.25rem;
   align-items: start;
+  font-size: 1.25rem;
 }
 
 /* Align sidebar icons in center */
@@ -219,7 +228,7 @@ nav.bd-links p.caption {
 
 /* Disable footer border */
 footer.bd-footer-content {
-  border-top: 0px;
+  border-top: 0;
   font-size: 1.3rem;
 }
 
@@ -242,8 +251,8 @@ footer.bd-footer-content .bd-footer-content__inner {
 
 /* Inline code block section */
 code.literal {
-  border-radius: 0.5rem;
   padding: .2rem .5rem;
+  border-radius: 0.5rem;
 }
 
 /* Code block section */
@@ -252,8 +261,20 @@ pre {
 }
 
 /* Epigraph section */
-blockquote {
+blockquote.epigraph,
+blockquote.highlights,
+blockquote.pull-quote {
+  margin: 0;
+  padding: 1rem 2.5rem;
+  background-color: var(--pst-color-background);
+  font-size: 1.1rem;
   font-style: italic;
+}
+
+/* Remove extra margin and padding from Epigraph section */
+blockquote p {
+  margin: 0;
+  padding: 0;
 }
 
 /* Custom L.E.A.R.N extension CSS classes and properties */
@@ -277,14 +298,13 @@ blockquote {
 
 /* Author's name */
 .author a.name-link {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 0.5rem 0;
   font-size: 1.7rem;
   color: var(--pst-color-text-base);
   text-decoration: none;
 }
 
-/* Author's name */
+/* Author's affiliation */
 .author p.affiliation-link {
   font-size: 1.2rem;
   color: var(--pst-color-text-base);
@@ -292,7 +312,6 @@ blockquote {
 
 /* Author's email */
 .author a.email-link {
-  margin-top: 1rem;
   margin-bottom: 2rem;
   font-size: 1.1em;
   font-family: var(--pst-font-family-monospace-system);
@@ -318,4 +337,25 @@ blockquote {
   content: "Abstract. ";
   font-weight: bold;
   color: var(--pst-color-text-muted);
+}
+
+/* References div class */
+.learn-references ol {
+  display: block;
+  text-align: left;
+  font-size: 1.375rem;
+  margin-left: 1rem;
+}
+
+/* References list items */
+.learn-references>ol>li>p {
+  text-align: left;
+}
+
+/* References items border */
+.references-border {
+  border: 0.125rem solid var(--pst-color-primary-link);
+  font-size: 1.375rem;
+  font-family: var(--pst-font-family-monospace-system);
+  color: var(--pst-color-text-base);
 }
