@@ -4,7 +4,7 @@ Authors Directive for L.E.A.R.N
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: Wednesday, May 03 2023
-Last updated on: Monday, July 31 2023
+Last updated on: Friday, August 11 2023
 
 This module provides a custom directive for L.E.A.R.N's custom theme,
 that allows authors and contributors to add list of authors or
@@ -63,6 +63,9 @@ This will style the authors list with required fonts and alignments.
 .. versionchanged:: 1.0.2
     Directive extensions are now called with their names, no underscore
     prefixes are used.
+
+.. versionchanged:: 1.0.3
+    Author details are now formatted as table instead of list.
 """
 
 from __future__ import annotations
@@ -86,17 +89,35 @@ __all__ = [
 
 AUTHORS_TEMPLATE: t.Final[jinja2.Template] = jinja2.Template(
     """\
-    {% for name, email, affiliation, link in content %}
-        <div class="author">
-            {% if link != "#" %}
-                <a href="{{ link }}" class="name-link">{{ name }}</a>
+    <table id="authors">
+        <tr>               
+        {% for name in contents %}
+            {% if name[3] != "#" %}
+                <td class="name-link">
+                    <a href="{{ name[3] }}">{{ name[0] }}</a>
+                </td>
             {% else %}
-                <p>{{ name }}</p>
+                <td class="name-link">{{ name[0] }}</td>
             {% endif %}
-            <p class="affiliation-link">{{ affiliation }}</p>
-            <a href="mailto:{{ email }}" class="email-link">{{ email }}</a>
-        </div>
-    {% endfor %}
+        {% endfor %}
+        </tr>
+        <tr>               
+        {% for affiliation in contents %}
+            <td class="affiliation">
+            {% for affiliation_break in affiliation[2] %}
+                <p class="affiliation-link">{{ affiliation_break }}</p>
+            {% endfor %}
+            </td>
+        {% endfor %}
+        </tr>
+        <tr>               
+        {% for email in contents %}
+            <td class="email-link">
+                <a href="mailto:{{ email[1] }}">{{ email[1] }}</a>
+            </td>
+        {% endfor %}
+        </tr>
+    </table>
     """
 )
 
@@ -169,21 +190,28 @@ def visit_authors_html(self: HTMLTranslator, node: AuthorsNode) -> None:
     This function allows the rendering of the abstract of a topid on the
     webpage. It relies on ``Jinja`` templating to perform the expansion
     and rendering of the HTML source code.
+
+    .. versionchanged:: 1.0.3
+        The ``contents`` variable is type casted to list instead of
+        being an iterator to loop over the Jinja template multiple
+        times.
     """
-    raw = {"names": None, "emails": None, "affiliations": None, "links": None}
+    raw: dict[str, str | list[str]] = {}
     interested_attributes = ["names", "emails", "affiliations", "links"]
     for attribute in interested_attributes:
         raw[attribute] = node.attributes.pop(attribute).split("[%]")
     names, emails, affiliations, links = (
         raw["names"],
         raw["emails"],
-        raw["affiliations"],
+        [affiliation.split("\\n") for affiliation in raw["affiliations"]],
         raw["links"],
     )
-    content = map(
-        lambda n, e, a, l: (n, e, a, l), names, emails, affiliations, links
+    contents = list(
+        map(
+            lambda n, e, a, l: (n, e, a, l), names, emails, affiliations, links
+        )
     )  # type: ignore[call-overload]
-    html_src = AUTHORS_TEMPLATE.render(content=content)
+    html_src = AUTHORS_TEMPLATE.render(contents=contents)
     self.body.append(f"{self.starttag(node, 'div')}{html_src}")
 
 

@@ -62,6 +62,9 @@ quickly.
     Major refactoring of the ``__init__`` module. The module now
     supports dynamic object (class and functions) generation rather
     than importing each object explicitly from the module.
+
+.. versionchanged:: 1.0.3
+    Author details are now formatted as table instead of list.
 """
 
 from __future__ import annotations
@@ -74,7 +77,7 @@ from os import path as p
 if t.TYPE_CHECKING:
     from sphinx.application import Sphinx
 
-__version__: str = "1.0.2"
+__version__: str = "1.0.3"
 
 this = p.dirname(__file__)
 directives: list[str] = [
