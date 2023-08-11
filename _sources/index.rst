@@ -1,12 +1,12 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: Monday, May 08 2023
-.. Last updated on: Friday, July 28 2023
+.. Last updated on: Friday, August 11 2023
 
 .. _learn-home:
 
-#########
-L.E.A.R.N
-#########
+##################################################
+Learning the Essence of AI, Research and Notations
+##################################################
 
 .. toctree::
 
