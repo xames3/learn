@@ -65,7 +65,7 @@ Since this project is hosted on GitHub if you find any discrepancy in my explana
 Conclusion
 **********
 
-Re-learning high school-level math in depth may seem boring but as we keep doing it repeatedly, it will become a good habit and help later in solving more complicated problems. Thus, through L.E.A.R.N I invite you to embark on an enlightening journey with me where I hope to untie the knots of mathematical formulae behind AI engagingly. To conclude this brief introduction, this website seeks to empower readers to comprehend the essence of AI beyond its surface. Together, we embark on a voyage that reveals the intricate reasonings behind AI, unveiling the beauty and brilliance that drives this transformative field.
+Re-learning high school-level math in depth may seem boring but as we keep doing it repeatedly, it will become a good habit and help later in solving more complicated problems. Thus, through L.E.A.R.N I invite you to embark on an enlightening journey with me where I hope to untie the knots of mathematical formulae behind AI engagingly. This website is essentially a collection of my experiences working on this subject and the lessons learned over the years. Briefly speaking, I will be discussing a variety of topics from math, science, ethics and philosophy. Through these discussions, readers will be able to think deeply about the essence of this modern technology and the future of humanity. Together, we embark on a voyage that reveals the intricate reasonings behind AI, unveiling the beauty and brilliance that drives this transformative field.
 
 If you read it completely, I would like to thank you for your time!
 
