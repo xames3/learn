@@ -21,7 +21,8 @@ body {
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
   margin: 0 auto;
-  line-height: 1.5;
+  line-height: 2rem;
+  color: var(--pst-color-text-base);
 }
 
 h1 {
@@ -90,11 +91,20 @@ h6 {
 p {
   margin: 1rem 0;
   font-size: 1.375rem;
-  color: var(--pst-color-text-base);
   text-align: justify;
   word-spacing: -0.05em;
   hyphens: auto;
   -webkit-hyphens: auto;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  padding: 0.3rem 1rem;
+  text-align: center;
+  font-size: 1.375rem;
 }
 
 /* Disable underlining of hyperlinks */
@@ -102,6 +112,7 @@ a:not([class]),
 a:hover {
   text-decoration-skip-ink: auto;
   text-decoration: none;
+  color: var(--pst-color-text-base);
 }
 
 /* Disable navbar shadow */
@@ -278,26 +289,19 @@ blockquote p {
 }
 
 /* Custom L.E.A.R.N extension CSS classes and properties */
-/* Authors list class */
+/* Authors root class */
 .learn-authors {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  line-height: 0.5rem;
-  color: var(--pst-color-text-muted);
+  color: var(--pst-color-text-base);
 }
 
 /* Author class */
-.author {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto 1.5rem;
+#authors {
+  text-align: center;
+  color: var(--pst-color-text-base);
 }
 
 /* Author's name */
-.author a.name-link {
+.name-link {
   margin: 0.5rem 0;
   font-size: 1.7rem;
   color: var(--pst-color-text-base);
@@ -305,15 +309,19 @@ blockquote p {
 }
 
 /* Author's affiliation */
-.author p.affiliation-link {
+.affiliation,
+p.affiliation-link {
+  text-align: center;
   font-size: 1.2rem;
+  line-height: 0.8rem;
+  margin-bottom: 0.3rem;
   color: var(--pst-color-text-base);
 }
 
 /* Author's email */
-.author a.email-link {
+.email-link {
   margin-bottom: 2rem;
-  font-size: 1.1em;
+  font-size: 1.1em !important;
   font-family: var(--pst-font-family-monospace-system);
   font-weight: bold;
   color: var(--pst-color-text-base);
