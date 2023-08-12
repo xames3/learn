@@ -105,6 +105,14 @@ td {
   padding: 0.3rem 1rem;
   text-align: center;
   font-size: 1.375rem;
+  vertical-align: center;
+}
+
+/* Show table vertically when on mobile */
+@media screen and (max-width: 960px) {
+  td {
+    display: block;
+  }
 }
 
 /* Disable underlining of hyperlinks */
@@ -288,6 +296,17 @@ blockquote p {
   padding: 0;
 }
 
+/* Keyboard modifier */
+kbd:not(.compound) {
+  border: 1px solid var(--pst-color-border);
+  box-shadow: 1px 1px 1px var(--pst-color-shadow);
+  border-radius: 0.4rem;
+  margin: 0 .3rem;
+  padding: 0 .4rem;
+  font-family: var(--pst-font-family-keyboard);
+  color: var(--pst-color-muted-highlight);
+}
+
 /* Custom L.E.A.R.N extension CSS classes and properties */
 /* Authors root class */
 .learn-authors {
@@ -318,6 +337,14 @@ p.affiliation-link {
   color: var(--pst-color-text-base);
 }
 
+/* Reduce affiliation font size when on mobile */
+@media screen and (max-width: 960px) {
+  .affiliation,
+  p.affiliation-link {
+    font-size: 1rem;
+  }
+}
+
 /* Author's email */
 .email-link {
   margin-bottom: 2rem;
@@ -326,6 +353,13 @@ p.affiliation-link {
   font-weight: bold;
   color: var(--pst-color-text-base);
   text-decoration: none;
+}
+
+/* Remove margin bottom for email when on mobile */
+@media screen and (max-width: 960px) {
+  .email-link {
+    margin-bottom: 0;
+  }
 }
 
 /* Abstract div class */
