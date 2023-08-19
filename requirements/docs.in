@@ -3,3 +3,4 @@ sphinx-book-theme
 sphinx-copybutton
 sphinx-design
 sphinx_favicon
+sphinxcontrib.jquery
