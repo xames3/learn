@@ -11,3 +11,4 @@ Learning the Essence of AI, Research and Notations
 .. toctree::
 
     _documentation/introducing-learn
+    _documentation/chapters/demystifying-buzzwords
