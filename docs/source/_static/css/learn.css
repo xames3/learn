@@ -314,9 +314,13 @@ figcaption > p {
   text-align: center;
   font-size: 1.2rem;
 }
+
+/* Increment all the elements which have class "caption-text" by 1 */
 figcaption > p .caption-text {
   counter-increment: figure;
 }
+
+/* Prefix figure number based on the increment */
 figcaption > p .caption-text::before {
   content: "Fig. " counter(figure) ". ";
   font-weight: bold;
