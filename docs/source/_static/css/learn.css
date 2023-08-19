@@ -23,6 +23,7 @@ body {
   margin: 0 auto;
   line-height: 2rem;
   color: var(--pst-color-text-base);
+  counter-reset: figure 0;
 }
 
 h1 {
@@ -305,6 +306,21 @@ kbd:not(.compound) {
   padding: 0 .4rem;
   font-family: var(--pst-font-family-keyboard);
   color: var(--pst-color-muted-highlight);
+}
+
+/* Based on the solution provided here: https://stackoverflow.com/a/29849993 */
+/* Centering and prefixing figures */
+figcaption > p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+figcaption > p .caption-text {
+  counter-increment: figure;
+}
+figcaption > p .caption-text::before {
+  content: "Fig. " counter(figure) ". ";
+  font-weight: bold;
+  color: var(--pst-color-text-muted);
 }
 
 /* Custom L.E.A.R.N extension CSS classes and properties */

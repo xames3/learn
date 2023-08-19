@@ -90,3 +90,11 @@ var suggestivePlaceholderElement = new suggestivePlaceholder({
 window.addEventListener("load", (event) => {
   suggestivePlaceholderElement.init();
 })
+
+// Dummy code example for performing onClick event
+// 
+// $(document).ready(function() {
+//   $(".CSS-CLASSNAME").on("click", function() {
+//       alert("Clicked!");
+//   });
+// });
