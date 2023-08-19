@@ -19,6 +19,7 @@ html {
   --pst-font-family-heading: var(--pst-font-family-base-system);
   --pst-font-family-monospace-system: "Computer Modern Typewriter", serif;
   --pst-font-family-monospace: var(--pst-font-family-monospace-system);
+  --pst-font-family-keyboard: Arial, Helvetica, sans-serif;
   --pst-font-size-base: 1rem;
   --pst-font-size-h1: 2.1875rem;
   --pst-font-size-h2: 1.875rem;
@@ -97,7 +98,7 @@ html[data-theme="light"] {
   --pst-color-light: #c9c9c9;
   --pst-color-link-hover: var(--pst-color-attention);
   --pst-color-link: var(--pst-color-primary);
-  --pst-color-muted-highlight: #3e3e3e;
+  --pst-color-muted-highlight: #636366;
   --pst-color-muted-text: #ffffff;
   --pst-color-muted: #000000;
   --pst-color-on-background: #ffffff;

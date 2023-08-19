@@ -1,0 +1,361 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-theme="light">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <link href="../../_static/img/favicon-16x16.png" sizes="16x16" rel="icon" type="image/png">
+    <link href="../../_static/img/favicon-32x32.png" sizes="32x32" rel="icon" type="image/png">
+    <title>Demystifying the Buzzwords &#8212; L.E.A.R.N</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/defaults.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/learn.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../_static/js/learn.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_documentation/chapters/demystifying-buzzwords';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Let’s L.E.A.R.N!" href="../introducing-learn.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="light">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">L.E.A.R.N</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../introducing-learn.html"><span class="sectnum"></span>Let’s L.E.A.R.N!</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><span class="sectnum"></span>Demystifying the Buzzwords</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>   Demystifying the Buzzwords</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction"><span class="sectnum">1   </span>Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intelligence"><span class="sectnum">2   </span>Intelligence</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning"><span class="sectnum">3   </span>Learning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intelligence-v-s-learning"><span class="sectnum">4   </span>Intelligence v/s Learning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#artificial-intelligence"><span class="sectnum">5   </span>Artificial Intelligence</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="demystifying-the-buzzwords">
+<span id="demystifying-buzzwords"></span><h1><span class="sectnum"></span>Demystifying the Buzzwords<a class="headerlink" href="#demystifying-the-buzzwords" title="Permalink to this heading">#</a></h1>
+<div class="learn-authors">
+    <table id="authors">
+        <tr>               
+        
+            
+                <td class="name-link">
+                    <a href="https://linkedin.com/in/xames3">Akshay Mestry</a>
+                </td>
+            
+        
+        </tr>
+        <tr>               
+        
+            <td class="affiliation">
+            
+                <p class="affiliation-link">DePaul University</p>
+            
+                <p class="affiliation-link">Jarvis College of Computing and Digital Media</p>
+            
+                <p class="affiliation-link">Chicago, IL 60604, USA</p>
+            
+            </td>
+        
+        </tr>
+        <tr>               
+        
+            <td class="email-link">
+                <a href="mailto:xa@mes3.dev">xa@mes3.dev</a>
+            </td>
+        
+        </tr>
+    </table>
+    </div><section id="introduction">
+<h2><span class="sectnum">1   </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<p>Hello hello everyone! This chapter will discuss the ideas behind the buzzwords like Artificial Intelligence, Machine Learning, Neural Networks, etc. What do they mean? Since 2010, there has been a massive surge in usage of these words. I have come across a lot of people in my field and outside using them interchangeably. They classify systems as AI-based and some as ML-based. Some often claim a company is an AI-first company. But is the distinction between these buzzwords even correct? Do they mean the same thing or are there any subtle differences? To learn about these terminologies precisely we first need to understand what “Intelligence” and “Learning” means. They often connote a similar thing, something to do with knowledge or information. In our world of computer science, we call this information or knowledge, data.</p>
+</section>
+<section id="intelligence">
+<h2><span class="sectnum">2   </span>Intelligence<a class="headerlink" href="#intelligence" title="Permalink to this heading">#</a></h2>
+<p>According to Google…</p>
+<blockquote class="epigraph">
+<div><p>Intelligence is the ability to acquire and apply knowledge and skills to solve a particular problem at hand.</p>
+</div></blockquote>
+<p>Some say it is the ability to solve complex problems or make decisions with outcomes benefitting the actor using prior knowledge. Some call it a trait, like height or strength. We can keep arguing on what is the right definition and still would not be able to settle on one in particular. But that is not our goal, we want to understand what Intelligence is. So let us go over the definition once again. In simple terms, it means, you learn something and based on that acquired information you do something. Now, what you learn or how you learn is a different subject or what you do with the information or how you use that information depends on the context of the problem. But the key insight is you first learn about something and then you apply your knowledge.</p>
+<p><span class="raw-html">&emsp;</span> This is how we humans and some mammals tend to function. Over our lifetime we spend time learning and adapting to new information as we grow and later use it for carrying out some activity. This is Intelligence at work. Like memories, intelligence is not a single thing located in some part of our brain. The concept of intelligence <abbr title="that is">i.e.</abbr> analyzing, learning, adapting and using the information wisely, is something we as a species have developed throughout thousands of years through evolution. It took us a lot of time to develop this level of intellect which we now take for granted. Let me explain this with a very simple example. Imagine early humans learning to use sticks and twigs for self-defence. They used bamboo sticks or dried tree branches to cast off predators. When this method of intimidation became ineffective as the predators also learnt to adapt, these early humans started modifying their tools. They would sharpen the tips of the branches or light the stick on fire. They started using their resources more effectively to yield better results. Another example would be touching a hot surface, we all have been there. Imagine yourself accidentally touching something hot to your touch, you instinctively quickly pull yourselves from it. Once you register the fact that touching a hot thing would harm you, you now become more cautious and aware of your next actions. You adapt to the new information.</p>
+<figure class="align-default" id="id1">
+<img alt="Intelligence cycle" src="../../_images/intelligence-cycle.png" />
+<figcaption>
+<p><span class="caption-text">Intelligence as a collective process of various stages</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p><span class="raw-html">&emsp;</span> Our survival instincts as a species led us to develop this intellect and thus over the years it kept on improving. It is extremely important to remember that this way of figuring out a solution to a problem probably took us a very long time. But over time, our species understood the problem at hand, learnt and found a way around it. With time, we adopted different strategies and kept improvising. Now, it is often debated amongst many scientists and researchers how to measure or what intelligence is. To make matters worse, intelligence is also connected to consciousness since awareness is helpful in problem-solving. This process collectively is Intelligence. Understanding a problem statement or being aware or conscious of a situation, prototyping a solution based on experience, testing it out and improvising based on failures is how we learn. So intelligence is a set of actions that we do harmoniously to get something done.</p>
+</section>
+<section id="learning">
+<h2><span class="sectnum">3   </span>Learning<a class="headerlink" href="#learning" title="Permalink to this heading">#</a></h2>
+<p>In simple terms, learning is a process of gathering and understanding information about something through senses such as vision, sound, smell, touch or taste. It is like intelligence but not completely. Intelligence is a collective process of learning and navigating our actions based on acquired knowledge. Whereas learning is a subset or part of the intelligence <em>process</em> wherein you try to gather more information, understand your problem and work on expanding your experiences about a particular subject. The gathered information about a subject through our senses is the basis of the next actions for learning. Without any information about a topic, we are unable to react appropriately or flexibly. Thus, having adequate information plays a significant role while learning. But only having information is not enough, we need to store it in memory too.</p>
+<p><span class="raw-html">&emsp;</span> While learning something, saving information in the memory is crucial. Memorization is the ability of the mind to save and recall information so that a living being does not have to start from scratch every time it perceives something relevant. For example, consider a toddler. A toddler is perhaps one of the best examples to explain how learning works. A toddler learns to walk on its twos after a lot of repetitive trial and error, trying different manoeuvrings and memorizing actions and elements which worked along the way until it masters them.</p>
+<figure class="align-default" id="id2">
+<img alt="A toddler learning to walk in multiple stages" src="../../_images/toddler-learning-to-walk.png" />
+<figcaption>
+<p><span class="caption-text">A toddler learning to walk throughout the multiple stages of its life</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>It starts by trying and learning to roll over its belly. This initial process takes some time for the little one as it is a new experience for him. Once it can transition from its back to belly seamlessly, it tries various gestures and learns to use its tiny little hands and feet to crawl like a commando thus moving forward or backwards. Once it is comfortable crawling, it starts using its feet for faster movements and starts using its knees. This is where it starts learning how to stand on twos. Initially, all its attempts to stand straight fail but with time and enough practice, it learns to hold itself without support. Once it is comfortable standing, it starts taking its first little steps. This is nothing but learning, a process of putting together a sequence of thoughts or actions. The toddler uses its little intellect to learn its way to stand and walk. It repeats its behaviours and adapts to new information. While learning to walk, it learns to sit and jump too simultaneously. The toddler understands the significance of sitting and jumping through their past experiences and how these activities aid in moving.</p>
+<p><span class="raw-html">&emsp;</span> The act of learning is not restricted to humans. Almost all animals exhibit this behaviour. Humans and terrestrial mammals learn to walk and swim while birds learn to fly. A lot of this learning seems quite intuitive and hard-wired in our brains. We do not have to teach babies to walk or birds to fly. They do it based on their instincts. Researchers are not sure why this behaviour feels so natural though or maybe this is the intelligence of a species at work.</p>
+</section>
+<section id="intelligence-v-s-learning">
+<h2><span class="sectnum">4   </span>Intelligence v/s Learning<a class="headerlink" href="#intelligence-v-s-learning" title="Permalink to this heading">#</a></h2>
+<p>To summarize, intelligence is simply a collective process of problem-solving using various elements while learning is the process of gathering information through repetitive trial and error and building this intellect. Of course, there are other things like planning, creativity, rationalization, socializing, etc which are also some of the overlapping components while speaking of intelligence and learning. But we will focus on them later. While learning and building intelligence, it is crucial to understand what is necessary for problem-solving. Intelligence is merely a toolbox which holds various tools like analyzing, learning, testing and adapting whereas Learning itself is a tool. All we need to do is learn how to use them effectively.</p>
+<p><span class="raw-html">&emsp;</span> I will try to explain the significance of applying intelligence and learning through a simple example. Animals like squirrels hoard their food for cold weather but cattle do not exhibit this behaviour. Through evolution, these animals have learnt their survival strategies. After a lot of trial and error, a squirrel has learnt that if it does not store enough food for colder weather it might not get sufficient food later. It had learnt this over thousands of years and thus has built enough intelligence to selectively hoard enough food for itself. On the other hand, consider a domesticated cow which does not worry about food in the cold weather. It lives in a group, a cattle. So for a cow, socializing plays a critical role in survival. The cow has learnt that if it stays with humans, it will be well fed irrespective of the weather. For the cow, the learning curve has stopped.</p>
+<figure class="align-default" id="id3">
+<img alt="Cow vs Squirrel" src="../../_images/animals-survival-by-food.png" />
+<figcaption>
+<p><span class="caption-text">Cow enjoying its social life whilst Squirrel needs to work hard</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p><span class="raw-html">&emsp;</span> The whole point of the above example is to make sure you understand where to focus your time and resources while building solutions. You as an engineer need to understand why are you developing something and how will it be used in real-world applications. You need to understand what you need rather than what you want. Do you need AI or ML? This is the question one must ask itself before venturing ahead.</p>
+</section>
+<section id="artificial-intelligence">
+<h2><span class="sectnum">5   </span>Artificial Intelligence<a class="headerlink" href="#artificial-intelligence" title="Permalink to this heading">#</a></h2>
+<p>If you understand the concept of intelligence correctly, this is a no-brainer. To re-iterate, intelligence is the process of analyzing, understanding and learning about the available information and then providing a solution to the problem. Artificial Intelligence is the same thing but something which is simulated artificially. When talking about AI, we talk about a system which is capable of comprehending and adapting to the presented problem and then finding a solution for it. It functions similarly to the intelligence exhibited by a living entity <span class="raw-html">&mdash;</span> acquiring information through senses, learning over time through repetitive variations and testing its outcomes against the problem to reward itself.</p>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Akshay Mestry
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023, Akshay Mestry.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

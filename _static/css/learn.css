@@ -23,6 +23,7 @@ body {
   margin: 0 auto;
   line-height: 2rem;
   color: var(--pst-color-text-base);
+  counter-reset: figure 0;
 }
 
 h1 {
@@ -105,6 +106,14 @@ td {
   padding: 0.3rem 1rem;
   text-align: center;
   font-size: 1.375rem;
+  vertical-align: center;
+}
+
+/* Show table vertically when on mobile */
+@media screen and (max-width: 960px) {
+  td {
+    display: block;
+  }
 }
 
 /* Disable underlining of hyperlinks */
@@ -288,6 +297,36 @@ blockquote p {
   padding: 0;
 }
 
+/* Keyboard modifier */
+kbd:not(.compound) {
+  border: 1px solid var(--pst-color-border);
+  box-shadow: 1px 1px 1px var(--pst-color-shadow);
+  border-radius: 0.4rem;
+  margin: 0 .3rem;
+  padding: 0 .4rem;
+  font-family: var(--pst-font-family-keyboard);
+  color: var(--pst-color-muted-highlight);
+}
+
+/* Based on the solution provided here: https://stackoverflow.com/a/29849993 */
+/* Centering and prefixing figures */
+figcaption > p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* Increment all the elements which have class "caption-text" by 1 */
+figcaption > p .caption-text {
+  counter-increment: figure;
+}
+
+/* Prefix figure number based on the increment */
+figcaption > p .caption-text::before {
+  content: "Fig. " counter(figure) ". ";
+  font-weight: bold;
+  color: var(--pst-color-text-muted);
+}
+
 /* Custom L.E.A.R.N extension CSS classes and properties */
 /* Authors root class */
 .learn-authors {
@@ -318,6 +357,14 @@ p.affiliation-link {
   color: var(--pst-color-text-base);
 }
 
+/* Reduce affiliation font size when on mobile */
+@media screen and (max-width: 960px) {
+  .affiliation,
+  p.affiliation-link {
+    font-size: 1rem;
+  }
+}
+
 /* Author's email */
 .email-link {
   margin-bottom: 2rem;
@@ -326,6 +373,13 @@ p.affiliation-link {
   font-weight: bold;
   color: var(--pst-color-text-base);
   text-decoration: none;
+}
+
+/* Remove margin bottom for email when on mobile */
+@media screen and (max-width: 960px) {
+  .email-link {
+    margin-bottom: 0;
+  }
 }
 
 /* Abstract div class */
