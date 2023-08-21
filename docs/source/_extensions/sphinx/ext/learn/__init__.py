@@ -4,7 +4,7 @@ L.E.A.R.N's Sphinx Extension
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: Wednesday, May 03 2023
-Last updated on: Monday, July 31 2023
+Last updated on: Sunday, August 20 2023
 
 This module contains Sphinx's custom extension for L.E.A.R.N. Since
 L.E.A.R.N uses a special ``research paper-esque`` aesthetics for it's UI
@@ -65,6 +65,10 @@ quickly.
 
 .. versionchanged:: 1.0.3
     Author details are now formatted as table instead of list.
+
+.. versionadded:: 1.0.4
+    Added support for ``tweet`` directive to embed Twitter's or X's
+    posts into the L.E.A.R.N document.
 """
 
 from __future__ import annotations
@@ -74,10 +78,13 @@ import sys
 import typing as t
 from os import path as p
 
+from .tweet import Tweet
+from .tweet import embed_twitter_js
+
 if t.TYPE_CHECKING:
     from sphinx.application import Sphinx
 
-__version__: str = "1.0.3"
+__version__: str = "1.0.4"
 
 this = p.dirname(__file__)
 directives: list[str] = [
@@ -90,10 +97,16 @@ directives: list[str] = [
 def setup(app: Sphinx) -> dict[str, t.Any]:
     """Bootstrapping L.E.A.R.N directives.
 
+    :param app: Sphinx application class.
+    :returns: Dictionary of Sphinx's read-write settings.
+
     .. versionchanged:: 1.0.2
         The ``setup`` function supports dynamic object (class and
         functions) generation rather than importing each object
         explicitly from the module.
+
+    .. versionadded:: 1.0.4
+        Added support for ``tweet`` directive.
     """
     # TODO (xames3): Check implementation of lazy module import to
     # minimize the overhead of importing larger directive modules in
@@ -115,4 +128,6 @@ def setup(app: Sphinx) -> dict[str, t.Any]:
             directive_node, html=(directive_visit_node, directive_depart_node)
         )
         app.add_directive(directive, directive_class)
+    app.add_directive("tweet", Tweet)
+    app.connect("html-page-context", embed_twitter_js)
     return {"parallel_read_safe": True, "parallel_write_safe": True}
