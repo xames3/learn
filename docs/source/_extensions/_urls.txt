@@ -5,6 +5,16 @@
 .. |dash| replace:: :raw-html:`&mdash;`
 .. |tab| replace:: :raw-html:`&emsp;`
 
+.. raw:: html
+
+   <script src="https://utteranc.es/client.js"
+         repo="xames3/learn"
+         issue-term="pathname"
+         theme="github-light"
+         crossorigin="anonymous"
+         async>
+   </script>
+
 .. _github pr: https://github.com/xames3/learn/pulls
 
 .. _python website: https://python.org
