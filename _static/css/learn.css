@@ -421,3 +421,13 @@ p.affiliation-link {
   font-family: var(--pst-font-family-monospace-system);
   color: var(--pst-color-text-base);
 }
+
+/* Utterances frame resizing */
+.utterances {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}

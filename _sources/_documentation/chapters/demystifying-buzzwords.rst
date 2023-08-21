@@ -19,7 +19,7 @@ Demystifying the Buzzwords
 Introduction
 ************
 
-Hello hello everyone! This chapter will discuss the ideas behind the buzzwords like Artificial Intelligence, Machine Learning, Neural Networks, etc. What do they mean? Since 2010, there has been a massive surge in usage of these words. I have come across a lot of people in my field and outside using them interchangeably. They classify systems as AI-based and some as ML-based. Some often claim a company is an AI-first company. But is the distinction between these buzzwords even correct? Do they mean the same thing or are there any subtle differences? To learn about these terminologies precisely we first need to understand what "Intelligence" and "Learning" means. They often connote a similar thing, something to do with knowledge or information. In our world of computer science, we call this information or knowledge, data.
+Hello hello everyone! This chapter will discuss the ideas behind the buzzwords like Artificial Intelligence, Machine Learning, Neural Networks, etc. What do they mean? Since 2010, there has been a massive surge in usage of these words. I have come across a lot of people in my field and outside using them interchangeably. They classify systems as AI-based and some as ML-based. Some often claim a company is an AI-first company. But is the distinction between these buzzwords even correct? Do they mean the same thing or are there any subtle differences? To learn about these terminologies precisely we first need to understand what "Intelligence" and "Learning" means. They often connote a similar thing, something to do with knowledge or information. In our world of computer science, we call this information or knowledge, *data*.
 
 ************
 Intelligence
