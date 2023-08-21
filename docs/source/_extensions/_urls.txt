@@ -14,6 +14,9 @@
          crossorigin="anonymous"
          async>
    </script>
+   <a href="https://github.com/sponsors/xames3?o=esb" target="_blank" title="Sponsor @xames3">
+         <button class="sponsor-button"><i class="fa-regular fa-heart"></i>&nbsp;Sponsor</button>
+   </a>
 
 .. _github pr: https://github.com/xames3/learn/pulls
 

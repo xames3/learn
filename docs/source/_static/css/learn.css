@@ -310,18 +310,18 @@ kbd:not(.compound) {
 
 /* Based on the solution provided here: https://stackoverflow.com/a/29849993 */
 /* Centering and prefixing figures */
-figcaption > p {
+figcaption>p {
   text-align: center;
   font-size: 1.2rem;
 }
 
 /* Increment all the elements which have class "caption-text" by 1 */
-figcaption > p .caption-text {
+figcaption>p .caption-text {
   counter-increment: figure;
 }
 
 /* Prefix figure number based on the increment */
-figcaption > p .caption-text::before {
+figcaption>p .caption-text::before {
   content: "Fig. " counter(figure) ". ";
   font-weight: bold;
   color: var(--pst-color-text-muted);
@@ -335,6 +335,29 @@ figcaption > p .caption-text::before {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Custom GitHub sponsor button */
+.sponsor-button {
+  height: 2.2rem;
+  width: 7rem;
+  float: right;
+  fill: #656d76;
+  background-color: #f6f8fa;
+  border-color: #1f232826;
+  box-shadow: 0 0.0625rem 0 #1f23280a;
+  color: #24292f;
+  margin: auto 0.125rem;
+  padding: 0;
+  border-radius: 0.4rem;
+  vertical-align: middle;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+}
+
+/* Sponsor button color */
+i.fa-regular {
+  color: #bf3989;
 }
 
 /* Custom L.E.A.R.N extension CSS classes and properties */
@@ -369,6 +392,7 @@ p.affiliation-link {
 
 /* Reduce affiliation font size when on mobile */
 @media screen and (max-width: 960px) {
+
   .affiliation,
   p.affiliation-link {
     font-size: 1rem;
