@@ -2,5 +2,6 @@ Sphinx
 sphinx-book-theme
 sphinx-copybutton
 sphinx-design
+sphinx-last-updated-by-git
 sphinx_favicon
 sphinxcontrib.jquery
