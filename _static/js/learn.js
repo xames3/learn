@@ -91,10 +91,12 @@ window.addEventListener("load", (event) => {
   suggestivePlaceholderElement.init();
 })
 
-// Dummy code example for performing onClick event
-// 
-// $(document).ready(function() {
-//   $(".CSS-CLASSNAME").on("click", function() {
-//       alert("Clicked!");
-//   });
-// });
+// StackOverflow solution here: https://stackoverflow.com/a/22425498
+window.onload = function () {
+  var externalReference = document.getElementsByClassName("reference external");
+  for (var idx = 0; idx < externalReference.length; idx++) {
+    if (externalReference[idx].hostname != window.location.hostname) {
+      externalReference[idx].setAttribute("target", "_blank");
+    }
+  }
+}

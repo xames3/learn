@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: Friday, July 21 2023
-.. Last updated on: Friday, August 11 2023
+.. Last updated on: Sunday, August 20 2023
 
 .. _introducing-learn:
 
@@ -57,7 +57,7 @@ I have already admitted that there are far more resources out there about this s
 
     In writing, you clarify your own thoughts and strengthen your conviction. Indeed, you grasp your thoughts for the first time. Writing is a way of thinking. Writing creates thought and generates your ability to think, discover thoughts you hardly knew you had, and come to know what you know. You learn as you write. 
 
-Since this project is hosted on GitHub if you find any discrepancy in my explanations or if you have better examples to share, feel free to raise a `pull request <github pr_>`_ and I will have it merged. This way, we all can learn from each other.
+Since this project is hosted on GitHub if you find any discrepancy in my explanations or if you have better examples to share, feel free to raise a pull request at https://github.com/xames3/learn/compare and I will have it merged. This way, we all can learn from each other.
 
 |tab| When I started my career in AI a couple of years ago I used to get fascinated with the tutorials and the blog posts I used to see on the internet. Without skipping a beat, I would jump onto my computer and try it out. It used to feel amazing initially but later when I used to make changes for my use case, it wouldn't work as expected. I could not understand what was I doing wrong. I had no clue about the model |dash| how it was trained, its parameters and the tuning mechanism. Eventually, I used to give up. A few years later, when I started interviewing candidates for ML Engineer positions at work, I used to always ask them how they started their path in AI and ML. To my surprise, they all started just like me! They were also hyped initially but eventually left their project unfinished because they could not understand what was going wrong with their approach. This is another reason why I want to share my experiences on how I got around this problem.
 
@@ -74,4 +74,3 @@ If you read it completely, I would like to thank you for your time!
     arxiv >> Papers are published on arXiv every day
     python >> We will be using Python as the primary programming language for solving problems and building models
     prof. nicholas higham >> Prof. Nicholas Higham |dash| one of the geniuses in the world of mathematics and a famous author of many scientific and mathematical books
-    pull request >> Create a new pull request on GitHub. Make sure you provide proper details about the submission as this will help me to merge it
