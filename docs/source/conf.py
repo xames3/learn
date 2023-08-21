@@ -314,6 +314,8 @@ intersphinx_mapping = {
     "scipy": ("https://docs.scipy.org/doc/scipy/reference/", None),
 }
 todo_include_todos = True
+suppress_warnings = ["git.too_shallow"]
+
 rst_epilog = ""
 with open(RAW_LINKS_PATH) as f:
     rst_epilog += f.read()
