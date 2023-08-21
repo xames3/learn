@@ -84,7 +84,6 @@ sphinx==6.2.1
     #   sphinx-copybutton
     #   sphinx-design
     #   sphinx-favicon
-    #   sphinx-last-updated-by-git
     #   sphinxcontrib-applehelp
     #   sphinxcontrib-devhelp
     #   sphinxcontrib-htmlhelp
@@ -98,8 +97,6 @@ sphinx-copybutton==0.5.2
 sphinx-design==0.5.0
     # via -r ../requirements/docs.in
 sphinx-favicon==1.0.1
-    # via -r ../requirements/docs.in
-sphinx-last-updated-by-git==0.3.5
     # via -r ../requirements/docs.in
 sphinxcontrib-applehelp==1.0.7
     # via sphinx

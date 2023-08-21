@@ -246,7 +246,6 @@ extensions = [
     "sphinx_copybutton",
     "sphinx_design",
     "sphinx_favicon",
-    "sphinx_last_updated_by_git",
     "sphinxcontrib.jquery",
 ]
 
@@ -314,8 +313,8 @@ intersphinx_mapping = {
     "scipy": ("https://docs.scipy.org/doc/scipy/reference/", None),
 }
 todo_include_todos = True
-suppress_warnings = ["git.too_shallow"]
 
+# Add raw HTML code to the document.
 rst_epilog = ""
 with open(RAW_LINKS_PATH) as f:
     rst_epilog += f.read()
