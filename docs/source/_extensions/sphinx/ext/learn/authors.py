@@ -94,7 +94,7 @@ AUTHORS_TEMPLATE: t.Final[jinja2.Template] = jinja2.Template(
         {% for name in contents %}
             {% if name[3] != "#" %}
                 <td class="name-link">
-                    <a href="{{ name[3] }}">{{ name[0] }}</a>
+                    <a href="{{ name[3] }}" target="_blank">{{ name[0] }}</a>
                 </td>
             {% else %}
                 <td class="name-link">{{ name[0] }}</td>
