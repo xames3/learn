@@ -19,11 +19,11 @@ Demystifying the Buzzwords
 Introduction
 ************
 
-Hello hello everyone! This chapter will discuss the ideas behind the buzzwords like Artificial Intelligence, Machine Learning, Neural Networks, etc. What do they mean? Since 2010, there has been a massive surge in usage of these words. I have come across a lot of people in my field and outside using them interchangeably. They classify systems as AI-based and some as ML-based. Some often claim a company is an AI-first company. But is the distinction between these buzzwords even correct? Do they mean the same thing or are there any subtle differences? To learn about these terminologies precisely we first need to understand what "Intelligence" and "Learning" means. They often connote a similar thing, something to do with knowledge or information. In our world of computer science, we call this information or knowledge, *data*.
+Hello hello everyone! This chapter will discuss the ideas behind the buzzwords like Artificial Intelligence, Machine Learning, Neural Networks, etc. What do they mean? Since 2010, there has been a massive surge in usage of these words. I have come across a lot of people in my field and outside using them interchangeably. They classify systems as AI-based and some as ML-based. Some often claim a company is an AI-first company. But is the distinction between these buzzwords even correct? Do they mean the same thing or are there any subtle differences? To learn about these terminologies precisely we first need to understand what "Intelligence" and "Learning" means. By intelligence, I am referring to human intelligence. Although different animals display different levels of intelligence, I would primarily focus on our species. These words often connote a similar thing, something to do with knowledge or information. In our world of computer science, we call this information or knowledge, *data*.
 
-************
-Intelligence
-************
+******************
+Human Intelligence
+******************
 
 According to Google...
 
@@ -40,9 +40,9 @@ Some say it is the ability to solve complex problems or make decisions with outc
 
 |tab| Our survival instincts as a species led us to develop this intellect and thus over the years it kept on improving. It is extremely important to remember that this way of figuring out a solution to a problem probably took us a very long time. But over time, our species understood the problem at hand, learnt and found a way around it. With time, we adopted different strategies and kept improvising. Now, it is often debated amongst many scientists and researchers how to measure or what intelligence is. To make matters worse, intelligence is also connected to consciousness since awareness is helpful in problem-solving. This process collectively is Intelligence. Understanding a problem statement or being aware or conscious of a situation, prototyping a solution based on experience, testing it out and improvising based on failures is how we learn. So intelligence is a set of actions that we do harmoniously to get something done.
 
-********
-Learning
-********
+****************
+General Learning
+****************
 
 In simple terms, learning is a process of gathering and understanding information about something through senses such as vision, sound, smell, touch or taste. It is like intelligence but not completely. Intelligence is a collective process of learning and navigating our actions based on acquired knowledge. Whereas learning is a subset or part of the intelligence *process* wherein you try to gather more information, understand your problem and work on expanding your experiences about a particular subject. The gathered information about a subject through our senses is the basis of the next actions for learning. Without any information about a topic, we are unable to react appropriately or flexibly. Thus, having adequate information plays a significant role while learning. But only having information is not enough, we need to store it in memory too.
 
@@ -68,7 +68,7 @@ To summarize, intelligence is simply a collective process of problem-solving usi
 .. figure:: ../img/animals-survival-by-food.png
     :alt:  Cow vs Squirrel
 
-    Cow enjoying its social life whilst Squirrel needs to work hard
+    A cow enjoying its social life grazing through the meadows whilst a squirrel needs to work hard
 
 |tab| The whole point of the above example is to make sure you understand where to focus your time and resources while building solutions. You as an engineer need to understand why are you developing something and how will it be used in real-world applications. You need to understand what you need rather than what you want. Do you need AI or ML? This is the question one must ask itself before venturing ahead.
 
