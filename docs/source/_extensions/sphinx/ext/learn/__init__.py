@@ -4,7 +4,7 @@ L.E.A.R.N's Sphinx Extension
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: Wednesday, May 03 2023
-Last updated on: Sunday, August 20 2023
+Last updated on: Wednesday, August 23 2023
 
 This module contains Sphinx's custom extension for L.E.A.R.N. Since
 L.E.A.R.N uses a special ``research paper-esque`` aesthetics for it's UI
@@ -69,6 +69,10 @@ quickly.
 .. versionadded:: 1.0.4
     Added support for ``tweet`` directive to embed Twitter's or X's
     posts into the L.E.A.R.N document.
+
+.. versionadded:: 1.0.5
+    Added support for ``keywords`` directive to add auto generated
+    keywords for the L.E.A.R.N document.
 """
 
 from __future__ import annotations
@@ -84,12 +88,13 @@ from .tweet import embed_twitter_js
 if t.TYPE_CHECKING:
     from sphinx.application import Sphinx
 
-__version__: str = "1.0.4"
+__version__: str = "1.0.5"
 
 this = p.dirname(__file__)
 directives: list[str] = [
     "Abstract",
     "Authors",
+    "Keywords",
     "References",
 ]
 
@@ -107,6 +112,9 @@ def setup(app: Sphinx) -> dict[str, t.Any]:
 
     .. versionadded:: 1.0.4
         Added support for ``tweet`` directive.
+
+    .. versionadded:: 1.0.5
+        Added support for ``keywords`` directive.
     """
     # TODO (xames3): Check implementation of lazy module import to
     # minimize the overhead of importing larger directive modules in
