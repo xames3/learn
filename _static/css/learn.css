@@ -418,19 +418,38 @@ p.affiliation-link {
 
 /* Abstract div class */
 .learn-abstract {
-  max-width: 86%;
-  margin: 2.5rem auto;
+  max-width: 80%;
+  margin: 2.5rem auto 2rem auto;
 }
 
 /* Abstract text */
 .abstract {
-  margin: auto auto 2.5rem auto;
+  margin: auto auto 2rem auto;
   font-weight: 400 !important;
 }
 
 /* Abstract prefix */
 .abstract::before {
   content: "Abstract. ";
+  font-weight: bold;
+  color: var(--pst-color-text-muted);
+}
+
+/* Keywords div class */
+.learn-keywords {
+  max-width: 80%;
+  margin: 0 auto 2.5rem auto;
+}
+
+/* Keywords text */
+.keywords {
+  margin: auto auto 2rem auto;
+  font-weight: 400 !important;
+}
+
+/* Keywords prefix */
+.keywords::before {
+  content: "Keywords: ";
   font-weight: bold;
   color: var(--pst-color-text-muted);
 }
