@@ -8,12 +8,13 @@
 Let's L.E.A.R.N!
 ################
 .. sectnum:: 
-
+.. reading::
 .. authors::
     :affiliations: DePaul University\nJarvis College of Computing and Digital Media\nChicago, IL 60604, USA
     :emails: xa@mes3.dev
     :names: Akshay Mestry
     :links: https://linkedin.com/in/xames3
+
 
 ************
 Introduction
@@ -298,38 +299,130 @@ it's another to see them come alive in real-world scenarios. Therefore, the
 platform will regularly incorporate case studies, practical exercises, and
 real-life examples.
 
-|tab| At L.E.A.R.N, my educational ethos is centered around a multi-faceted approach to problem-solving. I believe in the power of examples |dash| not just one or two, but a multitude, each tailored to illuminate the nuances of the same problem. This methodology is not just about providing solutions; it's about revealing the many paths that can be taken to reach those solutions, thereby deepening the learner's understanding of the subject. In every topic I cover, be it the complex world of Statistics, the intricate patterns of Linear Algebra, or any other mathematical paradigm vital to AI, my approach will be to dissect and explore these subjects with comprehensive rigor. Each module is designed to culminate in experimental learning |dash| where I will manipulate scenarios, alter variables, and change operational orders. These practical exercises are crucial in demonstrating the dynamic nature of AI and mathematical models, showing learners how slight changes can lead to different outcomes. It's a hands-on approach that not only cements theoretical knowledge but also prepares learners for the unpredictable nature of real-world problem-solving.
+|tab| At L.E.A.R.N, my educational ethos is centered around a diverse approach
+to problem-solving. I believe in the power of examples |dash| not just one or
+two, but a multitude, each one tailored to illuminate the nuances of the same
+problem. This methodology is not just about providing solutions; it's about
+revealing the different paths that can be taken to reach those solutions,
+thereby deepening the learner's understanding of the subject. In every topic I
+cover, be it the complex world of Statistics, the intricate patterns of Linear
+Algebra, or any other mathematical paradigm vital to AI, my approach will be
+to dissect and explore these subjects with comprehensive rigor. Each module is
+designed to culminate in experimental learning |dash| where I will manipulate
+scenarios, alter variables, and change operational orders. This way I will
+demonstrate the dynamic nature of AI and mathematical models, showing learners
+how slight changes can lead to different outcomes. It's a hands-on approach
+that not only cements theoretical knowledge but also prepares learners for the
+unpredictable nature of real-world problem-solving.
 
-|tab| I am taking a unique approach to explaining each concept from scratch, assuming no prior knowledge from the readers whatsoever. For some of you, it may feel too easy and incredibly slow-paced but the complexity of the topic will escalate quickly before you even know it. Although I have taught software engineering to students and developers I have not ventured into mathematics so it is a new experience for me. I am going to use the teaching style of one of my college professors, Dr Marcus Schaefer whom I deeply admire. I find his teaching approach to be quite simple and rather very effective. He would give us a historical context about the mathematician or the philosopher who established the formula or concept respectively. Later he would make remarks on how we use their work for solving complicated problems in our day-to-day life. During classes, I used to find it very fascinating how something so old is still very relevant today and that is what we need to understand.
+|tab| In delving into these subjects, my primary aim is to build a very strong
+foundation in the mathematical and scientific principles that are the
+keystones of AI. I absolutely believe that a profound understanding of these
+principles is what empowers us to not just understand AI but to apply it
+creatively and effectively in real-world scenarios. It's about equipping
+learners with the tools and insights necessary to not just navigate but also
+innovate in the field of AI. By bridging the gap between theoretical concepts
+and practical applications, L.E.A.R.N will aspire to transform learners into
+thinkers and creators who can confidently apply their newly learned knowledge
+to solve complex problems and contribute to advancements in AI. The field of
+Artificial Intelligence is dynamic, with new developments and discoveries
+emerging on a constant basis. Therefore, fostering an attitude of adaptability
+is crucial for anyone venturing into this field.
 
-|tab| I will use a lot of examples to solve the same problem. The goal here is to build a strong understanding of the subject. At the end of each topic, we will experiment with different scenarios like :abbr:`conjugation (changing signs)`, changing the order of operation, etc. This will allow us to understand how the variables behave under different circumstances. Whether it is Statistics, Linear Algebra, or another mathematical :abbr:`paradigm (concept)`, I will dissect it comprehensively. I will prioritise developing a profound understanding of the mathematical and scientific principles which govern these models. I believe that once someone grasps the essence of mathematical techniques, they can then apply their knowledge to real-world problems with confidence.
+|tab| At L.E.A.R.N, the essence of my educational approach lies in the
+seamless integration of theoretical concepts with practical application. I
+won't just delve into mathematical theories; I will also bring them to life
+through Python code implementations. This methodology will help learners not
+just passively absorb information but actively engage with it, experimenting
+with the principles they learn. This hands-on approach bridges the gap between
+abstract mathematical concepts and tangible computer science applications,
+deepening the learner's understanding of AI from a multidimensional
+perspective. My academic journey in pursuing a Master's degree in Artificial
+Intelligence at DePaul University has been a significant catalyst for
+broadening my understanding of AI, enriched by interactions and discussions
+with a very diverse group of students and faculty. These interactions have
+been a wellspring of varied viewpoints and insights into the AI landscape. In
+line with my commitment to a proper and holistic educational experience,
+L.E.A.R.N will incorporate a tapestry of anecdotes from these individuals. By
+presenting a mosaic of thoughts and opinions, I aim to cultivate a learning
+environment that values diversity and encourages learners to appreciate the
+diverse nature of AI.
 
-|tab| Here, I will not only present the mathematical explanations but the respective `Python <python website_>`_ code for implementation. This hands-on approach ensures the readers experiment with the concepts they acquire, fostering a deeper grasp of mathematics using computer science. Currently, I am pursuing my Masters degree in Artificial Intelligence at DePaul University. While being here, I have come across a lot of amazing students from different majors and staff members who have contrasting opinions about AI. In the spirit of transparency and objectivity, I will highlight anecdotes from these individuals who hold different perspectives on technology than the rest of us. I believe my commitment to being utterly unbiased about my field of research encourages me to hone a holistic learning experience, addressing the potential challenges AI can present if not handled responsibly.
+|tab| Furthermore, my dedication to fostering an unbiased approach in AI
+education is a cornerstone of L.E.A.R.N. I recognize that AI is not just a
+scientific and technological endeavor but also one that intersects with
+ethical, social, and philosophical dimensions. Therefore, the site content is
+carefully curated to provide not only an in-depth understanding of AI but also
+an awareness of its broader implications. This holistic approach is
+instrumental in preparing learners to face the complexities of AI with a
+balanced perspective, equipped to use AI more responsibly and innovatively in
+various domains.
 
 *******************
 Why write about it?
 *******************
 
-I have already admitted that there are far more resources out there about this subject, then why am I writing again about it? I am not going to lie, the math behind building AI models is ridiculous and dense. The resources (books or videos) are scattered all over the internet and presume some prior knowledge which I feel is overkill. But, we need to start somewhere, right? So why not here? I would also like to provide a reference to `Prof. Nicholas Higham <nick higham_>`_'s 1998 book, "Handbook of Writing for the Mathematical Sciences". In the very first line of the book, he says, "*Writing helps you to learn*" and I truly believe it. He points to an explanation by author Sheridan Baker. He says,
+As I delve into the realm of writing and teaching about Artificial
+Intelligence, I'm acutely aware of the plethora of existing resources on the
+subject. Yet, here I am, adding my voice to the chorus, driven by a distinct
+purpose. The mathematics behind AI models, as I've come to realize through my
+studies and experience, is often shrouded in complexity and density. I agree
+there is wealth of resources available |dash| from books to online videos
+|dash| there remains a gap in truly accessible and comprehensible material,
+especially for those new to the field. This gap is precisely what I aim to
+bridge with my work. Reflecting on `Prof. Nicholas Higham <nick higham_>`_'s
+profound statement in his 1998 book, "Handbook of Writing for the Mathematical
+Sciences" |dash| *"Writing helps you to learn"* |dash| resonates deeply with
+my journey.
 
-.. epigraph:: 
-
-    In writing, you clarify your own thoughts and strengthen your conviction. Indeed, you grasp your thoughts for the first time. Writing is a way of thinking. Writing creates thought and generates your ability to think, discover thoughts you hardly knew you had, and come to know what you know. You learn as you write. 
-
-Since this project is hosted on GitHub if you find any discrepancy in my explanations or if you have better examples to share, feel free to raise a pull request at https://github.com/xames3/learn/compare and I will have it merged. This way, we all can learn from each other.
-
-|tab| When I started my career in AI a couple of years ago I used to get fascinated with the tutorials and the blog posts I used to see on the internet. Without skipping a beat, I would jump onto my computer and try it out. It used to feel amazing initially but later when I used to make changes for my use case, it wouldn't work as expected. I could not understand what was I doing wrong. I had no clue about the model |dash| how it was trained, its parameters and the tuning mechanism. Eventually, I used to give up. A few years later, when I started interviewing candidates for ML Engineer positions at work, I used to always ask them how they started their path in AI and ML. To my surprise, they all started just like me! They were also hyped initially but eventually left their project unfinished because they could not understand what was going wrong with their approach. This is another reason why I want to share my experiences on how I got around this problem.
+|tab| Embracing the collaborative spirit of learning, I have hosted this
+project on GitHub, under the repository https://github.com/xames3/learn/. This
+platform is more than just a repository of information; it's a dynamic space
+where learning is a two-way street. I wholeheartedly invite learners and
+experts alike to contribute their perspectives, insights, and even critiques.
+Whether it's through raising a `pull request <github pr_>`_ to correct an
+error or to offer a different example, every single contribution enriches the
+learning experience. It's in this shared space of knowledge and ideas that we
+can all grow and learn from each other, making the complex world of AI a
+little more comprehensible and a lot more accessible. In addition to the
+collaborative opportunities using GitHub, I am also keen on fostering a
+broader learning community around L.E.A.R.N. For this, I encourage feedback
+and interaction through the comment section presented below. This is a very
+good opportunity for learners to engage, question, and contribute.
 
 **********
 Conclusion
 **********
 
-Re-learning high school-level math in depth may seem boring but as we keep doing it repeatedly, it will become a good habit and help later in solving more complicated problems. Thus, through L.E.A.R.N I invite you to embark on an enlightening journey with me where I hope to untie the knots of mathematical formulae behind AI engagingly. This website is essentially a collection of my experiences working on this subject and the lessons learned over the years. Briefly speaking, I will be discussing a variety of topics from math, science, ethics and philosophy. Through these discussions, readers will be able to think deeply about the essence of this modern technology and the future of humanity. Together, we embark on a voyage that reveals the intricate reasonings behind AI, unveiling the beauty and brilliance that drives this transformative field.
+As I delve into the creation of L.E.A.R.N, I am keenly aware that revisiting
+fundamental mathematical concepts, akin to those learned in high school, might
+initially seem tedious to some. Yet, in my experience, I've found that these
+basics are the stepping stones to mastering the complexities of Artificial
+Intelligence. My approach is to transform what might initially appear mundane
+into a habit-forming practice, crucial for navigating and solving the more
+complex problems that AI presents. This journey on L.E.A.R.N is not just about
+relearning; it's about seeing these foundational concepts in a new light,
+relevant to the intricate world of AI. In crafting the content for L.E.A.R.N,
+I draw upon a wealth of personal experiences and lessons accumulated over
+years of working in the AI field. My aim is to cover a diverse range of
+topics, not just limited to mathematics and science, but extending to the
+realms of ethics and philosophy as well. These subjects are intertwined and
+crucial for understanding AI. Through our exploration, I intend to guide
+readers to think more deeply about AI |dash| not just as a technological tool,
+but as a significant influencer of the future trajectory of humanity.
+
+|tab| Together, we will embark on a voyage that does more than just impart
+knowledge. We will uncover the intricate logic that powers AI, illuminating
+the elegance and brilliance at its core. It's a journey that I envision to be
+transformative, one where the beauty and potential of AI are revealed through
+a blend of technical understanding and philosophical insight. My goal with
+L.E.A.R.N is to not only educate but to inspire, fostering a profound
+appreciation for AI and its impact on our world.
 
 If you read it completely, I would like to thank you for your time!
 
 .. references::
 
     arxiv >> Papers are published on arXiv every day
-    python >> We will be using Python as the primary programming language for solving problems and building models
-    prof. nicholas higham >> Prof. Nicholas Higham |dash| one of the geniuses in the world of mathematics and a famous author of many scientific and mathematical books
+    prof. nicholas higham >> Prof. Nicholas Higham |dash| a Mathematical genius
+    pull request >> Raise PR for managing content
