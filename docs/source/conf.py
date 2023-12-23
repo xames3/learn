@@ -4,7 +4,7 @@ L.E.A.R.N Sphinx Configuration
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: Wednesday, April 12 2023
-Last updated on: Monday, August 21 2023
+Last updated on: Saturday, December 23 2023
 
 This file contains the configuration settings for building the L.E.A.R.N
 documentation using Sphinx, a popular Python documentation tool. Sphinx
@@ -213,7 +213,7 @@ class LearnProject(t.NamedTuple):
     default_language: str = "en"
     main_title: str = "Learning the Essence of AI, Research, and Notations"
     release: str = build_module().__version__
-    short_title: str = "L.E.A.R.N"
+    short_title: str = "Home"
     theme: str = "sphinx_book_theme"
     url: str = "https://github.com/xames3/learn"
 
@@ -299,6 +299,12 @@ html_js_files = [
 # Miscellaneous options
 # =====================
 # Extra configurations that are used throughout the build process.
+comments_config = {
+    "utterances": {
+        "repo": "xames3/learn",
+        "optional": "config",
+    }
+}
 copybutton_prompt_is_regexp = True
 copybutton_prompt_text = (
     r">>> |\.\.\. |\$ |In \[\d*\]: | {2,5}\.\.\.: | {5,8}: "
