@@ -480,3 +480,10 @@ p.affiliation-link {
   max-width: 550px;
   margin: 2rem auto;
 }
+
+/* Reading prompt root class */
+.learn-reading>p {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--pst-color-text-base);
+}
