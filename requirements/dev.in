@@ -1,4 +1,0 @@
--r docs.in
--r style.in
--r typing.in
-pip-compile-multi
