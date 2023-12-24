@@ -3,6 +3,11 @@ defaults.css file. This holds the general values
 which are used all across the theme */
 @import url(defaults.css);
 
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Overide the base margin settings for bootstrap
 This overide affects the whole page-wide layout */
 body,
@@ -21,7 +26,7 @@ body {
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
   margin: 0 auto;
-  line-height: 2rem;
+  line-height: 1.7rem;
   color: var(--pst-color-text-base);
   counter-reset: figure 0;
 }
@@ -29,13 +34,13 @@ body {
 h1 {
   margin-top: 3.5rem;
   margin-bottom: 1.625rem;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   text-align: center;
 }
 
 h2 {
   margin-top: 3rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 h3 {
@@ -45,12 +50,12 @@ h3 {
 
 h4 {
   margin-top: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 h5 {
   margin-top: 1.8rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 h6 {
@@ -91,11 +96,8 @@ h6 {
 
 p {
   margin: 1rem 0;
-  font-size: 1.375rem;
+  font-size: 1.3rem;
   text-align: justify;
-  word-spacing: -0.05em;
-  hyphens: auto;
-  -webkit-hyphens: auto;
 }
 
 table {
@@ -105,7 +107,6 @@ table {
 td {
   padding: 0.3rem 1rem;
   text-align: center;
-  font-size: 1.375rem;
   vertical-align: center;
 }
 
@@ -117,11 +118,15 @@ td {
 }
 
 /* Disable underlining of hyperlinks */
+a,
+a:active,
+a:hover,
 a:not([class]),
-a:hover {
+a:visited,
+.navbar-brand:hover:hover,
+.navbar-brand:visited:hover:hover {
   text-decoration-skip-ink: auto;
   text-decoration: none;
-  color: var(--pst-color-text-base);
 }
 
 /* Disable navbar shadow */
@@ -144,7 +149,7 @@ label.sidebar-toggle.primary-toggle {
 /* Searchbar font size */
 .search-button__wrapper.show i,
 .search-button__wrapper.show input {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 /* Searchbar magnifying glass left margin */
@@ -153,9 +158,25 @@ label.sidebar-toggle.primary-toggle {
 }
 
 /* Searchbar rounded radius setting */
-.bd-search input {
-  padding-left: 3.5rem;
+.bd-search {
+  padding-left: 1rem;
   border-radius: 3rem;
+}
+
+/* Searchbar form control */
+.form-control {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  line-height: 1.7;
+  color: var(--pst-color-muted-highlight);
+}
+
+/* Searchbar form control on focus */
+.form-control:focus,
+.form-control:focus-visible {
+  outline: 0;
+  width: 80%;
 }
 
 /* Change highlighted text color */
@@ -174,6 +195,16 @@ span.highlighted {
 .bd-sidebar-primary::-webkit-scrollbar {
   width: 0;
   height: 0;
+}
+
+/* Sidebar current disable vertical line */
+nav.bd-links .current>a {
+  box-shadow: none;
+}
+
+/* Sidebar current prefix */
+nav.bd-links .current>a::before {
+  content: "• ";
 }
 
 /* Center the hide search button */
@@ -235,6 +266,11 @@ nav.bd-links p.caption {
   font-weight: bold;
 }
 
+/* Sidebar ToC disable underline */
+nav.bd-links li>a:hover {
+  text-decoration: none;
+}
+
 /* Make titles bolder */
 .bd-article-container h1,
 .bd-article-container h2 {
@@ -262,11 +298,23 @@ pre {
   display: none;
 }
 
-/* Center copyright information */
+/* Disable footer content copyright information */
 footer.bd-footer-content .bd-footer-content__inner {
-  display: flex;
-  justify-content: center;
-  padding: 0;
+  display: none;
+}
+
+/* Disable footer line */
+.bd-footer {
+  border-top: 0;
+  margin: 1rem auto;
+  width: 100%;
+}
+
+/* Center copyright information */
+.bd-footer .footer-items__center,
+.bd-footer .footer-items__end,
+.bd-footer .footer-items__start {
+  flex-direction: initial;
 }
 
 /* Inline code block section */
@@ -356,7 +404,7 @@ figcaption>p .caption-text::before {
 }
 
 /* Sponsor button color */
-i.fa-regular {
+.svg-inline--fa.fa-heart {
   color: #bf3989;
 }
 
@@ -373,18 +421,20 @@ i.fa-regular {
 }
 
 /* Author's name */
-.name-link {
+.name-link,
+.name-link>a {
   margin: 0.5rem 0;
-  font-size: 1.7rem;
-  color: var(--pst-color-text-base);
+  font-size: 1.4rem;
+  font-weight: 600;
   text-decoration: none;
+  color: var(--pst-color-text-base);
 }
 
 /* Author's affiliation */
 .affiliation,
 p.affiliation-link {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.175rem;
   line-height: 0.8rem;
   margin-bottom: 0.3rem;
   color: var(--pst-color-text-base);
@@ -400,11 +450,12 @@ p.affiliation-link {
 }
 
 /* Author's email */
-.email-link {
+.email-link,
+.email-link>a {
   margin-bottom: 2rem;
-  font-size: 1.1em !important;
+  font-size: 1.2rem !important;
   font-family: var(--pst-font-family-monospace-system);
-  font-weight: bold;
+  font-weight: 400;
   color: var(--pst-color-text-base);
   text-decoration: none;
 }
@@ -458,19 +509,21 @@ p.affiliation-link {
 .learn-references ol {
   display: block;
   text-align: left;
-  font-size: 1.375rem;
+  font-size: 1.2rem;
   margin-left: 1rem;
 }
 
 /* References list items */
 .learn-references>ol>li>p {
   text-align: left;
+  font-size: 1.2rem;
+  text-decoration: none;
 }
 
 /* References items border */
 .references-border {
   border: 0.125rem solid var(--pst-color-primary-link);
-  font-size: 1.375rem;
+  font-size: 1.2rem;
   font-family: var(--pst-font-family-monospace-system);
   color: var(--pst-color-text-base);
 }
@@ -486,4 +539,12 @@ p.affiliation-link {
   text-align: center;
   font-size: 1rem;
   color: var(--pst-color-text-base);
+  margin: 0.5rem auto;
+}
+
+/* Reading time prefix */
+.learn-reading>p::before {
+  content: "Reading time. ";
+  font-weight: bold;
+  color: var(--pst-color-text-muted);
 }
