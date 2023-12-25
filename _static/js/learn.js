@@ -115,7 +115,7 @@ window.onload = function () {
 
   if (totalWordCount > 0) {
     let value = Math.ceil(totalWordCount / wordsPerMinute);
-    result = `Reading time: ${value} mins read`;
+    result = `${value} mins read`;
   }
   document.getElementById("readingTime").innerText = result;
 }

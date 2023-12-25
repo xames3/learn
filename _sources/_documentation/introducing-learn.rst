@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: Friday, July 21 2023
-.. Last updated on: Friday, December 22 2023
+.. Last updated on: Sunday, December 24 2023
 
 .. _introducing-learn:
 
@@ -20,10 +20,12 @@ Let's L.E.A.R.N!
 Introduction
 ************
 
-Welcome to all who venture here! I am immensely proud to introduce you to my
-latest and most ambitious project, L.E.A.R.N |dash| an acronym encapsulating a
-journey into *Learning the Essence of AI, Research, and Notations*. This
-website is thoughtfully crafted to demystify the intricate mathematical
+I am immensely proud to introduce you to my latest and most ambitious project,
+L.E.A.R.N |dash| an acronym encapsulating a journey into...
+
+.. epigraph:: Learning the Essence of AI, Research, and Notations
+    
+This website is thoughtfully crafted to demystify the intricate mathematical
 underpinnings of AI, Machine Learning, and Data Science, making these complex
 subjects approachable for beginners while retaining the depth required by more
 seasoned enthusiasts. At L.E.A.R.N, each element of the acronym is a portal
@@ -38,13 +40,13 @@ concepts are expressed and understood.
 landscapes of these technologies, this website is more than just a repository
 of information; it is a guide, a companion in your learning journey. I
 understand the complexities involved in mastering these subjects, having
-learned them through considerable effort and perseverance. It is my intention
-to streamline this learning process for you, making it more intuitive and
+learned them through considerable effort and perseverance. I intend to
+streamline this learning process for you, making it more intuitive and
 specifically less daunting. The central inquiry of this platform is "What is
-AI?" |dash| a question that kind of resonates more profoundly now than ever
-before. In our rapidly evolving world, where AI is no longer just a futuristic
-concept but a present reality, understanding its essence is crucial. This site
-aims to explore AI's multifaceted nature, delving into its applications,
+AI?" |dash| a question that resonates more profoundly now than ever before. In
+our rapidly evolving world, where AI is no longer just a futuristic concept
+but a present reality, understanding its essence is crucial. This site aims to
+explore AI's multi-faceted nature, delving into its applications,
 implications, and the reasons behind its growing ubiquity in our lives.
 
 |tab| As the architect of L.E.A.R.N, my goal transcends beyond merely
@@ -70,21 +72,22 @@ encourage you to engage, ask questions, and even contribute to the content.
 Your insights and queries will help enrich this learning space, making it a
 vibrant community of AI enthusiasts and scholars.
 
+.. tweet:: https://twitter.com/xkcdComic/status/864703723196391424
+
 |tab| In today's digital era, the internet is awash with resources on Machine
 Learning and AI, ranging from dense academic texts to fleeting video
-tutorials. However, through my personal exploration, I've often found these
-resources either overwhelmingly complex or frustratingly superficial,
-particularly in their coding examples. This realization sparked the inception
-of L.E.A.R.N, a website meticulously designed to fill these educational voids.
-I aim to transform complex theoretical concepts into accessible,
-layperson-friendly explanations, enriched with comprehensive, practical
-examples and their full-fledged source code. Understanding that our audience
-spans from eager beginners to seasoned experts, L.E.A.R.N is carefully
-tailored to cater to this spectrum. For novices, the site provides a gentle
-yet thorough introduction to the world of AI, methodically building
-foundational knowledge. Meanwhile, for the experienced, it offers in-depth
-analyses and advanced discussions, thus enriching and expanding their existing
-expertise.
+tutorials. However, through my exploration, I've often found these resources
+either overwhelmingly complex or frustratingly superficial, particularly in
+their coding examples. This realization sparked the inception of L.E.A.R.N, a
+website meticulously designed to fill these educational voids. I aim to
+transform complex theoretical concepts into accessible, layperson-friendly
+explanations, enriched with comprehensive, practical examples and their
+full-fledged source code. Understanding that my audience spans from eager
+beginners to seasoned experts, L.E.A.R.N is carefully tailored to cater to
+this spectrum. For novices, the site provides a gentle yet thorough
+introduction to the world of AI, methodically building foundational knowledge.
+Meanwhile, for the experienced, it offers in-depth analyses and advanced
+discussions, thus enriching and expanding their existing expertise.
 
 |tab| My journey as a researcher, marked by both challenges and achievements
 in implementing machine learning models, forms the backbone of this website. I
@@ -105,8 +108,8 @@ experience.
 Machine Learning, each day ushers in new revelations and research, prominently
 featured on platforms like `arXiv <recent arxiv_>`_ (pronounced "*archive*").
 In such a rapidly advancing landscape, the necessity for a robust foundational
-understanding becomes not just beneficial, but imperative. At L.E.A.R.N, my
-endeavor is to not only stay abreast of these continual advancements but to
+understanding becomes not just beneficial, but imperative. At L.E.A.R.N, I
+endeavor to not only stay abreast of these continual advancements but to
 also unravel and simplify them. The aim is to present the intricate
 mathematical concepts behind the various machine learning methodologies in a
 manner that is comprehensible and engaging for learners at every level of
@@ -138,27 +141,29 @@ industries and settings. This approach aims to equip learners not only with
 academic knowledge but also with practical skills and insights that can be
 applied in real-life scenarios, thereby preparing them for the challenges and
 opportunities in the ever-growing field of AI. These hands-on experiences are
-designed to reinforce the learning material, thus allowing learners to experiment, innovate, and apply the concepts in practical situations.
+designed to reinforce the learning material, thus allowing learners to
+experiment, innovate, and apply the concepts in practical situations.
 
-*******************
-Why learn about AI?
-*******************
+***********************
+Artificial Intelligence
+***********************
 
-As I sit down to write in August 2023, we are in the midst of a transformative 
-era dominated by Artificial Intelligence. Since the early 2010s, AI has ceased
-to be a mere buzzword and has become a ubiquitous element in our daily
-existence. Its presence is felt everywhere |dash| from the pervasive reach of
-the internet to the smart devices that have become almost extensions of
-ourselves. AI, in its silent yet profound way, influences how we live, work,
-and interact with the world around us. The realms where AI has made its mark
-are vast and varied. In the field of healthcare, AI is revolutionizing
-diagnostics and treatment plans, making super-precision medicine not just a
-possibility but a reality. In genomics, it's unlocking mysteries of human DNA
-at an unprecedented pace. The influence of Artificial Intelligence extends
-beyond these life-altering applications; it's reshaping the very nature of
-work, automating tasks that were once the bastion of human effort. This
-global-level shift brings with it a complex tapestry of socio-economic
-implications, from job transformations to ethical considerations.
+As I sit down to write in December 2023, we are in the midst of a
+transformative era dominated by Artificial Intelligence. Since the early
+2010s, AI has ceased to be a mere buzzword and has become a ubiquitous element
+in our daily existence. Its presence is felt everywhere |dash| from the
+pervasive reach of the internet to the smart devices that have become almost
+extensions of ourselves. AI, in its silent yet profound way, influences how we
+live, work, and interact with the world around us. The realms where AI has
+made its mark are vast and varied. In the field of healthcare, AI is
+revolutionizing diagnostics and treatment plans, making super-precision
+medicine is not just a possibility but a reality. In genomics, it's unlocking
+mysteries of human DNA at an unprecedented pace. The influence of Artificial
+Intelligence extends beyond these life-altering applications; it's reshaping
+the very nature of work, automating tasks that were once the bastion of human
+effort. This global-level shift brings with it a complex tapestry of
+socio-economic implications, from job transformations to ethical
+considerations.
 
 |tab| Yet, the proliferation of AI brings with it a spectrum of challenges and
 responsibilities. The development of autonomous systems, often portrayed in
@@ -171,7 +176,24 @@ AI-enhanced world, it becomes imperative to understand not just the
 technological marvels but also the broader implications of AI on our global
 community.
 
-|tab| As we stand at this pivotal juncture in the evolution of AI, it is also crucial to cast our gaze forward, contemplating what the future may hold in this rapidly advancing field. The massive potential for AI to further integrate into every facet of our lives from personalized education to advanced urban planning is immense. This future, brimming with possibilities, also sort of necessitates a collective readiness to adapt, learn, and contribute to shaping an AI-driven world that is ethical, sustainable, and beneficial for all. In light of this, the true importance of platforms like L.E.A.R.N becomes even more pronounced. They serve not only as beacons of knowledge in the present AI landscape but also as preparatory grounds for the future. By equipping ourselves with a deep understanding of AI, its applications, and its implications, we can become active participants in steering this technology toward positive outcomes.
+.. figure:: ./img/skynet-attacking.gif
+    :alt:  An example of the portrayal of AIs in the movies
+
+    An illustrative warning: Skynet's rise in the Terminator series as a
+    symbol of the ethical and societal challenges posed by unchecked AI
+    development in autonomous systems.
+
+|tab| As we stand at this pivotal juncture in the evolution of AI, it is also
+crucial to cast our gaze forward, contemplating what the future may hold in
+this rapidly advancing field. The massive potential for AI to further
+integrate into every facet of our lives from personalized education to
+advanced urban planning is immense. This future, brimming with possibilities,
+also sort of necessitates a collective readiness to adapt, learn, and
+contribute to shaping an AI-driven world that is ethical, sustainable, and
+beneficial for all. In light of this, the true importance of platforms like
+L.E.A.R.N becomes even more pronounced. By equipping ourselves with a deep
+understanding of AI, its applications, and its implications, we can become
+active participants in steering this technology toward positive outcomes.
 
 |tab| In this era, where AI is not just emerging but flourishing, the
 industry's top leaders like Google, Tesla, and OpenAI stand at the forefront,
@@ -185,6 +207,8 @@ between these tech titans such as Google and OpenAI in the arena of generative
 AI is a clear indicator of the direction in which our digital world is headed.
 These advancements are not just technological feats; they are harbingers of a
 future deeply intertwined with intelligent systems.
+
+.. tweet:: https://twitter.com/FT/status/1638182534340132865
 
 |tab| This race towards AI supremacy extends beyond the corporate sphere.
 Governments across the globe, acutely aware of AI's transformative potential,
@@ -219,9 +243,9 @@ social responsibility. This balanced approach will be crucial in ensuring that
 the benefits of AI are distributed equitably and that its potential is
 harnessed for the greater good of society.
 
-**************************
-How am I approaching this?
-**************************
+********
+Approach
+********
 
 In the vast expanse of the internet, one can find a myriad of resources on AI
 and Machine Learning. However, through my discussions with numerous
@@ -238,7 +262,7 @@ foundational mathematical principles that are the bedrock of AI technology.
 The field of AI, which is often perceived as a convoluted maze of mathematical
 formulas, is demystified at L.E.A.R.N. Here, we unravel the complexities,
 presenting them in a manner that is both comprehensible and engaging. By
-dissecting and reconstructing AI models, we offer a unique perspective |dash|
+dissecting and reconstructing AI models, I offer a unique perspective |dash|
 a deep dive into the *"why"* and *"how"* behind the algorithms that are
 reshaping our world.
 
@@ -299,6 +323,12 @@ it's another to see them come alive in real-world scenarios. Therefore, the
 platform will regularly incorporate case studies, practical exercises, and
 real-life examples.
 
+.. figure:: ./img/theory-can-only-take-you-meme.png
+    :alt:  Theory is not enough
+
+    Theory meets reality, my commitment to practical AI and Machine Learning
+    experiences.
+
 |tab| At L.E.A.R.N, my educational ethos is centered around a diverse approach
 to problem-solving. I believe in the power of examples |dash| not just one or
 two, but a multitude, each one tailored to illuminate the nuances of the same
@@ -315,40 +345,40 @@ how slight changes can lead to different outcomes. It's a hands-on approach
 that not only cements theoretical knowledge but also prepares learners for the
 unpredictable nature of real-world problem-solving.
 
+|tab| The essence of my educational approach lies in the seamless integration
+of theoretical concepts with practical application. I won't just delve into
+mathematical theories; I will also bring them to life through Python code
+implementations. This methodology will help learners not just passively absorb
+information but actively engage with it, experimenting with the principles
+they learn. This hands-on approach bridges the gap between abstract
+mathematical concepts and tangible computer science applications, deepening
+the learner's understanding of AI from a multidimensional perspective. My
+academic journey in pursuing a Master's degree in Artificial Intelligence at
+DePaul University has been a significant catalyst for broadening my
+understanding of AI, enriched by interactions and discussions with a very
+diverse group of students and faculty. These interactions have been a
+wellspring of varied viewpoints and insights into the AI landscape. In line
+with my commitment to a proper and holistic educational experience, L.E.A.R.N
+will incorporate a tapestry of anecdotes from these individuals. By presenting
+a mosaic of thoughts and opinions, I aim to cultivate a learning environment
+that values diversity and encourages learners to appreciate the diverse nature
+of AI.
+
 |tab| In delving into these subjects, my primary aim is to build a very strong
 foundation in the mathematical and scientific principles that are the
-keystones of AI. I absolutely believe that a profound understanding of these
-principles is what empowers us to not just understand AI but to apply it
-creatively and effectively in real-world scenarios. It's about equipping
-learners with the tools and insights necessary to not just navigate but also
-innovate in the field of AI. By bridging the gap between theoretical concepts
-and practical applications, L.E.A.R.N will aspire to transform learners into
-thinkers and creators who can confidently apply their newly learned knowledge
-to solve complex problems and contribute to advancements in AI. The field of
-Artificial Intelligence is dynamic, with new developments and discoveries
-emerging on a constant basis. Therefore, fostering an attitude of adaptability
-is crucial for anyone venturing into this field.
+keystones of AI. I believe that a profound understanding of these principles
+is what empowers us to not just understand AI but to apply it creatively and
+effectively in real-world scenarios. It's about equipping learners with the
+tools and insights necessary to not just navigate but also innovate in the
+field of AI. By bridging the gap between theoretical concepts and practical
+applications, L.E.A.R.N will aspire to transform learners into thinkers and
+creators who can confidently apply their newly learned knowledge to solve
+complex problems and contribute to advancements in AI. The field of Artificial
+Intelligence is dynamic, with new developments and discoveries emerging
+constantly. Therefore, fostering an attitude of adaptability is crucial for
+anyone venturing into this field.
 
-|tab| At L.E.A.R.N, the essence of my educational approach lies in the
-seamless integration of theoretical concepts with practical application. I
-won't just delve into mathematical theories; I will also bring them to life
-through Python code implementations. This methodology will help learners not
-just passively absorb information but actively engage with it, experimenting
-with the principles they learn. This hands-on approach bridges the gap between
-abstract mathematical concepts and tangible computer science applications,
-deepening the learner's understanding of AI from a multidimensional
-perspective. My academic journey in pursuing a Master's degree in Artificial
-Intelligence at DePaul University has been a significant catalyst for
-broadening my understanding of AI, enriched by interactions and discussions
-with a very diverse group of students and faculty. These interactions have
-been a wellspring of varied viewpoints and insights into the AI landscape. In
-line with my commitment to a proper and holistic educational experience,
-L.E.A.R.N will incorporate a tapestry of anecdotes from these individuals. By
-presenting a mosaic of thoughts and opinions, I aim to cultivate a learning
-environment that values diversity and encourages learners to appreciate the
-diverse nature of AI.
-
-|tab| Furthermore, my dedication to fostering an unbiased approach in AI
+|tab| Furthermore, my dedication to fostering an unbiased approach to AI
 education is a cornerstone of L.E.A.R.N. I recognize that AI is not just a
 scientific and technological endeavor but also one that intersects with
 ethical, social, and philosophical dimensions. Therefore, the site content is
@@ -358,20 +388,19 @@ instrumental in preparing learners to face the complexities of AI with a
 balanced perspective, equipped to use AI more responsibly and innovatively in
 various domains.
 
-*******************
-Why write about it?
-*******************
+****************
+Text over Videos
+****************
 
-As I delve into the realm of writing and teaching about Artificial
-Intelligence, I'm acutely aware of the plethora of existing resources on the
-subject. Yet, here I am, adding my voice to the chorus, driven by a distinct
-purpose. The mathematics behind AI models, as I've come to realize through my
-studies and experience, is often shrouded in complexity and density. I agree
-there is wealth of resources available |dash| from books to online videos
-|dash| there remains a gap in truly accessible and comprehensible material,
-especially for those new to the field. This gap is precisely what I aim to
-bridge with my work. Reflecting on `Prof. Nicholas Higham <nick higham_>`_'s
-profound statement in his 1998 book, "Handbook of Writing for the Mathematical
+I'm acutely aware of the plethora of existing resources on the subject. Yet,
+here I am, adding my voice to the chorus, driven by a distinct purpose. The
+mathematics behind AI models, as I've come to realize through my studies and
+experience, is often shrouded in complexity and density. I agree there is a
+wealth of resources available |dash| from books to online videos |dash| there
+remains a gap in truly accessible and comprehensible material, especially for
+those new to the field. This gap is precisely what I aim to bridge with my
+work. Reflecting on `Prof. Nicholas Higham <nick higham_>`_'s profound
+statement in his 1998 book, "Handbook of Writing for the Mathematical
 Sciences" |dash| *"Writing helps you to learn"* |dash| resonates deeply with
 my journey.
 
@@ -394,22 +423,23 @@ good opportunity for learners to engage, question, and contribute.
 Conclusion
 **********
 
-As I delve into the creation of L.E.A.R.N, I am keenly aware that revisiting
-fundamental mathematical concepts, akin to those learned in high school, might
-initially seem tedious to some. Yet, in my experience, I've found that these
-basics are the stepping stones to mastering the complexities of Artificial
-Intelligence. My approach is to transform what might initially appear mundane
-into a habit-forming practice, crucial for navigating and solving the more
-complex problems that AI presents. This journey on L.E.A.R.N is not just about
-relearning; it's about seeing these foundational concepts in a new light,
-relevant to the intricate world of AI. In crafting the content for L.E.A.R.N,
-I draw upon a wealth of personal experiences and lessons accumulated over
-years of working in the AI field. My aim is to cover a diverse range of
-topics, not just limited to mathematics and science, but extending to the
-realms of ethics and philosophy as well. These subjects are intertwined and
-crucial for understanding AI. Through our exploration, I intend to guide
-readers to think more deeply about AI |dash| not just as a technological tool,
-but as a significant influencer of the future trajectory of humanity.
+
+To conclude, I am keenly aware that revisiting fundamental mathematical
+concepts, akin to those learned in high school, might initially seem tedious
+to some. Yet, in my experience, I've found that these basics are the stepping
+stones to mastering the complexities of Artificial Intelligence. My approach
+is to transform what might initially appear mundane into a habit-forming
+practice, crucial for navigating and solving the more complex problems that AI
+presents. This journey on L.E.A.R.N is not just about relearning; it's about
+seeing these foundational concepts in a new light, relevant to the intricate
+world of AI. In crafting the content for L.E.A.R.N, I draw upon a wealth of
+personal experiences and lessons accumulated over years of working in the AI
+field. I aim to cover a diverse range of topics, not just limited to
+mathematics and science, but extending to the realms of ethics and philosophy
+as well. These subjects are intertwined and crucial for understanding AI.
+Through our exploration, I intend to guide readers to think more deeply about
+AI |dash| not just as a technological tool, but as a significant influencer of
+the future trajectory of humanity.
 
 |tab| Together, we will embark on a voyage that does more than just impart
 knowledge. We will uncover the intricate logic that powers AI, illuminating
@@ -423,6 +453,6 @@ If you read it completely, I would like to thank you for your time!
 
 .. references::
 
-    arxiv >> Papers are published on arXiv every day
-    prof. nicholas higham >> Prof. Nicholas Higham |dash| a Mathematical genius
-    pull request >> Raise PR for managing content
+    arxiv >> Regular Publications on Artificial Intelligence. arXiv is a widely recognized online repository that publishes a significant volume of research papers on Artificial Intelligence and related fields almost daily, serving as a vital resource for the latest developments and scholarly work in AI
+    prof. nicholas higham >> Prof. Nicholas Higham |dash| a Mathematical genius. Higham, Nicholas J. "Handbook of Writing for the Mathematical Sciences." Third Edition. Society for Industrial and Applied Mathematics, 1998
+    pull request >> Raise a pull request on GitHub for editing, correcting or adding new content
