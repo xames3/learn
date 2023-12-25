@@ -98,6 +98,8 @@ p {
   margin: 1rem 0;
   font-size: 1.3rem;
   text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
 table {
@@ -339,10 +341,12 @@ blockquote.pull-quote {
   font-style: italic;
 }
 
-/* Remove extra margin and padding from Epigraph section */
+/* Remove extra margin and padding from Epigraph section and
+centering the text */
 blockquote p {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 /* Keyboard modifier */
@@ -360,7 +364,7 @@ kbd:not(.compound) {
 /* Centering and prefixing figures */
 figcaption>p {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 /* Increment all the elements which have class "caption-text" by 1 */
