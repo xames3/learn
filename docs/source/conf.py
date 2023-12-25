@@ -50,6 +50,7 @@ from docutils import nodes
 from docutils.transforms import Transform
 from docutils.transforms import parts
 from docutils.writers import _html_base
+from sphinx.builders.html import StandaloneHTMLBuilder
 from sphinx.locale import __
 from sphinx.registry import *
 
@@ -203,6 +204,12 @@ class MoreSpacedHTMLTranslator(nodes.NodeVisitor):
 
 
 SphinxComponentRegistry.load_extension = load_extension  # type: ignore
+StandaloneHTMLBuilder.supported_image_types = [
+    "image/svg+xml",
+    "image/gif",
+    "image/png",
+    "image/jpeg",
+]
 _html_base.HTMLTranslator.visit_generated = MoreSpacedHTMLTranslator.padding
 parts.SectNum.update_section_numbers = NoTitleSectNum.update_section_numbers
 
