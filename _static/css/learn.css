@@ -363,8 +363,10 @@ kbd:not(.compound) {
 /* Based on the solution provided here: https://stackoverflow.com/a/29849993 */
 /* Centering and prefixing figures */
 figcaption>p {
-  text-align: center;
   font-size: 1.1rem;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
 /* Increment all the elements which have class "caption-text" by 1 */
