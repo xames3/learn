@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: Friday, August 11 2023
-.. Last updated on: Monday, December 25 2023
+.. Last updated on: Tuesday, December 26 2023
 
 .. _demystifying-buzzwords:
 
@@ -56,16 +56,30 @@ future. So, as I dissect these terms, we'll also be uncovering the myriad ways
 they're being employed to solve complex problems, enhance human capabilities,
 and redefine the technological landscape.
 
-******************
-Human Intelligence
-******************
+************
+Intelligence
+************
 
 In my exploration of Artificial Intelligence, one term frequently arises: *"Intelligence"*. According to Google...
 
 .. epigraph:: Intelligence is the ability to acquire and apply knowledge and
     skills to solve a particular problem at hand.
     
-Some experts describe it as the capacity to solve complex issues or make informed decisions using prior knowledge, akin to personal traits like height or strength. The quest for a definitive understanding of intelligence is complex and multi-faceted, and no single definition can capture its entirety. But in the context of AI, our quest isn't to pinpoint a rigid definition, but rather to grasp the essence of intelligence in all its dimensions. Let's reflect on this concept again. At its most fundamental level, intelligence involves learning something and then applying that acquired knowledge. This process, simple in description yet profound in implication, is what lies at the heart of both human and artificial intelligence. In AI, this is mirrored through algorithms that learn from data and then utilize these learnings to perform tasks or make predictions. Understanding the nuances of this process |dash| how information is learned, the ways it can be applied, and the varying contexts it operates within |dash| is crucial. This understanding underpins the entire field of AI.
+Some experts describe it as the capacity to solve complex issues or make
+informed decisions using prior knowledge, akin to personal traits like height
+or strength. The quest for a definitive understanding of intelligence is
+complex and multi-faceted, and no single definition can capture its entirety.
+But in the context of AI, our quest isn't to pinpoint a rigid definition, but
+rather to grasp the essence of intelligence in all its dimensions. Let's
+reflect on this concept again. At its most fundamental level, intelligence
+involves learning something and then applying that acquired knowledge. This
+process, simple in description yet profound in implication, is what lies at
+the heart of both human and artificial intelligence. In AI, this is mirrored
+through algorithms that learn from data and then utilize these learnings to
+perform tasks or make predictions. Understanding the nuances of this process
+|dash| how information is learned, the ways it can be applied, and the varying
+contexts it operates within |dash| is crucial. This understanding underpins
+the entire field of AI.
 
 |tab| As I delve deeper into this topic, I aim to unravel the layers of what
 intelligence means, especially about AI. We'll explore how this fundamental
@@ -136,46 +150,192 @@ to advance AI technologies.
     continuous evolution of human understanding, a concept at the core of
     developing adaptive and responsive AI systems.
 
-|tab| Our survival instincts as a species led us to develop this intellect and thus over the years it kept on improving. It is extremely important to remember that this way of figuring out a solution to a problem probably took us a very long time. But over time, our species understood the problem at hand, learnt and found a way around it. With time, we adopted different strategies and kept improvising. Now, it is often debated amongst many scientists and researchers how to measure or what intelligence is. To make matters worse, intelligence is also connected to consciousness since awareness is helpful in problem-solving. This process collectively is Intelligence. Understanding a problem statement or being aware or conscious of a situation, prototyping a solution based on experience, testing it out and improvising based on failures is how we learn. So intelligence is a set of actions that we do harmoniously to get something done.
+|tab| Furthermore, in the backdrop of these examples and insights, it's
+important to acknowledge that the study of intelligence, both in biological
+and artificial systems, is an area of ongoing research and spirited debate.
+The field is continually evolving, with new theories and findings emerging
+that challenge our existing understanding. This dynamic nature of intelligence
+research is something that I find particularly intriguing and it forms an
+integral part of our exploration in L.E.A.R.N. In my exploration of human
+intelligence, I've come to understand its deep roots in our survival
+instincts. Throughout the millennia, this innate drive has shaped our
+intellect, continually evolving and improving. It's vital to appreciate that
+this journey of discovery and adaptation wasn't swift; it involved a gradual,
+often painstaking process of learning from our environment and experiences.
+Our ancestors faced numerous challenges, and through trial and error, they
+developed and honed strategies for survival, leading to the sophisticated
+level of intelligence we possess today.
 
-****************
-General Learning
-****************
+|tab| As I delve deeper, I'm struck by the ongoing debates among scientists
+and researchers about defining and measuring intelligence. Is it a
+quantifiable entity, or something more abstract? Furthermore, the intricate
+relationship between intelligence and consciousness adds another layer of
+complexity. The ability to be aware of and understand our surroundings plays a
+crucial role in how we solve problems. This suggests that intelligence isn't
+just about the actions we take but also about our consciousness of the
+situation we are in. Therefore, when I reflect on intelligence, I see it as a
+symphony of actions and awareness. It's the entire process of recognizing a
+problem, conceptualizing a solution based on past learnings, experimenting,
+and then refining our approach based on feedback. This dynamic, iterative
+process is what I aim to parallel in the world of Artificial Intelligence.
+It's not solely about creating machines that solve problems; it's about
+imbuing them with a level of *"awareness"* and the capacity to learn and
+adapt. This perspective on human intelligence, with its intricate blend of
+cognitive processes and consciousness, forms the foundation of my approach to
+understanding and developing AI. It's a vast and fascinating field, where each
+discovery about our intelligence opens new possibilities for artificial minds.
 
-In simple terms, learning is a process of gathering and understanding information about something through senses such as vision, sound, smell, touch or taste. It is like intelligence but not completely. Intelligence is a collective process of learning and navigating our actions based on acquired knowledge. Whereas learning is a subset or part of the intelligence *process* wherein you try to gather more information, understand your problem and work on expanding your experiences about a particular subject. The gathered information about a subject through our senses is the basis of the next actions for learning. Without any information about a topic, we are unable to react appropriately or flexibly. Thus, having adequate information plays a significant role while learning. But only having information is not enough, we need to store it in memory too.
+.. tweet:: https://twitter.com/ilyasut/status/1710462485411561808
 
-|tab| While learning something, saving information in the memory is crucial. Memorization is the ability of the mind to save and recall information so that a living being does not have to start from scratch every time it perceives something relevant. For example, consider a toddler. A toddler is perhaps one of the best examples to explain how learning works. A toddler learns to walk on its twos after a lot of repetitive trial and error, trying different manoeuvrings and memorizing actions and elements which worked along the way until it masters them.
+|tab| In addition to reflecting on the evolution of human intelligence and its
+profound connection to consciousness, it's also crucial to consider the
+implications of these insights for the future trajectory of Artificial
+Intelligence. As we continue to unravel the mysteries of human cognition and
+consciousness, we gain valuable perspectives that can guide the development of
+more advanced, responsive, and perhaps even empathetic AI systems.
+Understanding the intricate processes behind human learning, decision-making,
+and problem-solving can inspire new models and algorithms in AI. This
+knowledge could lead to the creation of AI systems that not only mimic human
+intelligence more closely but also interact with us in more intuitive and
+meaningful ways. Furthermore, these insights into human intelligence bring to
+light ethical considerations that are increasingly important in AI
+development. As we strive to create machines that resemble human thinking,
+questions about AI autonomy, decision-making, and the role of AI in society
+become more pertinent. It's a reminder that the journey of AI is not just a
+technical endeavor but also a deeply philosophical and ethical one. In this
+context, my exploration into AI is not only about understanding or replicating
+human intelligence but also about envisioning the future of AI and its role in
+our lives. It's about shaping a future where AI enhances human capabilities
+and operates in harmony with our values and ethical principles.
+
+********
+Learning
+********
+
+In my exploration of learning, I've come to understand it as an intricate
+process that goes far beyond mere information acquisition. To me, learning
+involves engaging our senses |dash| vision, sound, smell, touch, and taste, to
+gather and interpret information about the world around us. This sensory
+exploration is fundamental, yet it's distinct from intelligence. While there
+are overlaps, intelligence, in my view, is a more encompassing concept. It's
+not just about learning; it's about how we use that learned information to
+navigate and make decisions in our lives. Learning, then, is a vital subset of
+intelligence. It's about delving deep into a subject, unraveling its
+complexities, and expanding our understanding. The information we absorb
+through our senses lays the groundwork for further learning actions. Without
+this sensory input, our reactions and adaptability to new situations would be
+severely limited. This realization highlights the critical role of information
+in the learning process. But learning isn't just about gathering information;
+it's also about retention. The ability to store this information in our memory
+is what transforms fleeting experiences into lasting knowledge. This storage
+aspect is crucial, as it allows us to build on past experiences and
+continuously expand our understanding. As I delve into the realm of learning,
+I see fascinating parallels with how AI systems learn. Like us, AI systems
+gather data (their version of sensory input) and store patterns and
+information. This process enables them to *"learn"* and make informed
+decisions based on past inputs. In exploring these parallels, I aim to shed
+light on both the human learning process and AI learning mechanisms. It's a
+journey through the multi-faceted landscape of cognition, where human and
+artificial intelligence intersect, each providing insights into the other.
+
+|tab| Moreover, it's important to emphasize that learning, both for humans and
+AI is an ongoing and evolving journey. In humans, this continuous process
+shapes our understanding, behaviors, and skills throughout our lives. We are
+not just passive recipients of information; we actively engage with and adapt
+to new experiences and knowledge. This adaptability is a hallmark of our
+intelligence. Similarly, in the realm of AI, learning is not a one-time event
+but a continuous process. AI systems are designed to learn from new data,
+adapt to changing environments, and improve their performance over time. This
+ability to evolve and refine their knowledge base and decision-making
+processes is what makes AI both powerful and promising. In this context,
+exploring learning is about understanding this dynamic process |dash| how we
+gather, store, and adapt information over time, and how AI systems mirror this
+ability in their unique way. It's about recognizing that learning is an
+ever-changing landscape, full of challenges and opportunities for growth, both
+for us as individuals and for the AI technologies we develop.
+
+|tab| In my exploration of the learning process, I've come to recognize the
+pivotal role of memory. Memorization is not merely about storing information;
+it's a fundamental aspect of learning that enables us to build upon what we've
+previously encountered. This concept becomes vividly clear when observing a
+toddler learning to walk. To me, a toddler represents an embodiment of the
+learning journey, a journey marked by persistence, experimentation, and the
+crucial role of memory. Consider the early stages of a toddler's life. The
+initial challenge of rolling over might seem insurmountable to the little one,
+but with each attempt, the child learns and adapts. Through repetition and
+recall of what works and what doesn't, progress is made. Once rolling over is
+mastered, the toddler ventures into crawling, using hands and feet in
+coordination. This phase is more than mere movement; it's a complex
+integration of previously learned skills, all stored and retrieved from
+memory. The journey continues as the toddler attempts to stand. Each faltering
+step is a learning experience, a trial that feeds into the child's growing
+repository of knowledge. Memory plays a key role here, as each attempt,
+successful or unsuccessful, informs the next. Eventually, the child stands and
+then walks. These milestones are not just physical achievements but are the
+culmination of a sophisticated process of learning and memorizing.
 
 .. figure:: ../img/toddler-learning-to-walk.png
     :alt:  A toddler learning to walk in multiple stages
 
-    A toddler learning to walk throughout the multiple stages of its life
+    The evolution of learning and memory in action: Tracing a toddler's
+    journey from rolling over to walking. This sequence captures the essence
+    of gradual skill acquisition and the pivotal role of memory in each phase.
+    It begins with mastering rolling over, progresses to the coordination
+    required in crawling, advances through the challenge of standing, and
+    culminates in the triumphant first steps of walking. Each stage represents
+    not just physical growth, but the intricate process of learning,
+    remembering, and building upon past experiences
 
-It starts by trying and learning to roll over its belly. This initial process takes some time for the little one as it is a new experience for him. Once it can transition from its back to belly seamlessly, it tries various gestures and learns to use its tiny little hands and feet to crawl like a commando thus moving forward or backwards. Once it is comfortable crawling, it starts using its feet for faster movements and starts using its knees. This is where it starts learning how to stand on twos. Initially, all its attempts to stand straight fail but with time and enough practice, it learns to hold itself without support. Once it is comfortable standing, it starts taking its first little steps. This is nothing but learning, a process of putting together a sequence of thoughts or actions. The toddler uses its little intellect to learn its way to stand and walk. It repeats its behaviours and adapts to new information. While learning to walk, it learns to sit and jump too simultaneously. The toddler understands the significance of sitting and jumping through their past experiences and how these activities aid in moving.
+|tab| In drawing parallels to Artificial Intelligence, I see a reflection of
+this process. AI systems, in their way, *"learn"* by gathering data,
+processing it, and *"remembering"* patterns. This mimicry of human learning
+and memorization is fascinating and offers profound insights into the
+potential of AI. It's a reminder that learning, whether in humans or machines,
+is an intricate tapestry woven from experiences, trials, and the continuous
+process of building upon past knowledge. Furthermore, it's important to
+acknowledge the challenges inherent in translating these natural learning
+processes into AI systems. While the parallels between a toddler's learning
+journey and AI's learning mechanisms offer valuable insights, the replication
+of human-like learning in machines presents a unique set of complexities. AI
+systems, though capable of processing and *"remembering"* vast amounts of data,
+still face limitations in replicating the nuanced and adaptive nature of human
+learning. We need to understand the limitations of AI in mimicking human
+learning processes, such as the understanding of context, the application of
+learned knowledge in varied situations, and the ability to learn from minimal
+input. It's about recognizing the remarkable capabilities of AI while also
+being mindful of the journey ahead in achieving a level of learning and
+understanding that truly mirrors human cognition. This acknowledgment not only
+informs our approach to AI development but also fosters an appreciation for
+the intricate and sophisticated nature of our learning abilities.
 
-|tab| The act of learning is not restricted to humans. Almost all animals exhibit this behaviour. Humans and terrestrial mammals learn to walk and swim while birds learn to fly. A lot of this learning seems quite intuitive and hard-wired in our brains. We do not have to teach babies to walk or birds to fly. They do it based on their instincts. Researchers are not sure why this behaviour feels so natural though or maybe this is the intelligence of a species at work.
+|tab| In my studies and observations of the natural world, I've been
+continually fascinated by the universal nature of learning. It's a phenomenon
+that transcends human boundaries, evident in nearly all forms of life. From
+the terrestrial mammals that instinctively learn to walk and swim to the birds
+that master the art of flight, learning is an integral part of life's
+tapestry. This process, which seems so intuitive and ingrained, has always
+intrigued me. Observing a baby as it navigates its first steps or a bird as it
+takes to the skies, one can't help but marvel at the innate ability that
+drives these milestones. These instinctive behaviors, which occur without
+formal instruction, suggest a profound intelligence embedded within each
+species. It raises compelling questions about the nature of intelligence
+|dash| is it the manifestation of deeply rooted instincts, or is it something
+that transcends innate behaviors? This conundrum is one that researchers and
+scientists grapple with, as the boundary between instinctual behavior and
+learned intelligence often blurs into a fascinating gray area.
 
-*************************
-Intelligence v/s Learning
-*************************
+.. tweet:: https://twitter.com/NWF/status/965336370175606784
 
-To summarize, intelligence is simply a collective process of problem-solving using various elements while learning is the process of gathering information through repetitive trial and error and building this intellect. Of course, there are other things like planning, creativity, rationalization, socializing, etc which are also some of the overlapping components while speaking of intelligence and learning. But we will focus on them later. While learning and building intelligence, it is crucial to understand what is necessary for problem-solving. Intelligence is merely a toolbox which holds various tools like analyzing, learning, testing and adapting whereas Learning itself is a tool. All we need to do is learn how to use them effectively.
-
-|tab| I will try to explain the significance of applying intelligence and learning through a simple example. Animals like squirrels hoard their food for cold weather but cattle do not exhibit this behaviour. Through evolution, these animals have learnt their survival strategies. After a lot of trial and error, a squirrel has learnt that if it does not store enough food for colder weather it might not get sufficient food later. It had learnt this over thousands of years and thus has built enough intelligence to selectively hoard enough food for itself. On the other hand, consider a domesticated cow which does not worry about food in the cold weather. It lives in a group, a cattle. So for a cow, socializing plays a critical role in survival. The cow has learnt that if it stays with humans, it will be well fed irrespective of the weather. For the cow, the learning curve has stopped.
-
-.. figure:: ../img/animals-survival-by-food.png
-    :alt:  Cow vs Squirrel
-
-    A cow enjoying its social life grazing through the meadows whilst a squirrel needs to work hard
-
-The whole point of the above example is to make sure you understand where to focus your time and resources while building solutions. You as an engineer need to understand why are you developing something and how will it be used in real-world applications. You need to understand what you need rather than what you want. Do you need AI or ML? This is the question one must ask itself before venturing ahead.
-
-***********************
-Artificial Intelligence
-***********************
-
-If you understand the concept of human intelligence correctly, this is a no-brainer. To re-iterate, intelligence is the process of analyzing, understanding and learning about the available information and then prototyping a solution to the problem. Artificial Intelligence is the same thing but something that is simulated artificially by humans. When talking about AI, we talk about a system that is capable of comprehending and adapting to the presented problem and then finding a solution for it. It functions similarly to the intelligence exhibited by living entities |dash| acquiring information through senses, learning over time through repetitive variations and testing its outcomes against the problem to reward itself. This is what an AI is. It is a system that simulates a living entity (not necessarily a human but close) artificially. Here the term artificial implies something that is designed or programmed by humans and which is inherently not created naturally.
-
-|tab| In lay terms, it is a system. Now the term system is used loosely in this context and can be defined in many different ways. It can be a computer program, a dedicated mesh of computer networks that talk to each other or some robotic framework for a particular task. So to define AI in simple terms, Artificial Intelligence is a system that is capable of simulating near-human intelligence or function like a human to solve a problem. Since the last decade, a lot of these AIs have been developed and now there has been a variety of these AIs out there like AIs playing games or AIs conversing with humans, etc. But at its core, these are nothing but machines or systems designed by humans to perform *a certain task*. We call these AIs, Artificial Narrow Intelligence or ANIs. There is another type of AI called Artificial General Intelligence or AGI. Both ANIs and AGIs are marvellous and extremely sophisticated in their designs but extremely difficult to build.
-
-|tab| Almost all the AIs that are out there are examples of ANIs. They do perform similarly to humans to an extent but their reach is limited to a particular field or task. They cannot solve problems which they are not trained to solve. Whereas an AGI is a super-intelligent system that can act using its "subconscious" state to understand, debug and solve the problem. Unfortunately, AGIs don't exist yet. A researcher from Google claims they have seen their AI become conscious or sentient in its action but I believe it is far from truth. I am not saying that AGIS can't exist, what I am saying is it is very unlikely that we will hear about them sooner than we anticipate. Sure, the AIs that we have developed now are certainly capable of surprising us with the answers they provide to the complicated problems which we throw at them.
+Some theories propose that these innate abilities are the result of
+evolutionary processes, honed over generations for survival and efficiency. As
+I delve deeper into this subject, I find myself pondering the intricate
+relationship between instinct, learning, and intelligence. It's a relationship
+that not only defines the survival and development of a species but also
+highlights the remarkable adaptability and complexity inherent in nature. In
+exploring these ideas, I aim to capture the essence of learning in its
+broadest sense |dash| not just as a human endeavor but as a fundamental
+characteristic of life. The way a child learns to walk, or a bird learns to
+fly, isn't merely a function of biology; it's a testament to the intelligence
+that permeates the natural world. These natural phenomena, often overlooked in
+their simplicity, are in reality profound expressions of life's inherent
+wisdom and adaptability.
