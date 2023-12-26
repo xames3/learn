@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: Friday, August 11 2023
-.. Last updated on: Saturday, August 19 2023
+.. Last updated on: Monday, December 25 2023
 
 .. _demystifying-buzzwords:
 
@@ -8,7 +8,7 @@
 Demystifying the Buzzwords
 ##########################
 .. sectnum:: 
-
+.. reading::
 .. authors::
     :affiliations: DePaul University\nJarvis College of Computing and Digital Media\nChicago, IL 60604, USA
     :emails: xa@mes3.dev
@@ -19,24 +19,122 @@ Demystifying the Buzzwords
 Introduction
 ************
 
-Hello hello everyone! This chapter will discuss the ideas behind the buzzwords like Artificial Intelligence, Machine Learning, Neural Networks, etc. What do they mean? Since 2010, there has been a massive surge in usage of these words. I have come across a lot of people in my field and outside using them interchangeably. They classify systems as AI-based and some as ML-based. Some often claim a company is an AI-first company. But is the distinction between these buzzwords even correct? Do they mean the same thing or are there any subtle differences? To learn about these terminologies precisely we first need to understand what "Intelligence" and "Learning" means. By intelligence, I am referring to human intelligence. Although different animals display different levels of intelligence, I would primarily focus on our species. These words often connote a similar thing, something to do with knowledge or information. In our world of computer science, we call this information or knowledge, *data*.
+As we embark on this chapter, I'm eager to delve into the often-misunderstood
+buzzwords like Artificial Intelligence, Machine Learning, Neural Networks, and
+others. Some of these terms have become increasingly popular since 2010, yet
+I've noticed a mix-up in their usage, both within my professional circle and
+beyond. It's common to hear these terms being used interchangeably, with
+systems labeled as *"AI-based"* or *"ML-based"*, and companies touted as
+*"AI-first"*. But, do these labels accurately reflect their meanings, or is
+there more to these buzzwords than meets the eye? In pursuit of clarity, my
+first step is to dissect the meanings of "Intelligence" and "Learning". Here,
+my focus is on human intelligence, as it provides a crucial reference point
+for understanding AI. While acknowledging that intelligence manifests
+diversely across different species, our primary exploration will center on its
+human aspect. In the context of computer science, these concepts of
+intelligence and learning are deeply intertwined with data |dash| the
+cornerstone of knowledge and information processing in this digital age.
+
+|tab| This chapter is not just about defining these terms; it's about peeling
+back the layers to reveal the nuances and intricacies they encompass. By
+understanding what each of these buzzwords truly signifies, and how they
+interplay within the broader landscape of AI, we'll gain a deeper appreciation
+of the field. Join me as I unravel these terms, exploring their proper use and
+the common misconceptions surrounding them, ultimately leading to a more
+informed and nuanced understanding of the exciting world of Artificial
+Intelligence and Machine Learning. Moreover, in this chapter, we won't limit
+ourselves to theoretical definitions alone. I will also guide you through the
+practical applications of these technologies. Understanding how Artificial
+Intelligence, Machine Learning, and Neural Networks are utilized in various
+industries and sectors can provide a more tangible grasp of their relevance
+and potential. From healthcare and finance to autonomous vehicles and beyond,
+we will explore how these buzzwords translate into groundbreaking innovations
+and everyday solutions. This practical lens is crucial as it connects the
+abstract concepts of intelligence and learning with real-world impact,
+illustrating the transformative power of AI and ML in shaping our present and
+future. So, as I dissect these terms, we'll also be uncovering the myriad ways
+they're being employed to solve complex problems, enhance human capabilities,
+and redefine the technological landscape.
 
 ******************
 Human Intelligence
 ******************
 
-According to Google...
+In my exploration of Artificial Intelligence, one term frequently arises: *"Intelligence"*. According to Google...
 
-.. epigraph:: Intelligence is the ability to acquire and apply knowledge and skills to solve a particular problem at hand.
+.. epigraph:: Intelligence is the ability to acquire and apply knowledge and
+    skills to solve a particular problem at hand.
+    
+Some experts describe it as the capacity to solve complex issues or make informed decisions using prior knowledge, akin to personal traits like height or strength. The quest for a definitive understanding of intelligence is complex and multi-faceted, and no single definition can capture its entirety. But in the context of AI, our quest isn't to pinpoint a rigid definition, but rather to grasp the essence of intelligence in all its dimensions. Let's reflect on this concept again. At its most fundamental level, intelligence involves learning something and then applying that acquired knowledge. This process, simple in description yet profound in implication, is what lies at the heart of both human and artificial intelligence. In AI, this is mirrored through algorithms that learn from data and then utilize these learnings to perform tasks or make predictions. Understanding the nuances of this process |dash| how information is learned, the ways it can be applied, and the varying contexts it operates within |dash| is crucial. This understanding underpins the entire field of AI.
 
-Some say it is the ability to solve complex problems or make decisions with outcomes benefitting the actor using prior knowledge. Some call it a trait, like height or strength. We can keep arguing on what is the right definition and still would not be able to settle on one in particular. But that is not our goal, we want to understand what Intelligence is. So let us go over the definition once again. In simple terms, it means, you learn something and based on that acquired information you do something. Now, what you learn or how you learn is a different subject or what you do with the information or how you use that information depends on the context of the problem. But the key insight is you first learn about something and then you apply your knowledge.
+|tab| As I delve deeper into this topic, I aim to unravel the layers of what
+intelligence means, especially about AI. We'll explore how this fundamental
+concept of learning and applying not only shapes human cognition but also
+forms the foundational principle of AI systems. It's a journey through the
+intricate relationship between knowledge, application, and the diverse
+manifestations of intelligence in our increasingly digital world. In addition
+to understanding the foundational aspects of intelligence, it's also important
+to recognize its evolving nature, especially in the context of AI. As we delve
+deeper into Artificial Intelligence, we see that just like human intelligence,
+AI is not static; it evolves, adapts, and improves over time. This dynamic
+aspect of AI, where algorithms learn from new data, adapt to changing
+environments, and potentially even develop new ways of problem-solving, is a
+fascinating parallel to human cognitive growth.
 
-|tab| This is how we humans and some mammals tend to function. Over our lifetime we spend time learning and adapting to new information as we grow and later use it for carrying out some activity. This is Intelligence at work. Like memories, intelligence is not a single thing located in some part of our brain. The concept of intelligence :abbr:`i.e. (that is)` analyzing, learning, adapting and using the information wisely, is something we as a species have developed throughout thousands of years through evolution. It took us a lot of time to develop this level of intellect which we now take for granted. Let me explain this with a very simple example. Imagine early humans learning to use sticks and twigs for self-defence. They used bamboo sticks or dried tree branches to cast off predators. When this method of intimidation became ineffective as the predators also learnt to adapt, these early humans started modifying their tools. They would sharpen the tips of the branches or light the stick on fire. They started using their resources more effectively to yield better results. Another example would be touching a hot surface, we all have been there. Imagine yourself accidentally touching something hot to your touch, you instinctively quickly pull yourselves from it. Once you register the fact that touching a hot thing would harm you, you now become more cautious and aware of your next actions. You adapt to the new information.
+.. tweet:: https://twitter.com/stevenheidel/status/1736817896314351873
 
-.. figure:: ../img/intelligence-cycle.png
-    :alt:  Intelligence cycle
+|tab| In our exploration, we will not only focus on the current state of AI
+but also consider its potential for future development. How does AI's ability
+to learn and adapt today shape what it could become tomorrow? This perspective
+is crucial for a comprehensive understanding of AI and for envisioning how it
+might continue to transform our world. By keeping in mind both the established
+definitions and the progressive nature of intelligence, we can gain a richer,
+more nuanced understanding of what it means for a machine to be
+*"intelligent"*. This exploration is key to appreciating the full scope and
+potential of AI, as we continue to witness its remarkable journey from a
+concept to a transformative force in our lives. In my experience of what
+intelligence truly means, I've observed a fascinating aspect of our human
+nature and that of some mammals. Throughout our lives, we're engaged in a
+continuous process of learning and adapting. This ongoing development of
+skills and knowledge, and their application in various contexts, is the very
+essence of intelligence at work. Unlike something tangible and localized,
+intelligence is an abstract, multi-faceted capability. It encompasses our
+ability to analyze, learn, adapt, and wisely use information |dash| a complex
+trait that we, as a species, have evolved over thousands of years.
 
-    Intelligence as a collective process of various stages
+|tab| To put this into perspective, let's consider a few illustrative examples
+from our evolutionary past. Picture early humans learning to utilize sticks
+and twigs, not just as tools but as instruments of defense. Initially, simple
+bamboo sticks or dried tree branches were employed to fend off predators.
+However, as these methods gradually lost their efficacy, our ancestors began
+to innovate |dash| sharpening the ends of these sticks, or even using fire to
+enhance their defensive capabilities. This evolution of tool usage showcases
+the adaptive nature of human intelligence, where learning from experiences
+leads to better, more effective solutions. Another example that resonates with
+most of us is the instinctive reaction to touching a hot surface. We've all
+experienced that sudden withdrawal upon contact with something scalding. This
+immediate response, followed by a cautious approach in similar future
+situations, is a prime example of learning and adapting based on experience.
+It highlights how intelligence isn't just about knowledge acquisition but also
+about applying that knowledge to ensure better outcomes. As I delve deeper
+into the realms of Artificial Intelligence, these reflections on human
+intelligence provide a vital backdrop. They help us understand the challenges
+in replicating such adaptive and learning capabilities in AI systems. In AI,
+we are attempting to emulate this depth and flexibility of human intelligence,
+understanding that it is not a static trait but a dynamic, evolving one. This
+journey of understanding the essence of intelligence, both in humans and 
+machines, is not just intellectually enriching but also crucial in our quest
+to advance AI technologies.
+
+.. figure:: ../img/touch-to-burn.gif
+    :alt:  Learning through experience
+
+    Learning through experience: How our instinctive reaction to a hot surface
+    mirrors the fundamental process of human learning and adaptation. This
+    everyday example illustrates the essence of intelligence - not only in
+    acquiring knowledge but also in applying it to avoid harm. It reflects the
+    continuous evolution of human understanding, a concept at the core of
+    developing adaptive and responsive AI systems.
 
 |tab| Our survival instincts as a species led us to develop this intellect and thus over the years it kept on improving. It is extremely important to remember that this way of figuring out a solution to a problem probably took us a very long time. But over time, our species understood the problem at hand, learnt and found a way around it. With time, we adopted different strategies and kept improvising. Now, it is often debated amongst many scientists and researchers how to measure or what intelligence is. To make matters worse, intelligence is also connected to consciousness since awareness is helpful in problem-solving. This process collectively is Intelligence. Understanding a problem statement or being aware or conscious of a situation, prototyping a solution based on experience, testing it out and improvising based on failures is how we learn. So intelligence is a set of actions that we do harmoniously to get something done.
 
