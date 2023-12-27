@@ -258,11 +258,6 @@ div#searchbox p.highlight-link a::before {
   justify-content: center;
 }
 
-/* Table of content indentation */
-.toctree-wrapper>ul {
-  padding-left: 2rem;
-}
-
 /* Sidebar ToC text properties */
 nav.bd-links p.caption {
   font-weight: bold;
@@ -271,6 +266,32 @@ nav.bd-links p.caption {
 /* Sidebar ToC disable underline */
 nav.bd-links li>a:hover {
   text-decoration: none;
+}
+
+/* Table of content indentation */
+.toctree-wrapper>ul {
+  padding-left: 2rem;
+  counter-reset: item;
+}
+
+/* ToC on index page title */
+span.caption-text {
+  font-weight: bolder;
+}
+
+/* Add margin to the contents text */
+.toctree-wrapper p.caption {
+  font-size: 1.5em;
+  margin-bottom: 3rem;
+}
+
+div.toctree-wrapper.compound * {
+  color: var(--pst-color-text-base);
+}
+
+/* Make title in ToC bolder */
+div.toctree-wrapper.compound>ul>li>a {
+  font-weight: bolder;
 }
 
 /* Make titles bolder */
