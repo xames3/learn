@@ -204,11 +204,6 @@ nav.bd-links .current>a {
   box-shadow: none;
 }
 
-/* Sidebar current prefix */
-nav.bd-links .current>a::before {
-  content: "• ";
-}
-
 /* Center the hide search button */
 div#searchbox p.highlight-link {
   box-shadow: 0 0 0 0 var(--pst-color-shadow) !important;
