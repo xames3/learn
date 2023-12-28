@@ -12,6 +12,7 @@ Learning the Essence of AI, Research and Notations
     :caption: Contents
     :titlesonly:
 
+    _documentation/preface
     _documentation/introducing-learn
 
 .. toctree::

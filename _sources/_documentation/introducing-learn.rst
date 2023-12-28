@@ -48,7 +48,6 @@ less daunting. The central inquiry of this platform is...
 
 .. epigraph:: What is AI?
 
-
 A question that resonates more profoundly now than ever before. In our rapidly
 evolving world, where AI is no longer just a futuristic concept but a present
 reality, understanding its essence is crucial. This site aims to explore AI's
@@ -159,120 +158,6 @@ applied in real-life scenarios, thereby preparing them for the challenges and
 opportunities in the ever-growing field of AI. These hands-on experiences are
 designed to reinforce the learning material, thus allowing learners to
 experiment, innovate, and apply the concepts in practical situations.
-
-***********************
-Artificial Intelligence
-***********************
-
-Current Landscape of AI
-#######################
-
-Ubiquity and Impact
-*******************
-
-As I sit down to write in December 2023, we are in the midst of a
-transformative era dominated by Artificial Intelligence. Since the early
-2010s, AI has ceased to be a mere buzzword and has become a ubiquitous element
-in our daily existence. Its presence is felt everywhere |dash| from the
-pervasive reach of the internet to the smart devices that have become almost
-extensions of ourselves. AI, in its silent yet profound way, influences how we
-live, work, and interact with the world around us. The realms where AI has
-made its mark are vast and varied. In the field of healthcare, AI is
-revolutionizing diagnostics and treatment plans, making super-precision
-medicine is not just a possibility but a reality. In genomics, it's unlocking
-mysteries of human DNA at an unprecedented pace. The influence of Artificial
-Intelligence extends beyond these life-altering applications; it's reshaping
-the very nature of work, automating tasks that were once the bastion of human
-effort. This global-level shift brings with it a complex tapestry of
-socio-economic implications, from job transformations to ethical
-considerations.
-
-Societal Implications
-*********************
-
-Yet, the proliferation of AI brings with it a spectrum of challenges and
-responsibilities. The development of autonomous systems, often portrayed in
-cinematic narratives, is a real and present concern, highlighting the ethical
-quandaries and the need for stringent governance in AI deployment. One of the
-controversial aspects lies in its application in military technology. These
-advancements, while a testament to human ingenuity, also pose profound
-questions about the future direction of our society. As we navigate this
-AI-enhanced world, it becomes imperative to understand not just the
-technological marvels but also the broader implications of AI on our global
-community.
-
-.. figure:: ./img/skynet-attacking.gif
-    :alt:  An example of the portrayal of AIs in the movies
-
-    An illustrative warning: Skynet's rise in the Terminator series as a
-    symbol of the ethical and societal challenges posed by unchecked AI
-    development in autonomous systems.
-
-|tab| As we stand at this pivotal juncture in the evolution of AI, it is also
-crucial to cast our gaze forward, contemplating what the future may hold in
-this rapidly advancing field. The massive potential for AI to further
-integrate into every facet of our lives from personalized education to
-advanced urban planning is immense. This future, brimming with possibilities,
-also sort of necessitates a collective readiness to adapt, learn, and
-contribute to shaping an AI-driven world that is ethical, sustainable, and
-beneficial for all. In light of this, the true importance of platforms like
-L.E.A.R.N becomes even more pronounced. By equipping ourselves with a deep
-understanding of AI, its applications, and its implications, we can become
-active participants in steering this technology toward positive outcomes.
-
-Role of Industry Leaders and Government
-***************************************
-
-In this era, where AI is not just emerging but flourishing, the industry's top
-leaders like Google, Tesla, and OpenAI stand at the forefront, crafting
-remarkable AI solutions that are reshaping our world. These companies are more
-than just businesses; they are the architects of a future where AI integrates
-seamlessly into every facet of our existence. Consider Tesla's investment in
-self-driving cars transcends the boundaries of automotive manufacturing, thus
-venturing into the realm of AI-powered autonomy that could redefine how we
-perceive our transportation. Similarly, the fierce competition between these
-tech titans such as Google and OpenAI in the arena of generative AI is a clear
-indicator of the direction in which our digital world is headed. These
-advancements are not just technological feats; they are harbingers of a future
-deeply intertwined with intelligent systems.
-
-.. tweet:: https://twitter.com/FT/status/1638182534340132865
-
-|tab| This race towards AI supremacy extends beyond the corporate sphere.
-Governments across the globe, acutely aware of AI's transformative potential,
-are pouring resources into nurturing this field. They recognize that AI is a
-cornerstone of future societal development, and are thus investing heavily in
-AI-based startups and research initiatives. This global movement signifies a
-collective shift towards embracing AI as a fundamental element of progress.
-However, with great advancement comes great complexity. Consider the user
-experience with tools like Google Sheets for intricate data analysis tasks.
-Despite all of the AI underpinnings, there are moments when these systems fall
-short of intuitively understanding and fulfilling specific user requests. This
-highlights a critical aspect of AI's journey: the measure of its
-sophistication lies not just in its computational prowess but in its synergy
-with human intuition and needs. This intersection of human expectation and AI
-capability is pivotal. As users and beneficiaries of these technologies, our
-understanding of what AI can and cannot do is crucial. It is truly about
-recognizing the limits and potential of AI, ensuring that we leverage these
-powerful tools in ways that augment our abilities and enrich our interactions
-with technology.
-
-Potential and Necessity for Adaptation
-######################################
-
-In contemplating the rapid strides made by these technological giants and
-governments in AI, it becomes imperative to also consider the ethical
-dimensions and societal impacts of these advancements. As we stand at the cusp
-of a new era in AI, there's a need for a dialogue around the responsible and
-ethical use of AI technologies. This includes addressing concerns like
-privacy, bias, and the broader implications of AI on employment and societal
-structures. The development and deployment of AI must be guided by a framework
-that prioritizes not only innovation but also the welfare and rights of
-individuals and communities. It's essential to foster an environment where
-technological progress goes hand in hand with ethics-based stewardship and
-social responsibility. This balanced approach will be crucial in ensuring that
-the benefits of AI are distributed equitably and that its potential is
-harnessed for the greater good of society.
 
 ************************
 Approach and Methodology
@@ -436,6 +321,120 @@ an awareness of its broader implications. This holistic approach is
 instrumental in preparing learners to face the complexities of AI with a
 balanced perspective, equipped to use AI more responsibly and innovatively in
 various domains.
+
+***********************
+Artificial Intelligence
+***********************
+
+Current Landscape of AI
+#######################
+
+Ubiquity and Impact
+*******************
+
+As I sit down to write in December 2023, we are in the midst of a
+transformative era dominated by Artificial Intelligence. Since the early
+2010s, AI has ceased to be a mere buzzword and has become a ubiquitous element
+in our daily existence. Its presence is felt everywhere |dash| from the
+pervasive reach of the internet to the smart devices that have become almost
+extensions of ourselves. AI, in its silent yet profound way, influences how we
+live, work, and interact with the world around us. The realms where AI has
+made its mark are vast and varied. In the field of healthcare, AI is
+revolutionizing diagnostics and treatment plans, making super-precision
+medicine is not just a possibility but a reality. In genomics, it's unlocking
+mysteries of human DNA at an unprecedented pace. The influence of Artificial
+Intelligence extends beyond these life-altering applications; it's reshaping
+the very nature of work, automating tasks that were once the bastion of human
+effort. This global-level shift brings with it a complex tapestry of
+socio-economic implications, from job transformations to ethical
+considerations.
+
+Societal Implications
+*********************
+
+Yet, the proliferation of AI brings with it a spectrum of challenges and
+responsibilities. The development of autonomous systems, often portrayed in
+cinematic narratives, is a real and present concern, highlighting the ethical
+quandaries and the need for stringent governance in AI deployment. One of the
+controversial aspects lies in its application in military technology. These
+advancements, while a testament to human ingenuity, also pose profound
+questions about the future direction of our society. As we navigate this
+AI-enhanced world, it becomes imperative to understand not just the
+technological marvels but also the broader implications of AI on our global
+community.
+
+.. figure:: ./img/skynet-attacking.gif
+    :alt:  An example of the portrayal of AIs in the movies
+
+    An illustrative warning: Skynet's rise in the Terminator series as a
+    symbol of the ethical and societal challenges posed by unchecked AI
+    development in autonomous systems.
+
+|tab| As we stand at this pivotal juncture in the evolution of AI, it is also
+crucial to cast our gaze forward, contemplating what the future may hold in
+this rapidly advancing field. The massive potential for AI to further
+integrate into every facet of our lives from personalized education to
+advanced urban planning is immense. This future, brimming with possibilities,
+also sort of necessitates a collective readiness to adapt, learn, and
+contribute to shaping an AI-driven world that is ethical, sustainable, and
+beneficial for all. In light of this, the true importance of platforms like
+L.E.A.R.N becomes even more pronounced. By equipping ourselves with a deep
+understanding of AI, its applications, and its implications, we can become
+active participants in steering this technology toward positive outcomes.
+
+Role of Industry Leaders and Government
+***************************************
+
+In this era, where AI is not just emerging but flourishing, the industry's top
+leaders like Google, Tesla, and OpenAI stand at the forefront, crafting
+remarkable AI solutions that are reshaping our world. These companies are more
+than just businesses; they are the architects of a future where AI integrates
+seamlessly into every facet of our existence. Consider Tesla's investment in
+self-driving cars transcends the boundaries of automotive manufacturing, thus
+venturing into the realm of AI-powered autonomy that could redefine how we
+perceive our transportation. Similarly, the fierce competition between these
+tech titans such as Google and OpenAI in the arena of generative AI is a clear
+indicator of the direction in which our digital world is headed. These
+advancements are not just technological feats; they are harbingers of a future
+deeply intertwined with intelligent systems.
+
+.. tweet:: https://twitter.com/FT/status/1638182534340132865
+
+|tab| This race towards AI supremacy extends beyond the corporate sphere.
+Governments across the globe, acutely aware of AI's transformative potential,
+are pouring resources into nurturing this field. They recognize that AI is a
+cornerstone of future societal development, and are thus investing heavily in
+AI-based startups and research initiatives. This global movement signifies a
+collective shift towards embracing AI as a fundamental element of progress.
+However, with great advancement comes great complexity. Consider the user
+experience with tools like Google Sheets for intricate data analysis tasks.
+Despite all of the AI underpinnings, there are moments when these systems fall
+short of intuitively understanding and fulfilling specific user requests. This
+highlights a critical aspect of AI's journey: the measure of its
+sophistication lies not just in its computational prowess but in its synergy
+with human intuition and needs. This intersection of human expectation and AI
+capability is pivotal. As users and beneficiaries of these technologies, our
+understanding of what AI can and cannot do is crucial. It is truly about
+recognizing the limits and potential of AI, ensuring that we leverage these
+powerful tools in ways that augment our abilities and enrich our interactions
+with technology.
+
+Potential and Necessity for Adaptation
+######################################
+
+In contemplating the rapid strides made by these technological giants and
+governments in AI, it becomes imperative to also consider the ethical
+dimensions and societal impacts of these advancements. As we stand at the cusp
+of a new era in AI, there's a need for a dialogue around the responsible and
+ethical use of AI technologies. This includes addressing concerns like
+privacy, bias, and the broader implications of AI on employment and societal
+structures. The development and deployment of AI must be guided by a framework
+that prioritizes not only innovation but also the welfare and rights of
+individuals and communities. It's essential to foster an environment where
+technological progress goes hand in hand with ethics-based stewardship and
+social responsibility. This balanced approach will be crucial in ensuring that
+the benefits of AI are distributed equitably and that its potential is
+harnessed for the greater good of society.
 
 ********************
 The Digital Platform
