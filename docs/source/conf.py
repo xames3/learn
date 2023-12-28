@@ -4,7 +4,7 @@ L.E.A.R.N Sphinx Configuration
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: Wednesday, April 12 2023
-Last updated on: Sunday, December 24 2023
+Last updated on: Thursday, December 28 2023
 
 This file contains the configuration settings for building the L.E.A.R.N
 documentation using Sphinx, a popular Python documentation tool. Sphinx
@@ -290,7 +290,7 @@ html_theme_options = {
     "repository_url": _project.url,
     "secondary_sidebar_items": [],
     "show_prev_next": False,
-    "footer_start": ["copyright", "sphinx-version"],
+    "footer_start": ["copyright", "theme-version"],
 }
 language = _project.default_language
 
