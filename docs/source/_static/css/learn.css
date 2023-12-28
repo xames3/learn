@@ -204,6 +204,11 @@ nav.bd-links .current>a {
   box-shadow: none;
 }
 
+/* Bold home */
+.navbar-brand .logo__title {
+  font-weight: bolder;
+}
+
 /* Center the hide search button */
 div#searchbox p.highlight-link {
   box-shadow: 0 0 0 0 var(--pst-color-shadow) !important;
@@ -280,8 +285,14 @@ span.caption-text {
   margin-bottom: 3rem;
 }
 
+/* Make ToC black */
 div.toctree-wrapper.compound * {
   color: var(--pst-color-text-base);
+}
+
+/* Add space after non-numbered titles */
+div.toctree-wrapper.compound>ul>li {
+  margin-bottom: 1rem;
 }
 
 /* Make title in ToC bolder */
@@ -431,6 +442,30 @@ figcaption>p .caption-text::before {
 }
 
 /* Custom L.E.A.R.N extension CSS classes and properties */
+/* Preface settings */
+.preface-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "location-date author-name";
+}
+
+/* Location and date settings */
+.location-date {
+  justify-self: start;
+  align-self: center;
+  grid-area: location-date;
+}
+
+/* Author name with alignment */
+.author-name {
+  justify-self: end;
+  grid-area: author-name;
+}
+
 /* Authors root class */
 .learn-authors {
   color: var(--pst-color-text-base);
