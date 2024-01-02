@@ -321,13 +321,13 @@ copybutton_prompt_text = (
     r">>> |\.\.\. |\$ |In \[\d*\]: | {2,5}\.\.\.: | {5,8}: "
 )
 intersphinx_mapping = {
-    # "Sphinx": ("https://www.sphinx-doc.org/en/stable/", None),
-    # "matplotlib": ("https://matplotlib.org/stable/", None),
-    # "numpy": ("https://numpy.org/doc/stable/", None),
-    # "pandas": ("https://pandas.pydata.org/docs/", None),
-    # "python": ("https://docs.python.org/3", None),
-    # "scikit-learn": ("https://scikit-learn.org/stable/", None),
-    # "scipy": ("https://docs.scipy.org/doc/scipy/reference/", None),
+    "Sphinx": ("https://www.sphinx-doc.org/en/stable/", None),
+    "matplotlib": ("https://matplotlib.org/stable/", None),
+    "numpy": ("https://numpy.org/doc/stable/", None),
+    "pandas": ("https://pandas.pydata.org/docs/", None),
+    "python": ("https://docs.python.org/3", None),
+    "scikit-learn": ("https://scikit-learn.org/stable/", None),
+    "scipy": ("https://docs.scipy.org/doc/scipy/reference/", None),
 }
 todo_include_todos = True
 
