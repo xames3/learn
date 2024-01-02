@@ -4,7 +4,7 @@ L.E.A.R.N Sphinx Configuration
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: Wednesday, April 12 2023
-Last updated on: Thursday, December 28 2023
+Last updated on: Monday, January 01 2024
 
 This file contains the configuration settings for building the L.E.A.R.N
 documentation using Sphinx, a popular Python documentation tool. Sphinx
@@ -219,7 +219,7 @@ class LearnProject(t.NamedTuple):
 
     # Project metadata
     author: str = "Akshay Mestry"
-    copyright: str = "2023, Akshay Mestry"
+    copyright: str = "2024, Akshay Mestry"
     default_language: str = "en"
     main_title: str = "Learning the Essence of AI, Research, and Notations"
     release: str = build_module().__version__
@@ -321,13 +321,13 @@ copybutton_prompt_text = (
     r">>> |\.\.\. |\$ |In \[\d*\]: | {2,5}\.\.\.: | {5,8}: "
 )
 intersphinx_mapping = {
-    "Sphinx": ("https://www.sphinx-doc.org/en/stable/", None),
-    "matplotlib": ("https://matplotlib.org/stable/", None),
-    "numpy": ("https://numpy.org/doc/stable/", None),
-    "pandas": ("https://pandas.pydata.org/docs/", None),
-    "python": ("https://docs.python.org/3", None),
-    "scikit-learn": ("https://scikit-learn.org/stable/", None),
-    "scipy": ("https://docs.scipy.org/doc/scipy/reference/", None),
+    # "Sphinx": ("https://www.sphinx-doc.org/en/stable/", None),
+    # "matplotlib": ("https://matplotlib.org/stable/", None),
+    # "numpy": ("https://numpy.org/doc/stable/", None),
+    # "pandas": ("https://pandas.pydata.org/docs/", None),
+    # "python": ("https://docs.python.org/3", None),
+    # "scikit-learn": ("https://scikit-learn.org/stable/", None),
+    # "scipy": ("https://docs.scipy.org/doc/scipy/reference/", None),
 }
 todo_include_todos = True
 
