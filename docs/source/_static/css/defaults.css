@@ -57,7 +57,7 @@ html {
   --pst-icon-external-link: "\f35d"; /* fa-solid fa-up-right-from-square */
   --pst-icon-github: "\f09b"; /* fa-brands fa-github */
   --pst-icon-gitlab: "\f296"; /* fa-brands fa-gitlab */
-  --pst-icon-info-circle: "\f05a"; /* fa-solid fa-circle-info */
+  --pst-icon-info-circle: "\f005"; /* fa-solid fa-note-sticky */
   --pst-icon-lightbulb: "\f0eb"; /* fa-solid fa-lightbulb */
   --pst-icon-pencil: "\f303"; /* fa-solid fa-pencil */
   --pst-icon-search-minus: "\f010"; /* fa-solid fa-magnifying-glass-minus */
@@ -91,7 +91,7 @@ html[data-theme="light"] {
   --pst-color-dark: #323232;
   --pst-color-info-highlight: #306e81;
   --pst-color-info-text: #ffffff;
-  --pst-color-info: #459db9;
+  --pst-color-info: #636366;
   --pst-color-inline-code: #e83e8c;
   --pst-color-light-highlight: #a3a3a3;
   --pst-color-light-text: #000000;

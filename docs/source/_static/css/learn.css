@@ -232,7 +232,7 @@ div#searchbox p.highlight-link a {
   transition: box-shadow .25s ease-out;
   background-color: var(--pst-color-danger);
   border-radius: 0;
-  color: #fff;
+  color: var(--pst-color-background);
 }
 
 /* FontAwesome glass before inside the hide search button */
@@ -288,6 +288,18 @@ span.caption-text {
 /* Make ToC black */
 div.toctree-wrapper.compound * {
   color: var(--pst-color-text-base);
+  overflow: hidden;
+}
+
+/* Draw dotted lines after title in ToC */
+.toctree-wrapper li[class^="toctree-l"]>a::after {
+  content: "";
+  display: inline-block;
+  vertical-align: baseline;
+  width: 100%;
+  margin-left: 0.5rem;
+  margin-right: -100%;
+  border-top: 0.125rem dotted var(--pst-color-text-base);
 }
 
 /* Add space after non-numbered titles */
@@ -408,6 +420,10 @@ figcaption>p .caption-text::before {
   color: var(--pst-color-text-muted);
 }
 
+img {
+  border-radius: 1rem;
+}
+
 /* Utterances frame resizing */
 .utterances {
   position: relative;
@@ -439,6 +455,43 @@ figcaption>p .caption-text::before {
 /* Sponsor button color */
 .svg-inline--fa.fa-heart {
   color: #bf3989;
+}
+
+/* Admonition Settings */
+.admonition,
+div.admonition {
+  border: 0.07rem solid var(--pst-color-border);
+  border-radius: 1rem;
+  box-shadow: 0 0 0 0 transparent !important;
+  margin: 1.5625em 2rem;
+  overflow: hidden;
+  padding: 0 .6rem .8rem;
+}
+
+/* Admonition title */
+.admonition>.admonition-title,
+div.admonition>.admonition-title,
+.admonition.note>.admonition-title,
+div.admonition.note>.admonition-title {
+  background-color: transparent;
+  margin: 0 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Admonition icon */
+.admonition>.admonition-title::after,
+div.admonition>.admonition-title::after,
+.admonition.note>.admonition-title::after,
+div.admonition.note>.admonition-title::after {
+  margin-left: -0.5rem;
+  content: var(--pst-icon-info-circle);
+  line-height: initial;
+}
+
+/* Admonition text */
+.admonition p.admonition-title~*,
+div.admonition p.admonition-title~* {
+  font-size: 1.2rem;
 }
 
 /* Custom L.E.A.R.N extension CSS classes and properties */
