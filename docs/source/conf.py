@@ -4,7 +4,7 @@ L.E.A.R.N Sphinx Configuration
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: Wednesday, April 12 2023
-Last updated on: Monday, January 01 2024
+Last updated on: Wednesday, January 24 2024
 
 This file contains the configuration settings for building the L.E.A.R.N
 documentation using Sphinx, a popular Python documentation tool. Sphinx
@@ -227,6 +227,11 @@ class LearnProject(t.NamedTuple):
     theme: str = "sphinx_book_theme"
     url: str = "https://github.com/xames3/learn"
 
+    announcement: str = (
+        "Due to high requests for covering topics about and related to "
+        "Neural Networks, I'll be focusing more on that in the coming days."
+    )
+
 
 _project = LearnProject()
 
@@ -285,6 +290,7 @@ html_show_sourcelink = False
 html_theme = _project.theme
 html_title = _project.short_title
 html_theme_options = {
+    "announcement": _project.announcement,
     "article_header_end": ["search-button"],
     "navigation_with_keys": True,
     "repository_url": _project.url,

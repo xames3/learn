@@ -119,6 +119,11 @@ td {
   }
 }
 
+/* Announcement banner */
+.bd-header-announcement {
+  background-color: var(--pst-color-primary);
+}
+
 /* Disable underlining of hyperlinks */
 a,
 a:active,
