@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: Friday, July 21 2023
-.. Last updated on: Wednesday, December 27 2023
+.. Last updated on: Wednesday, January 24 2024
 
 .. _introducing-learn:
 
@@ -10,7 +10,7 @@ Let's L.E.A.R.N!
 .. sectnum:: 
 .. reading::
 .. authors::
-    :affiliations: DePaul University\nJarvis College of Computing and Digital Media\nChicago, IL 60604, USA
+    :affiliations: DePaul University\nChicago, IL
     :emails: xa@mes3.dev
     :names: Akshay Mestry
     :links: https://linkedin.com/in/xames3
@@ -370,7 +370,7 @@ community.
     symbol of the ethical and societal challenges posed by unchecked AI
     development in autonomous systems.
 
-|tab| As we stand at this pivotal juncture in the evolution of AI, it is also
+As we stand at this pivotal juncture in the evolution of AI, it is also
 crucial to cast our gaze forward, contemplating what the future may hold in
 this rapidly advancing field. The massive potential for AI to further
 integrate into every facet of our lives from personalized education to
@@ -400,7 +400,7 @@ deeply intertwined with intelligent systems.
 
 .. tweet:: https://twitter.com/FT/status/1638182534340132865
 
-|tab| This race towards AI supremacy extends beyond the corporate sphere.
+This race towards AI supremacy extends beyond the corporate sphere.
 Governments across the globe, acutely aware of AI's transformative potential,
 are pouring resources into nurturing this field. They recognize that AI is a
 cornerstone of future societal development, and are thus investing heavily in
@@ -515,4 +515,11 @@ If you read it completely, I would like to thank you for your time!
 
     arxiv >> Regular Publications on Artificial Intelligence. arXiv is a widely recognized online repository that publishes a significant volume of research papers on Artificial Intelligence and related fields almost daily, serving as a vital resource for the latest developments and scholarly work in AI
     prof. nicholas higham >> Prof. Nicholas Higham |dash| a Mathematical genius. Higham, Nicholas J. "Handbook of Writing for the Mathematical Sciences." Third Edition. Society for Industrial and Applied Mathematics, 1998
-    pull request >> Raise a pull request on GitHub for editing, correcting or adding new content
+    pull request >> Raise a pull request on GitHub for editing, correcting or adding new content. Pull requests are built on the principles of code review and team collaboration. Developers and contributors can request reviews from their colleagues and track the build status of their work via PRs
+    oppenheimer theory quote >> The risk involved in the Trinity Test and the creation of the atomic bomb was based on the notion that at the time it was entirely theoretical. Due to Oppenheimer's genius, he was able to construct a bomb based on theory alone, which he admits "will only take you so far." Ernest Lawrence understands this too and agrees with Oppenheimer's ambitions despite knowing the slim chance that the plan could end the world because it is based on theory instead of fact
+    depaul college of computing >> This is where I study and the place where it all began. The students coming in here are packed with a whole lot of curiosity and enthusiasm for learning concepts like Computing, Design and Digital Media. I consider DePaul University to be a good place for enthusiasts like me to kindle and learn about fascinating stories related to technologies and theory alike
+    towards data science website >> One of the sources for inspiration for L.E.A.R.N is this massive collection of great articles. This was probably the place for people like me to jump upon and solve problems related to Machine Learning and AI
+    deeplearning.ai website >> Considered to be one of the industry standards in professional teaching, DeepLearning.ai is possibly a go-to place for learning the foundational basics of Machine Learning, Statistics and Artificial Intelligence
+    terminator rise of the machines >> A classic reference to AI taking over the world and humanity portrayed in form of a movie
+    tesla autopilot >> Autopilot is an advanced driver assistance system that enhances safety and convenience behind the wheel. When used properly, Autopilot reduces your overall workload as a driver. Each new Tesla vehicle is equipped with multiple external cameras and powerful vision processing to provide an additional layer of safety
+    use of python in machine learning >> Python has earned its place as one of the most popular programming languages among ML professionals thanks to its easy-to-read syntax, extensive libraries, and cross-platform compatibility. As a high-level, open-source programming language, Python has become the go-to choice for a wide range of machine learning tasks, from data analysis to deep learning
