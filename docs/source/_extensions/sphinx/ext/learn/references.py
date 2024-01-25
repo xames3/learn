@@ -4,7 +4,7 @@ Reference Directive for L.E.A.R.N
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: Friday, July 28 2023
-Last updated on: Monday, July 31 2023
+Last updated on: Wednesday, January 24 2023
 
 This module provides a custom directive for L.E.A.R.N's custom theme,
 that allows authors and contributors to add a dedicated references
@@ -148,12 +148,15 @@ class References(Directive):
 
 
 def visit_references_html(self: HTMLTranslator, node: ReferencesNode) -> None:
-    """Node visitor function which maps ``ReferencesNode`` element to the
-    HTML output.
+    """Node visitor function which maps ``ReferencesNode`` element to
+    the HTML output.
 
-    This function allows the rendering of the references of a topic on the
-    webpage. It relies on ``Jinja`` templating to perform the expansion
-    and rendering of the HTML source code.
+    This function allows the rendering of the references of a topic on
+    the webpage. It relies on ``Jinja`` templating to perform the
+    expansion and rendering of the HTML source code.
+
+    .. versionadded:: 1.0.6
+        Added support for force embedding of reference links.
     """
     content: list[tuple[str, str]] = []
     pairs: dict[str, str] = {}
@@ -163,9 +166,12 @@ def visit_references_html(self: HTMLTranslator, node: ReferencesNode) -> None:
         doc, new = correction.split(" >> ")
         pairs[doc] = new
     for target in node._document.findall(nodes.target):
-        if target.hasattr("refuri") and target.indirect_reference_name:
+        if target.hasattr("refuri"):
             title = target["names"][0]
-            content.append((pairs.get(title, title.title()), target["refuri"]))
+            if target.indirect_reference_name or title in pairs:
+                content.append(
+                    (pairs.get(title, title.title()), target["refuri"])
+                )
     html_src = REFERENCES_TEMPLATE.render(content=content)
     self.body.append(f"{self.starttag(node, 'div')}{html_src}")
 

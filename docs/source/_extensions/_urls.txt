@@ -18,14 +18,23 @@
    <a href="https://github.com/sponsors/xames3?o=esb" target="_blank" title="Sponsor @xames3">
          <button class="sponsor-button"><i class="fa-regular fa-heart"></i>&nbsp;Sponsor</button>
    </a>
+   <a href="https://twitter.com/xa_mes3" target="_blank" title="Follow @xa_mes3">
+         <button class="follow-button"><i></i>&nbsp;Follow</button>
+   </a>
 
 .. _github pr: https://github.com/xames3/learn/pulls
-
 .. _python website: https://python.org
-
 .. _recent arxiv: https://arxiv.org/list/cs.AI/recent
 .. _depaul college of communication: https://communication.depaul.edu/Pages/default.aspx
+.. _depaul college of computing: https://cdm.depaul.edu/Pages/default.aspx
 .. _feynman technique: https://fs.blog/feynman-technique/
 .. _richard feynman: https://en.wikipedia.org/wiki/Richard_Feynman
 .. _nick higham: https://nhigham.com
 .. _scientic american post about arxiv: https://www.scientificamerican.com/article/arxiv-org-reaches-a-milestone-and-a-reckoning/
+.. _oppenheimer theory quote: https://screenrant.com/oppenheimer-movie-best-quotes/#ldquo-prometheus-stole-fire-from-the-gods-hellip-rdquo
+.. _towards data science website: https://towardsdatascience.com
+.. _deeplearning.ai website: https://www.deeplearning.ai
+.. _coursera website: https://www.coursera.org
+.. _terminator rise of the machines: https://en.wikipedia.org/wiki/Terminator_3:_Rise_of_the_Machines
+.. _tesla autopilot: https://www.tesla.com/support/autopilot
+.. _use of python in machine learning: https://www.newhorizons.com/resources/blog/why-is-python-used-for-machine-learning
