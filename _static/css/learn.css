@@ -119,6 +119,11 @@ td {
   }
 }
 
+/* Announcement banner */
+.bd-header-announcement {
+  background-color: var(--pst-color-primary);
+}
+
 /* Disable underlining of hyperlinks */
 a,
 a:active,
@@ -232,7 +237,7 @@ div#searchbox p.highlight-link a {
   transition: box-shadow .25s ease-out;
   background-color: var(--pst-color-danger);
   border-radius: 0;
-  color: #fff;
+  color: var(--pst-color-background);
 }
 
 /* FontAwesome glass before inside the hide search button */
@@ -288,6 +293,18 @@ span.caption-text {
 /* Make ToC black */
 div.toctree-wrapper.compound * {
   color: var(--pst-color-text-base);
+  overflow: hidden;
+}
+
+/* Draw dotted lines after title in ToC */
+.toctree-wrapper li[class^="toctree-l"]>a::after {
+  content: "";
+  display: inline-block;
+  vertical-align: baseline;
+  width: 100%;
+  margin-left: 0.5rem;
+  margin-right: -100%;
+  border-top: 0.125rem dotted var(--pst-color-text-base);
 }
 
 /* Add space after non-numbered titles */
@@ -408,6 +425,10 @@ figcaption>p .caption-text::before {
   color: var(--pst-color-text-muted);
 }
 
+img {
+  border-radius: 1rem;
+}
+
 /* Utterances frame resizing */
 .utterances {
   position: relative;
@@ -439,6 +460,69 @@ figcaption>p .caption-text::before {
 /* Sponsor button color */
 .svg-inline--fa.fa-heart {
   color: #bf3989;
+}
+
+/* Custom X follow button */
+.follow-button {
+  height: 2.2rem;
+  background-color: #000;
+  float: right;
+  color: #fff;
+  margin: auto 0.125rem;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  border-radius: 1.2rem;
+  vertical-align: middle;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  border-style: none;
+}
+
+.follow-button i {
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: transparent 0 0 no-repeat;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='32' height='32' fill='none'/%3E%3Cpath d='M17.9686 14.1623L26.7065 4H24.6358L17.0488 12.8238L10.9891 4H4L13.1634 17.3432L4 28H6.07069L14.0827 18.6817L20.4822 28H27.4714L17.9681 14.1623H17.9686ZM15.1326 17.4607L14.2041 16.132L6.81679 5.55961H9.99723L15.9589 14.0919L16.8873 15.4206L24.6368 26.5113H21.4564L15.1326 17.4612V17.4607Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+
+/* Admonition Settings */
+.admonition,
+div.admonition {
+  border: 0.07rem solid var(--pst-color-border);
+  border-radius: 1rem;
+  box-shadow: 0 0 0 0 transparent !important;
+  margin: 1.5625em 2rem;
+  overflow: hidden;
+  padding: 0 .6rem .8rem;
+}
+
+/* Admonition title */
+.admonition>.admonition-title,
+div.admonition>.admonition-title,
+.admonition.note>.admonition-title,
+div.admonition.note>.admonition-title {
+  background-color: transparent;
+  margin: 0 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Admonition icon */
+.admonition>.admonition-title::after,
+div.admonition>.admonition-title::after,
+.admonition.note>.admonition-title::after,
+div.admonition.note>.admonition-title::after {
+  margin-left: -0.5rem;
+  content: var(--pst-icon-info-circle);
+  line-height: initial;
+}
+
+/* Admonition text */
+.admonition p.admonition-title~*,
+div.admonition p.admonition-title~* {
+  font-size: 1.2rem;
 }
 
 /* Custom L.E.A.R.N extension CSS classes and properties */
@@ -582,7 +666,6 @@ p.affiliation-link {
   border: 0.125rem solid var(--pst-color-primary-link);
   font-size: 1.2rem;
   font-family: var(--pst-font-family-monospace-system);
-  color: var(--pst-color-text-base);
 }
 
 /* Tweets root class */
