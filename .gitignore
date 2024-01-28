@@ -137,5 +137,6 @@ venv/
 .vscode/*
 
 # Our mess
+archive/*
 assets/*
 *.bak
