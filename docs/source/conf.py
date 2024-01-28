@@ -4,7 +4,7 @@ L.E.A.R.N Sphinx Configuration
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: Wednesday, April 12 2023
-Last updated on: Wednesday, January 24 2024
+Last updated on: Thursday, January 25 2024
 
 This file contains the configuration settings for building the L.E.A.R.N
 documentation using Sphinx, a popular Python documentation tool. Sphinx
@@ -37,13 +37,18 @@ see the official Sphinx documentation here: https://shorturl.at/iwBZ5
 
 .. versionadded:: 1.0.6
     Sphinx theme version to the footer alongside the copyright.
+
+:copyright: (c) 2024 Akshay Mestry. All rights reserved.
+:license: MIT, see LICENSE for more details.
 """
 
 from __future__ import annotations
 
 import importlib
+import subprocess
 import sys
 import typing as t
+import warnings
 from os import path as p
 
 from docutils import nodes
@@ -297,6 +302,7 @@ html_theme_options = {
     "secondary_sidebar_items": [],
     "show_prev_next": False,
     "footer_start": ["copyright", "theme-version"],
+    "footer_center": ["last-updated"],
 }
 language = _project.default_language
 
@@ -313,6 +319,22 @@ html_js_files = [
     "js/learn.js",
 ]
 
+# If not None, the timestamp is inserted at every page bottom, using the
+# given strftime format.
+git_cmd = [
+    "git",
+    "log",
+    "--pretty=format:%cd",
+    "--date=format:%b %d, %Y",
+    "-n1",
+]
+try:
+    html_last_updated_fmt = subprocess.check_output(git_cmd).decode("utf-8")
+except Exception:
+    warnings.warn("Cannot get last updated time from git.")
+else:
+    html_last_updated_fmt = None
+
 # Miscellaneous options
 # =====================
 # Extra configurations that are used throughout the build process.
@@ -327,13 +349,13 @@ copybutton_prompt_text = (
     r">>> |\.\.\. |\$ |In \[\d*\]: | {2,5}\.\.\.: | {5,8}: "
 )
 intersphinx_mapping = {
-    "Sphinx": ("https://www.sphinx-doc.org/en/stable/", None),
-    "matplotlib": ("https://matplotlib.org/stable/", None),
-    "numpy": ("https://numpy.org/doc/stable/", None),
-    "pandas": ("https://pandas.pydata.org/docs/", None),
-    "python": ("https://docs.python.org/3", None),
-    "scikit-learn": ("https://scikit-learn.org/stable/", None),
-    "scipy": ("https://docs.scipy.org/doc/scipy/reference/", None),
+        "Sphinx": ("https://www.sphinx-doc.org/en/stable/", None),
+        "matplotlib": ("https://matplotlib.org/stable/", None),
+        "numpy": ("https://numpy.org/doc/stable/", None),
+        "pandas": ("https://pandas.pydata.org/docs/", None),
+        "python": ("https://docs.python.org/3", None),
+        "scikit-learn": ("https://scikit-learn.org/stable/", None),
+        "scipy": ("https://docs.scipy.org/doc/scipy/reference/", None),
 }
 todo_include_todos = True
 

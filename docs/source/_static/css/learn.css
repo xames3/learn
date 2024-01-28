@@ -29,6 +29,9 @@ body {
   line-height: 1.7rem;
   color: var(--pst-color-text-base);
   counter-reset: figure 0;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
 h1 {
@@ -97,9 +100,6 @@ h6 {
 p {
   margin: 1rem 0;
   font-size: 1.3rem;
-  text-align: justify;
-  hyphens: auto;
-  -webkit-hyphens: auto;
 }
 
 table {
@@ -229,7 +229,6 @@ div#searchbox p.highlight-link {
     font-size: 1rem;
   }
 }
-
 
 /* Contents inside the hide search button */
 div#searchbox p.highlight-link a {
@@ -361,6 +360,16 @@ footer.bd-footer-content .bd-footer-content__inner {
 .bd-footer .footer-items__end,
 .bd-footer .footer-items__start {
   flex-direction: initial;
+}
+
+/* Center last updated below footer */
+.bd-footer .bd-footer__inner {
+  flex-direction: column;
+}
+
+/* Remove spaces between footer content */
+.bd-footer .footer-item p {
+  margin: 0;
 }
 
 /* Inline code block section */
