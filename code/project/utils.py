@@ -1,10 +1,10 @@
 """\
-L.E.A.R.N Utilities API
-=======================
+Generic Project Utilities
+=========================
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: Friday, January 26 2024
-Last updated on: Friday, February 02 2024
+Last updated on: Monday, February 05 2024
 
 :copyright: (c) 2024 Akshay Mestry. All rights reserved.
 :license: MIT, see LICENSE for more details.
@@ -12,11 +12,14 @@ Last updated on: Friday, February 02 2024
 
 from __future__ import annotations
 
+import os
 import re
+from os import path as p
 
 from . import export
 from .types import _VT
 from .types import _Any
+from .types import _Path
 
 
 @export
@@ -59,8 +62,14 @@ class Configurator(dict):
             return self[attr]
         raise AttributeError(f"Couldn't find attribute: {attr!r}")
 
-    __setattr__ = dict.__setitem__  # type: ignore
-    __delattr__ = dict.__delitem__  # type: ignore
+    def __setattr__(self, name: str, value: _Any) -> None:
+        """Set attributes which doesn't exist."""
+        if name in self.keys():
+            raise AttributeError(
+                f"Can't set attribute {name!r} as it is already present"
+                " in the Configurator instance"
+            )
+        return super().__setattr__(name, value)
 
 
 @export
@@ -73,7 +82,7 @@ class AttrDict(dict):
     attributes. This feature enhances code readability and convenience
     in accessing data, especially in settings where dot notation is
     preferred over bracket notation for key access.
-    
+
     The class retains all the functionality of a standard Python
     dictionary and is compatible with its methods.
 
@@ -101,3 +110,9 @@ def convert_case(name: str) -> str:
     :returns: Name conformed to SnakeCase.
     """
     return re.sub(r"(?<!^)(?=[A-Z])", "_", name).lower()
+
+
+@export
+def shorten(path: _Path) -> _Path:
+    """Shorten file path to reveal a relative path."""
+    return f".{os.sep}{min(path, p.relpath(path), key=len)}"

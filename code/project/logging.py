@@ -4,7 +4,7 @@ Generic Logging API
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: Thursday, January 25 2024
-Last updated on: Friday, February 02 2024
+Last updated on: Monday, February 05 2024
 
 A robust event logging system is written in this module along with an
 assortment of related functions and classes. The ability for all the
@@ -33,7 +33,6 @@ from os import path as p
 
 from tqdm import tqdm
 
-from . import PROJECT
 from . import export
 from .types import _VT
 from .types import _ExceptionInformation
@@ -365,7 +364,7 @@ def getLogger(module: str, **kwargs: _VT) -> _Logger:
     :param module: Module to be logged.
     :returns: Logger instance.
     """
-    logger = logging.getLogger(PROJECT).getChild(module)
+    logger = logging.getLogger(kwargs.pop("name")).getChild(module)
     setattr(logger, "loop", lambda *args: logger.log(70, *args))
     logging.addLevelName(70, "LOOP")
     filename = p.join(setup_logs_dir(), f"{module}.log")
