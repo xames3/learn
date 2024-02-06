@@ -4,7 +4,7 @@ Generic Project Configurations
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: Friday, January 26 2024
-Last updated on: Friday, February 02 2024
+Last updated on: Tuesday, February 06 2024
 
 :copyright: (c) 2024 Akshay Mestry. All rights reserved.
 :license: MIT, see LICENSE for more details.
@@ -17,24 +17,70 @@ from os import path as p
 
 import matplotlib.colors as mcolors
 
+from . import PROJECT
 from . import export
 from .types import _Path
 from .utils import AttrDict
 
 
 @export
-class Split(t.NamedTuple):
-    """Container class for representing dataset splits in a ML context.
+class Log:
+    """Class defining basic logging configuration for the project.
+
+    This class encapsulates fundamental logging settings that determine
+    how log messages are handled and displayed throughout the project.
+    It is designed to provide a simple yet flexible way to configure
+    logging behavior, including the logger's name, level, and whether to
+    use color coding in log messages. These settings can be adjusted to
+    suit different development and production needs, enhancing the
+    readability and utility of log output.
+
+    :param name: The name of the logger, typically set to the project's
+                 name. This helps in identifying log messages
+                 originating from this project when multiple projects
+                 or third-party libraries also generate logs.
+                 Defaults to ``project.PROJECT``.
+    :param level: The logging level, determining the severity of
+                  messages that the logger will handle. Common levels
+                  include ``DEBUG``, ``INFO``, ``WARNING``, ``ERROR``,
+                  and ``CRITICAL``, in increasing order of severity.
+                  Defaults to ``INFO``, meaning that debug messages will
+                  be suppressed while informational, warning, error, and
+                  critical messages will be logged.
+    :param color: A flag indicating whether to use color coding in log
+                  messages. This can improve log readability by
+                  highlighting different levels of log messages in
+                  distinct colors. Defaults to ``True``, enabling color
+                  coding.
+
+    .. note::
+
+        The actual implementation of colorized logging depends on the
+        logging framework and may require additional dependencies or
+        custom handlers. Care should be taken to ensure that the logging
+        output is compatible with the environments where the application
+        runs, as some terminals or log viewing tools may not support
+        color codes.
+    """
+
+    name: str = PROJECT
+    level: str = "INFO"
+    color: bool = True
+
+
+@export
+class Profile(t.NamedTuple):
+    """Container class for representing dataset profile in a ML context.
 
     This class is a ``NamedTuple`` used to define and access the
-    standard dataset splits commonly used in machine learning: training,
+    standard dataset profile commonly used in machine learning: training,
     validation, and test sets. Each field in the tuple represents a
     dataset split and is initialized with default split names.
 
     .. code-block:: python
 
-        >>> split = Split()
-        >>> split.train
+        >>> profile = Profile()
+        >>> profile.train
         "train"
         >>>
 
@@ -114,11 +160,12 @@ class Path:
         different project structures or directory naming conventions.
     """
 
-    models: _Path = p.abspath("./models")
-    figures: _Path = p.abspath("./figures")
     data: _Path = p.abspath("./data")
-    raw: _Path = p.abspath("./data/raw")
+    figures: _Path = p.abspath("./figures")
+    models: _Path = p.abspath("./models")
     processed: _Path = p.abspath("./data/processed")
+    raw: _Path = p.abspath("./data/raw")
+    stratified: _Path = p.abspath("./data/stratified")
 
 
 @export
