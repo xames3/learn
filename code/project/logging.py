@@ -4,7 +4,7 @@ Generic Logging API
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: Thursday, January 25 2024
-Last updated on: Monday, February 05 2024
+Last updated on: Tuesday, February 06 2024
 
 A robust event logging system is written in this module along with an
 assortment of related functions and classes. The ability for all the
@@ -30,8 +30,6 @@ import sys
 import typing as t
 from logging.handlers import RotatingFileHandler
 from os import path as p
-
-from tqdm import tqdm
 
 from . import export
 from .types import _VT
@@ -93,8 +91,8 @@ class Formatter(logging.Formatter):
     # See https://stackoverflow.com/a/14693789/14316408 for the RegEx
     # logic behind the ANSI escape sequence.
     ansi_hue_map: dict[int, str] = {
+        99: "\x1b[38;5;45m",
         90: "\x1b[38;5;242m",
-        70: "\x1b[38;5;45m",
         60: "\x1b[38;5;128m",
         50: "\x1b[38;5;197m",
         40: "\x1b[38;5;204m",
@@ -261,7 +259,6 @@ class StreamHandler(logging.StreamHandler[_Stream]):
         try:
             msg = self.format(record)
             if record.levelname == "LOOP":
-                tqdm.write(msg, end=self.terminator)
                 last_record.append(msg)
             else:
                 self.stream.write(msg + "\n")
@@ -270,6 +267,18 @@ class StreamHandler(logging.StreamHandler[_Stream]):
             raise
         except Exception:
             self.handleError(record)
+
+
+class Filter:
+    """Filter loop logging level."""
+
+    def __init__(self, level: int = 99) -> None:
+        """Initialize ``Filter`` with a log level."""
+        self.level = level
+
+    def filter(self, record: _Record) -> bool:
+        """Determine if a record is loggable or not."""
+        return record.levelno < self.level
 
 
 def init(
@@ -341,6 +350,7 @@ def init(
             file_handler = RotatingFileHandler(
                 filename, filemode, max_bytes, backup_count, encoding
             )
+            file_handler.addFilter(Filter())
             handlers.append(file_handler)
         for handler in handlers:
             logger.addHandler(handler)
@@ -365,7 +375,7 @@ def getLogger(module: str, **kwargs: _VT) -> _Logger:
     :returns: Logger instance.
     """
     logger = logging.getLogger(kwargs.pop("name")).getChild(module)
-    setattr(logger, "loop", lambda *args: logger.log(70, *args))
-    logging.addLevelName(70, "LOOP")
+    setattr(logger, "loop", lambda *args: logger.log(99, *args))
+    logging.addLevelName(99, "LOOP")
     filename = p.join(setup_logs_dir(), f"{module}.log")
     return init(logger, filename=filename, **kwargs)  # type: ignore
