@@ -4,7 +4,7 @@ L.E.A.R.N Sphinx Configuration
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: Wednesday, April 12 2023
-Last updated on: Thursday, January 25 2024
+Last updated on: Saturday, February 10 2024
 
 This file contains the configuration settings for building the L.E.A.R.N
 documentation using Sphinx, a popular Python documentation tool. Sphinx
@@ -331,8 +331,7 @@ git_cmd = [
 try:
     html_last_updated_fmt = subprocess.check_output(git_cmd).decode("utf-8")
 except Exception:
-    warnings.warn("Cannot get last updated time from git.")
-else:
+    warnings.warn("Couldn't retrieve last updated time from git logs [check]")
     html_last_updated_fmt = None
 
 # Miscellaneous options
