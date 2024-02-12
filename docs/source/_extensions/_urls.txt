@@ -28,13 +28,28 @@
 .. _depaul college of communication: https://communication.depaul.edu/Pages/default.aspx
 .. _depaul college of computing: https://cdm.depaul.edu/Pages/default.aspx
 .. _feynman technique: https://fs.blog/feynman-technique/
-.. _richard feynman: https://en.wikipedia.org/wiki/Richard_Feynman
+.. _richard feynman wikipedia: https://en.wikipedia.org/wiki/Richard_Feynman
 .. _nick higham: https://nhigham.com
 .. _scientic american post about arxiv: https://www.scientificamerican.com/article/arxiv-org-reaches-a-milestone-and-a-reckoning/
 .. _oppenheimer theory quote: https://screenrant.com/oppenheimer-movie-best-quotes/#ldquo-prometheus-stole-fire-from-the-gods-hellip-rdquo
 .. _towards data science website: https://towardsdatascience.com
 .. _deeplearning.ai website: https://www.deeplearning.ai
 .. _coursera website: https://www.coursera.org
-.. _terminator rise of the machines: https://en.wikipedia.org/wiki/Terminator_3:_Rise_of_the_Machines
+.. _terminator rise of the machines wikipedia: https://en.wikipedia.org/wiki/Terminator_3:_Rise_of_the_Machines
 .. _tesla autopilot: https://www.tesla.com/support/autopilot
 .. _use of python in machine learning: https://www.newhorizons.com/resources/blog/why-is-python-used-for-machine-learning
+.. _ai-based companies: https://builtin.com/artificial-intelligence/ai-companies-roundup
+.. _ml-based companies: https://builtin.com/artificial-intelligence/machine-learning-companies
+.. _toddler walking: https://lovevery.com/community/blog/skills-stages/walking/
+.. _salesforce ai-first: https://www.salesforce.com/plus/series/salesforce_on_salesforce/episode/episode-s1e31?utm_campaign=amer_cbaw&utm_content=comm_eng&utm_medium=organic_social&utm_source=twitter
+.. _ilya sutskever's ted talk: https://www.youtube.com/watch?v=SEkGLj0bwAU
+.. _ai and natural world are interlinked: https://medium.com/dataseries/ai-nature-are-they-interlinked-e7e0ae0061dc
+.. _scrat wiki: https://iceage.fandom.com/wiki/Scrat
+.. _privacy paradox with ai: https://www.reuters.com/legal/legalindustry/privacy-paradox-with-ai-2023-10-31/
+.. _privacy in an ai context: https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2021/beware-the-privacy-violations-in-artificial-intelligence-applications
+.. _ibm what is ai: https://www.ibm.com/topics/artificial-intelligence
+.. _narrow ai vs general ai vs super ai: https://medium.com/mapping-out-2050/distinguishing-between-narrow-ai-general-ai-and-super-ai-a4bc44172e22
+.. _south park alexa episode: https://www.theverge.com/2017/9/16/16318694/south-park-amazon-alexa-google-home
+.. _chunk based learning: https://www.verywellmind.com/chunking-how-can-this-technique-improve-your-memory-2794969
+.. _aws ml vs dl: https://aws.amazon.com/compare/the-difference-between-machine-learning-and-deep-learning/#:~:text=Deep%20learning%20and%20ML%20both,experts%20both%20understand%20statistics%20well.
+.. _garbage in garbage out wikipedia: https://en.wikipedia.org/wiki/Garbage_in,_garbage_out
