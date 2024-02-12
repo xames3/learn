@@ -210,6 +210,11 @@ nav.bd-links .current>a {
   text-align: left;
 }
 
+/* Sidebar items left align */
+.navbar-nav li {
+  text-align: left;
+}
+
 /* Bold home */
 .navbar-brand .logo__title {
   font-weight: bolder;
@@ -628,6 +633,7 @@ p.affiliation-link {
 .keywords {
   margin: auto auto 2rem auto;
   font-weight: 400 !important;
+  text-align: left;
 }
 
 /* Keywords prefix */
