@@ -4,7 +4,7 @@ L.E.A.R.N Sphinx Configuration
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: Wednesday, April 12 2023
-Last updated on: Saturday, February 10 2024
+Last updated on: Sunday, February 11 2024
 
 This file contains the configuration settings for building the L.E.A.R.N
 documentation using Sphinx, a popular Python documentation tool. Sphinx
@@ -74,9 +74,9 @@ RAW_LINKS_PATH: str = p.join(this, "_extensions/_urls.txt")
 def build_module() -> ModuleType:
     """Build the learn extension from ``_extensions`` directory."""
     spec = importlib.util.spec_from_file_location(MODULE_NAME, EXTENSION_PATH)
-    module = importlib.util.module_from_spec(spec)  # type: ignore[arg-type]
+    module = importlib.util.module_from_spec(spec)  # type: ignore
     sys.modules[MODULE_NAME] = module
-    spec.loader.exec_module(module)  # type: ignore[union-attr]
+    spec.loader.exec_module(module)  # type: ignore
     return module
 
 
@@ -232,10 +232,7 @@ class LearnProject(t.NamedTuple):
     theme: str = "sphinx_book_theme"
     url: str = "https://github.com/xames3/learn"
 
-    announcement: str = (
-        "Due to high requests for covering topics about and related to "
-        "Neural Networks, I'll be focusing more on that in the coming days."
-    )
+    announcement: str = ""
 
 
 _project = LearnProject()
@@ -252,7 +249,7 @@ release = _project.release
 # General configurations
 # ======================
 # Add any Sphinx extension module names here, as strings. They can be
-# extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
+# extensions coming with Sphinx (named ``sphinx.ext.*``) or your custom
 # ones.
 extensions = [
     "sphinx.ext.autodoc",
@@ -295,7 +292,6 @@ html_show_sourcelink = False
 html_theme = _project.theme
 html_title = _project.short_title
 html_theme_options = {
-    "announcement": _project.announcement,
     "article_header_end": ["search-button"],
     "navigation_with_keys": True,
     "repository_url": _project.url,
@@ -308,8 +304,8 @@ language = _project.default_language
 
 # Add any paths that contain custom static files (such as style sheets)
 # here, relative to this directory. They are copied after the builtin
-# static files, so a file named "default.css" will overwrite the builtin
-# "default.css".
+# static files, so a file named ``default.css`` will overwrite the builtin
+# ``default.css``.
 html_static_path = ["_static"]
 html_css_files = [
     "css/defaults.css",
