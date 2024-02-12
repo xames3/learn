@@ -19,7 +19,7 @@
          <button class="sponsor-button"><i class="fa-regular fa-heart"></i>&nbsp;Sponsor</button>
    </a>
    <a href="https://twitter.com/xa_mes3" target="_blank" title="Follow @xa_mes3">
-         <button class="follow-button"><i></i>&nbsp;Follow</button>
+         <button class="follow-button"><i class="fa-brands fa-x-twitter"></i>&nbsp;Follow</button>
    </a>
 
 .. _github pr: https://github.com/xames3/learn/pulls
