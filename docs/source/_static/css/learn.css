@@ -351,14 +351,15 @@ footer.bd-footer-content .bd-footer-content__inner {
 }
 
 /* Center copyright information */
-.bd-footer .footer-items__center,
 .bd-footer .footer-items__end,
+.bd-footer .footer-items__center,
 .bd-footer .footer-items__start {
   flex-direction: initial;
 }
 
 /* Center last updated below footer */
 .bd-footer .bd-footer__inner {
+  display: flex;
   flex-direction: column;
   padding: 0;
 }
@@ -366,6 +367,10 @@ footer.bd-footer-content .bd-footer-content__inner {
 /* Remove spaces between footer content */
 .bd-footer .footer-item p {
   margin: 0;
+  font-size: 1rem;
+  font-family: var(--pst-font-family-monospace-system);
+  font-weight: 400;
+  line-height: 1.2rem;
 }
 
 /* Inline code block section */
