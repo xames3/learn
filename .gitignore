@@ -139,5 +139,5 @@ venv/
 # Our mess
 archive/*
 assets/*
-code/data/processed/png/*.png
+code/data/processed/png/**
 *.bak
