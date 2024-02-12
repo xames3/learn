@@ -4,7 +4,7 @@ Keywords Directive for L.E.A.R.N
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: Wednesday, August 23 2023
-Last updated on: Wednesday, August 23 2023
+Last updated on: Monday, February 12 2024
 
 This module provides a custom directive for L.E.A.R.N's custom theme,
 that allows authors and contributors to auto generate keywords for their
@@ -136,7 +136,7 @@ def visit_keywords_html(self: HTMLTranslator, node: KeywordsNode) -> None:
     and rendering of the HTML source code.
     """
     if node.children:
-        keywords = node.children[0].astext().split(",")
+        keywords = node.children[0].astext().split(", ")
         node.remove(node.children[0])
     else:
         max_ngram_size = random.randint(1, 2)
