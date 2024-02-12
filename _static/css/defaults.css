@@ -77,7 +77,7 @@ html {
 }
 
 html[data-theme="light"] {
-  --pst-color-attention: #e83e8c;
+  --pst-color-attention: #636363;
   --pst-color-background: #ffffff;
   --pst-color-black-highlight: #000000;
   --pst-color-black-text: #ffffff;
@@ -102,6 +102,7 @@ html[data-theme="light"] {
   --pst-color-muted-text: #ffffff;
   --pst-color-muted: #000000;
   --pst-color-on-background: #ffffff;
+  --pst-color-muted-directory-lines: #e7e7e7;
   --pst-color-on-surface: #e1e1e1;
   --pst-color-primary-highlight: #306e81;
   --pst-color-primary-text: #ffffff;

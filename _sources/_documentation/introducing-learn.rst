@@ -8,12 +8,12 @@
 Let's L.E.A.R.N!
 ################
 .. sectnum:: 
-.. reading::
 .. authors::
     :affiliations: DePaul University\nChicago, IL
     :emails: xa@mes3.dev
     :names: Akshay Mestry
     :links: https://linkedin.com/in/xames3
+.. reading::
 
 I am immensely proud to introduce you to my latest and most ambitious project,
 L.E.A.R.N |dash| an acronym encapsulating a journey into...
@@ -520,6 +520,6 @@ If you read it completely, I would like to thank you for your time!
     depaul college of computing >> This is where I study and the place where it all began. The students coming in here are packed with a whole lot of curiosity and enthusiasm for learning concepts like Computing, Design and Digital Media. I consider DePaul University to be a good place for enthusiasts like me to kindle and learn about fascinating stories related to technologies and theory alike
     towards data science website >> One of the sources for inspiration for L.E.A.R.N is this massive collection of great articles. This was probably the place for people like me to jump upon and solve problems related to Machine Learning and AI
     deeplearning.ai website >> Considered to be one of the industry standards in professional teaching, DeepLearning.ai is possibly a go-to place for learning the foundational basics of Machine Learning, Statistics and Artificial Intelligence
-    terminator rise of the machines >> A classic reference to AI taking over the world and humanity portrayed in form of a movie
+    terminator rise of the machines wikipedia >> A classic reference to AI taking over the world and humanity portrayed in form of a movie
     tesla autopilot >> Autopilot is an advanced driver assistance system that enhances safety and convenience behind the wheel. When used properly, Autopilot reduces your overall workload as a driver. Each new Tesla vehicle is equipped with multiple external cameras and powerful vision processing to provide an additional layer of safety
     use of python in machine learning >> Python has earned its place as one of the most popular programming languages among ML professionals thanks to its easy-to-read syntax, extensive libraries, and cross-platform compatibility. As a high-level, open-source programming language, Python has become the go-to choice for a wide range of machine learning tasks, from data analysis to deep learning

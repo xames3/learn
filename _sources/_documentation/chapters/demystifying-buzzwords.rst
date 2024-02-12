@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: Friday, August 11 2023
-.. Last updated on: Wednesday, January 24 2024
+.. Last updated on: Monday, February 12 2024
 
 .. _demystifying-buzzwords:
 
@@ -8,21 +8,45 @@
 Demystifying the Buzzwords
 ##########################
 .. sectnum:: 
-.. reading::
 .. authors::
     :affiliations: DePaul University\nChicago, IL
     :emails: xa@mes3.dev
     :names: Akshay Mestry
     :links: https://linkedin.com/in/xames3
+.. reading::
+
+.. abstract::
+
+    In this chapter, we explore the intricate layers of Artificial
+    Intelligence, Machine Learning, and Deep Learning unveil their distinct
+    roles and interconnectedness in shaping the future of technology. By
+    meticulously examining the evolution of AI from its conceptual origins to
+    its current applications, we describe ML's pivotal role in enabling
+    machines to glean knowledge from data, thereby fostering a new era of
+    innovation. Deep Learning, as a subset of ML, is highlighted for its
+    profound ability to emulate the neural networks of the human brain,
+    offering unparalleled insights and complexities in data analysis. This
+    narrative not only elucidates the technical underpinnings and advancements
+    but also ventures into the ethical considerations and societal impacts,
+    advocating for a judicious balance between technological growth and moral
+    responsibility. It encourages the academic and professional communities to
+    ponder the profound implications of these technologies, urging a
+    collaborative approach towards navigating their future trajectory for the
+    betterment of society.
+
+.. keywords:: Deep Learning, Intelligence, Learning, Machine Learning
 
 As we embark on this chapter, I'm eager to delve into the often-misunderstood
 buzzwords like Artificial Intelligence, Machine Learning, Neural Networks, and
 others. Some of these terms have become increasingly popular since 2010, yet
 I've noticed a mix-up in their usage, both within my professional circle and
 beyond. It's common to hear these terms being used interchangeably, with
-systems labeled as *"AI-based"* or *"ML-based"*, and companies touted as
-*"AI-first"*. But, do these labels accurately reflect their meanings, or is
-there more to these buzzwords than meets the eye?
+systems labeled as "`AI-based <ai-based companies_>`_" or
+"`ML-based <ml-based companies_>`_", and companies touted as *"AI-first"*. But,
+do these labels accurately reflect their meanings, or is there more to these
+buzzwords than meets the eye?
+
+.. tweet:: https://twitter.com/salesforce/status/1677037362986078212
 
 ************
 Introduction
@@ -1019,17 +1043,19 @@ feedback directly influences the effectiveness of route suggestions. Just as
 reliable data leads to better navigational advice, high-quality data is
 essential for effective deep-learning outcomes.
 
-|tab| Drawing parallels with my personal experiences in learning new skills,
-I've noticed a similar pattern. When I started learning a new language, the
-initial phase was challenging, and the quality of my learning materials
-significantly impacted my progress. This mirrors the initial stages of
-training a Deep Learning model, where starting from scratch with quality data
-is crucial for successful learning. Looking ahead,
-the prospects of Deep Learning are both exciting and vast. In healthcare, for
-instance, Deep Learning could revolutionize diagnostic processes by analyzing
-medical images with precision, aiding in early disease detection. Similarly,
-in environmental science, predicting climate change patterns using these
-algorithms could lead to groundbreaking discoveries.
+.. tweet:: https://twitter.com/kevorkian82/status/1632581539673550848
+
+Drawing parallels with my personal experiences in learning new skills, I've
+noticed a similar pattern. When I started learning a new language, the initial
+phase was challenging, and the quality of my learning materials significantly
+impacted my progress. This mirrors the initial stages of training a Deep
+Learning model, where starting from scratch with quality data is crucial for
+successful learning. Looking ahead, the prospects of Deep Learning are both
+exciting and vast. In healthcare, for instance, Deep Learning could
+revolutionize diagnostic processes by analyzing medical images with precision,
+aiding in early disease detection. Similarly, in environmental science,
+predicting climate change patterns using these algorithms could lead to
+groundbreaking discoveries.
 
 |tab| In conclusion, as I navigate the vast and evolving landscape of Machine
 Learning, I'm struck by its complexity and potential. From practical
@@ -1041,3 +1067,23 @@ technical exploration but a deeper understanding of how quality data, ethical
 practices, and real-world applications intertwine to shape this dynamic field.
 It's a world where technology meets everyday life, creating a future brimming
 with possibilities and innovations.
+
+If you read it completely, I would like to thank you for your time!
+
+.. references::
+
+    ai-based >> Whether it be machine learning, large language models, smart applications and appliances, digital assistants, synthetic media software, or autonomous vehicles, companies that aren't investing in AI products and services risk becoming obsolete. Countless companies stand to benefit from AI, but a handful of stocks have AI and automation as a central part of their businesses
+    ml-based >> Forecast to grow to nearly US$2T by 2030, machine learning (ML) can be key to unlocking the value of corporate and customer data. According to MIT, ML is a subfield of AI that gives computers the ability to learn without explicitly being programmed
+    salesforce ai-first >> 3 Ways Salesforce Uses AI with Data and CRM 
+    ilya sutskever's ted talk >> Just weeks before the management shakeup at OpenAI rocked Silicon Valley and made international news, the company's cofounder and chief scientist Ilya Sutskever explored the transformative potential of artificial general intelligence (AGI), highlighting how it could surpass human intelligence and profoundly transform every aspect of life. Hear his take on the promises and perils of AGI — and his optimistic case for how unprecedented collaboration will ensure its safe and beneficial development
+    toddler walking >> From Crawling to Walking: A Journey of Persistence and Memory. This captures a pivotal moment in a toddler's life, embodying the essence of learning through trial, error, and memory. Each stage, from rolling over to taking those first unsteady steps, is a testament to the complex process of building upon past experiences, guided by the persistent and experimental nature of human learning. It's a visual representation of how memory serves as the foundation for acquiring new skills, showcasing the remarkable journey from dependency to independence.
+    ai and natural world are interlinked >> Human beings are not the only creatures living on earth who are capable of demonstrating and computing intelligence. Fortunately enough for us, human intelligence is usually considered as — by far — the highest in the environment
+    scrat wiki >> Scrat is an acorn-obsessed saber-toothed squirrel that lived during the ice ages, attempting to store his prized acorn
+    privacy paradox with ai >> The privacy paradox with AI
+    privacy in an ai context >> Privacy in the context of AI has different considerations to data privacy in general. One of the challenges of protecting privacy in artificial intelligence concerns how to create suitable regulations that protect privacy without stifling advances in AI technology. The data contexts at stake are both the scanning mechanisms that enable the AI tools to learn about their environments, as well as the nature of the data itself and how it is used to create the AI capability
+    ibm what is ai >> Learn what is artificial intelligence (AI)
+    narrow ai vs general ai vs super ai >> Distinguishing guide between Narrow AI, General AI and Super AI
+    south park alexa episode >> South Park trolls Amazon Alexa owners in this week's episode. Cartman, ever the prankster, starts the show's 21st season off by triggering a virtual Amazon Alexa, and adding disgusting items to its shopping list
+    chunk based learning >> While some research suggests people are capable of storing between five and nine units of information, more recent research posits that short-term memory has a capacity for about four chunks of information
+    aws ml vs dl >> What's the Difference And Similarity Between Machine Learning and Deep Learning? A comprehensive guide for understanding the two concepts quickly
+    garbage in garbage out wikipedia >> Garbage In, Garbage Out (GIGO) is also used to describe failures in human decision-making due to faulty, incomplete, or imprecise data
