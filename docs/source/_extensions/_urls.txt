@@ -7,13 +7,20 @@
 
 .. raw:: html
 
-   <script src="https://utteranc.es/client.js"
-         repo="xames3/learn"
-         issue-term="pathname"
-         label="Comment"
-         theme="github-light"
-         crossorigin="anonymous"
-         async>
+   <script src="https://giscus.app/client.js"
+        data-repo="xames3/learn"
+        data-repo-id="R_kgDOJgeVyA"
+        data-category="General"
+        data-category-id="DIC_kwDOJgeVyM4CWWz_"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
    </script>
    <a href="https://github.com/sponsors/xames3?o=esb" target="_blank" title="Sponsor @xames3">
          <button class="sponsor-button"><i class="fa-regular fa-heart"></i>&nbsp;Sponsor</button>
