@@ -223,6 +223,7 @@ class LearnProject(t.NamedTuple):
     """Configuration and metadata about the project."""
 
     # Project metadata
+    alt_title: str = "L.E.A.R.N"
     author: str = "Akshay Mestry"
     copyright: str = "2024, Akshay Mestry"
     default_language: str = "en"
@@ -264,6 +265,7 @@ extensions = [
     "sphinx_design",
     "sphinx_favicon",
     "sphinxcontrib.jquery",
+    "sphinxext.opengraph",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -334,10 +336,14 @@ except Exception:
 # Miscellaneous options
 # =====================
 # Extra configurations that are used throughout the build process.
+# Copy button options
+# -------------------
 copybutton_prompt_is_regexp = True
 copybutton_prompt_text = (
     r">>> |\.\.\. |\$ |In \[\d*\]: | {2,5}\.\.\.: | {5,8}: "
 )
+# Intersphinx mappings
+# --------------------
 intersphinx_mapping = {
     "Sphinx": ("https://www.sphinx-doc.org/en/stable/", None),
     "matplotlib": ("https://matplotlib.org/stable/", None),
@@ -347,6 +353,21 @@ intersphinx_mapping = {
     "scikit-learn": ("https://scikit-learn.org/stable/", None),
     "scipy": ("https://docs.scipy.org/doc/scipy/reference/", None),
 }
+# OpenGraph options
+# -----------------
+ogp_description_length = 300
+ogp_enable_meta_description = True
+ogp_image = (
+    "https://raw.githubusercontent.com/xames3/learn/"
+    "6473fd1f3a77992ab8d7b2988b9adcf6d26403c8/docs/"
+    "source/_static/img/learn-banner.png"
+)
+ogp_image_alt = _project.alt_title
+ogp_site_name = _project.alt_title
+ogp_site_url = "https://learn.mes3.dev"
+ogp_type = "website"
+# ToDo list
+# ---------
 todo_include_todos = True
 
 # Add raw HTML code to the document.
