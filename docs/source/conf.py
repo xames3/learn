@@ -334,12 +334,6 @@ except Exception:
 # Miscellaneous options
 # =====================
 # Extra configurations that are used throughout the build process.
-comments_config = {
-    "utterances": {
-        "repo": "xames3/learn",
-        "optional": "config",
-    }
-}
 copybutton_prompt_is_regexp = True
 copybutton_prompt_text = (
     r">>> |\.\.\. |\$ |In \[\d*\]: | {2,5}\.\.\.: | {5,8}: "
