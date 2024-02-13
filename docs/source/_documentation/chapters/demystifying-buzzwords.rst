@@ -218,8 +218,8 @@ discovery about our intelligence opens new possibilities for artificial minds.
 
 .. tweet:: https://twitter.com/ilyasut/status/1710462485411561808
 
-Parallels with Human Intelligence and Ethic Implications
-********************************************************
+Parallels with Human Intelligence and Ethical Implications
+**********************************************************
 
 In addition to reflecting on the evolution of human intelligence and its
 profound connection to consciousness, it's also crucial to consider the
