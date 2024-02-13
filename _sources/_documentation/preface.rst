@@ -64,7 +64,8 @@ and sharing my knowledge with clarity and passion.
 A heartfelt acknowledgment goes to the diligent proofreaders who have lent
 their expertise to refine my content. Their meticulous efforts have enhanced
 the quality of this platform, ensuring clarity and coherence. My heartfelt
-thanks to Shilpa, Suz and Nornubari for their invaluable contributions.
+thanks to Raghavindhraa Sir, Shilpa, Suz and Nornubari for their invaluable
+contributions.
 
 This platform, therefore, is more than just a platform for education on
 Artificial Intelligence. It is a tribute to the lessons learned, the
