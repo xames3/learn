@@ -220,6 +220,15 @@ nav.bd-links .current>a {
   font-weight: bolder;
 }
 
+/* Add logo before the Home title */
+.navbar-brand .logo__title::before {
+  content: url("../img/favicon-32x32.png");
+  top: 1rem;
+  position: absolute;
+  right: 0rem;
+}
+
+
 /* Center the hide search button */
 div#searchbox p.highlight-link {
   box-shadow: 0 0 0 0 var(--pst-color-shadow) !important;
