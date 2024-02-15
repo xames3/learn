@@ -130,11 +130,11 @@ demonstrates the practical power of mathematics as a language.
 |tab| In reflecting on my above phrase about signs and symbols, we see a
 profound truth about the nature of intelligence—both human and artificial. It
 is a reminder that at the core of all we endeavor to achieve lies a language
-that is both ancient and infinitely capable of innovation. Mathematics, with
-its signs and symbols, is not just a tool for communication; it is the very
-bedrock upon which the foundation of Artificial Intelligence stands. As we
-continue to explore and expand the boundaries of what AI can achieve, we do so
-by delving ever deeper into the mathematical language that underpins
-the fabric of reality, crafting a future where the line between the created and
-the creator becomes ever more blurred, united by the universal language of
-mathematics.
+that is both ancient and infinitely capable of innovation.
+Mathematics, with its signs and symbols, is not just a tool for communication;
+it is the very bedrock upon which the foundation of Artificial Intelligence
+stands. As we continue to explore and expand the boundaries of what AI can
+achieve, we do so by delving ever deeper into the mathematical language that
+underpins the fabric of reality, crafting a future where the line between the
+created and the creator becomes ever more blurred, united by the universal
+language of mathematics.
