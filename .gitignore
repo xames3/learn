@@ -141,3 +141,4 @@ archive/*
 assets/*
 code/data/processed/png/**
 *.bak
+*.psd
