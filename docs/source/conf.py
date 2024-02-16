@@ -4,7 +4,7 @@ L.E.A.R.N Sphinx Configuration
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: Wednesday, April 12 2023
-Last updated on: Monday, February 12 2024
+Last updated on: Friday, February 16 2024
 
 This file contains the configuration settings for building the L.E.A.R.N
 documentation using Sphinx, a popular Python documentation tool. Sphinx
@@ -49,6 +49,7 @@ import subprocess
 import sys
 import typing as t
 import warnings
+from datetime import date
 from os import path as p
 
 from docutils import nodes
@@ -80,6 +81,9 @@ def build_module() -> ModuleType:
     return module
 
 
+learn = build_module()
+
+
 def load_extension(self, app: Sphinx, extname: str) -> None:
     """Monkey-patched ``SphinxComponentRegistry.load_extension``."""
     if extname in app.extensions:
@@ -97,7 +101,7 @@ def load_extension(self, app: Sphinx, extname: str) -> None:
     with prefixed_warnings(prefix):
         try:
             if extname == "sphinx.ext.learn":
-                mod = build_module()
+                mod = learn
             else:
                 mod = import_module(extname)
         except ImportError as err:
@@ -225,10 +229,10 @@ class LearnProject(t.NamedTuple):
     # Project metadata
     alt_title: str = "L.E.A.R.N"
     author: str = "Akshay Mestry"
-    copyright: str = "2024, Akshay Mestry"
+    copyright: str = f"{date.today().year}, Akshay Mestry"
     default_language: str = "en"
     main_title: str = "Learning the Essence of AI, Research, and Notations"
-    release: str = build_module().__version__
+    release: str = learn.__version__
     short_title: str = "Home"
     theme: str = "sphinx_book_theme"
     url: str = "https://github.com/xames3/learn"
@@ -286,22 +290,26 @@ exclude_patterns = [
 # The theme to use for HTML and HTML help pages along with page-wide
 # settings.
 favicons = [
+    "img/android-chrome-192x192.png",
+    "img/android-chrome-512x512.png",
+    "img/apple-touch-icon.png",
     "img/favicon-16x16.png",
-    "img/favicon-32x32.png",
+    "img/favicon-16x16.png",
+    "img/favicon.ico",
 ]
 html_context = {"default_mode": "light"}
 html_show_sourcelink = False
 html_theme = _project.theme
 html_title = _project.short_title
 html_theme_options = {
-    "article_header_end": ["search-button"],
+    "article_header_end": [],
+    "footer_center": ["theme-version"],
+    "footer_end": ["last-updated"],
+    "footer_start": ["copyright"],
     "navigation_with_keys": True,
     "repository_url": _project.url,
     "secondary_sidebar_items": [],
     "show_prev_next": False,
-    "footer_start": ["copyright"],
-    "footer_center": ["theme-version"],
-    "footer_end": ["last-updated"],
 }
 language = _project.default_language
 
@@ -358,11 +366,10 @@ intersphinx_mapping = {
 ogp_description_length = 300
 ogp_enable_meta_description = True
 ogp_image = (
-    "https://raw.githubusercontent.com/xames3/learn/"
-    "6473fd1f3a77992ab8d7b2988b9adcf6d26403c8/docs/"
-    "source/_static/img/learn-banner.png"
+    "https://raw.githubusercontent.com/xames3/learn/main/docs/"
+    "source/_static/assets/learn-opengraph-home-banner.png"
 )
-ogp_image_alt = _project.alt_title
+ogp_image_alt = _project.alt_title + " Home Banner"
 ogp_site_name = _project.alt_title
 ogp_site_url = "https://learn.mes3.dev"
 ogp_type = "website"
