@@ -1,0 +1,302 @@
+<style>
+    /* Import default values which are defined in the
+    defaults.css file. This holds the general values
+    which are used all across the theme */
+    @import url(defaults.css);
+
+    details summary {
+        list-style-type: none;
+    }
+
+    details summary::-webkit-details-marker {
+        display: none;
+    }
+
+    details summary::marker {
+        display: none;
+    }
+
+    details {
+        position: relative;
+        font-size: 1.1rem;
+        font-family: var(--pst-font-family-monospace-system);
+        font-weight: 400;
+        color: var(--pst-color-text-base);
+    }
+
+    details:hover {
+        cursor: default;
+    }
+
+    details:first-child {
+        background-color: var(--pst-color-black-text);
+        border-radius: 8px;
+        max-width: 40em;
+        padding: 1em;
+        position: relative;
+        width: 100%;
+    }
+
+    details>details {
+        padding-left: 1em;
+    }
+
+    details>details::after {
+        background-color: var(--pst-color-muted-directory-lines);
+        content: "";
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 0.0625rem;
+    }
+
+    summary {
+        border-radius: 4px;
+        padding: 0.2rem 1rem;
+        position: relative;
+    }
+
+    summary:focus {
+        color: #000000;
+        background: #f4f5f7;
+        outline: none;
+    }
+
+    summary::before {
+        margin-right: 0.5em;
+    }
+
+    .directory::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f07b";
+        color: #54aeff;
+    }
+
+    details[open]>.directory::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f07c";
+        color: #54aeff;
+    }
+
+    .csv::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 300;
+        content: "\f1c3";
+        color: #656d76;
+        ;
+    }
+
+    .dcm::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 300;
+        content: "\f1c5";
+        color: #656d76;
+    }
+
+    .graph::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 300;
+        content: "\f080";
+        color: #656d76;
+    }
+
+    .log::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 300;
+        content: "\f15c";
+        color: #656d76;
+    }
+
+    .png::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 300;
+        content: "\f1c5";
+        color: #656d76;
+    }
+
+    .python::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 300;
+        content: "\f1c9";
+        color: #656d76;
+    }
+
+    details>p {
+        color: var(--pst-color-muted-highlight);
+        font-size: 0.75rem;
+        margin: 0 2.5rem;
+        line-height: 1rem;
+    }
+</style>
+<details open>
+    <summary class="directory">code</summary>
+    <details>
+        <summary class="directory">data</summary>
+        <details>
+            <summary class="directory">processed</summary>
+            <details>
+                <summary class="directory">png</summary>
+                <details>
+                    <summary class="directory">1</summary>
+                    <details open>
+                        <summary class="png">166.png</summary>
+                        <summary class="png">360.png</summary>
+                        <summary class="png">384.png</summary>
+                        <summary class="png">410.png</summary>
+                        <summary class="png">...</summary>
+                        <summary class="png">40721.png</summary>
+                    </details>
+                </details>
+                <details>
+                    <summary class="directory">2</summary>
+                    <details open>
+                        <summary class="png">142.png</summary>
+                        <summary class="png">192.png</summary>
+                        <summary class="png">208.png</summary>
+                        <summary class="png">300.png</summary>
+                        <summary class="png">...</summary>
+                        <summary class="png">40864.png</summary>
+                    </details>
+                </details>
+                <details>
+                    <summary class="directory">3</summary>
+                    <details open>
+                        <summary class="png">116.png</summary>
+                        <summary class="png">178.png</summary>
+                        <summary class="png">204.png</summary>
+                        <summary class="png">290.png</summary>
+                        <summary class="png">...</summary>
+                        <summary class="png">40841.png</summary>
+                    </details>
+                </details>
+                <details>
+                    <summary class="directory">4</summary>
+                    <details open>
+                        <summary class="png">24.png</summary>
+                        <summary class="png">93.png</summary>
+                        <summary class="png">114.png</summary>
+                        <summary class="png">132.png</summary>
+                        <summary class="png">...</summary>
+                        <summary class="png">40825.png</summary>
+                    </details>
+                </details>
+                <details>
+                    <summary class="directory">5</summary>
+                    <details open>
+                        <summary class="png">1.png</summary>
+                        <summary class="png">86.png</summary>
+                        <summary class="png">237.png</summary>
+                        <summary class="png">355.png</summary>
+                        <summary class="png">...</summary>
+                        <summary class="png">40853.png</summary>
+                    </details>
+                </details>
+            </details>
+        </details>
+        <details>
+            <summary class="directory">raw</summary>
+            <details>
+                <summary class="directory">images</summary>
+                <details open>
+                    <summary class="dcm"><a
+                            href="https://github.com/xames3/learn/blob/3cde6df027ebce3f63bb752ef76646714a391393/code/data/raw/images/1.dcm"
+                            target="_blank">1.dcm</a>
+                    </summary>
+                    <summary class="dcm"><a
+                            href="https://github.com/xames3/learn/blob/3cde6df027ebce3f63bb752ef76646714a391393/code/data/raw/images/10.dcm"
+                            target="_blank">10.dcm</a>
+                    </summary>
+                    <summary class="dcm"><a
+                            href="https://github.com/xames3/learn/blob/3cde6df027ebce3f63bb752ef76646714a391393/code/data/raw/images/100.dcm"
+                            target="_blank">100.dcm</a>
+                    </summary>
+                    <summary class="dcm"><a
+                            href="https://github.com/xames3/learn/blob/3cde6df027ebce3f63bb752ef76646714a391393/code/data/raw/images/1000.dcm"
+                            target="_blank">1000.dcm</a>
+                    </summary>
+                    <summary class="dcm"><a href="https://github.com/xames3/learn/tree/main/code/data/raw/images"
+                            target="_blank">...</a></summary>
+                    <summary class="dcm"><a
+                            href="https://github.com/xames3/learn/blob/3cde6df027ebce3f63bb752ef76646714a391393/code/data/raw/images/10898.dcm"
+                            target="_blank">10898.dcm</a>
+                    </summary>
+                </details>
+            </details>
+            <details open>
+                <summary class="csv"><a
+                        href="https://github.com/xames3/learn/blob/3cde6df027ebce3f63bb752ef76646714a391393/code/data/raw/base.csv"
+                        target="_blank">base.csv</a>
+                </summary>
+            </details>
+            <p>Around 40,000 raw (unformatted) DICOM/DCM images and the base mapping CSV file.</p>
+        </details>
+        <details>
+            <summary class="directory">stratified</summary>
+            <details>
+                <summary class="directory">train</summary>
+            </details>
+            <details>
+                <summary class="directory">validation</summary>
+            </details>
+            <details>
+                <summary class="directory">test</summary>
+            </details>
+        </details>
+    </details>
+    <details>
+        <summary class="directory">figures</summary>
+        <details open>
+            <summary class="graph">train-vs-validation-curve.png</summary>
+            <summary class="graph">test-confusion-matrix.png</summary>
+        </details>
+    </details>
+    <details>
+        <summary class="directory">logs</summary>
+        <details open>
+            <summary class="log">project.log</summary>
+        </details>
+    </details>
+    <details>
+        <summary class="directory">models</summary>
+    </details>
+    <details>
+        <summary class="directory">project</summary>
+        <details>
+            <summary class="directory">model</summary>
+            <details open>
+                <summary class="python"><a
+                        href="https://github.com/xames3/learn/blob/2d6bfb02021731859524799ecabd02d327fe5928/code/project/model/__init__.py">__init__.py</a>
+                </summary>
+                <summary class="python"><a
+                        href="https://github.com/xames3/learn/blob/3cde6df027ebce3f63bb752ef76646714a391393/code/project/model/preprocess.py"
+                        target="_blank">preprocess.py</a></summary>
+                <summary class="python"><a
+                        href="https://github.com/xames3/learn/blob/3cde6df027ebce3f63bb752ef76646714a391393/code/project/model/config.py"
+                        target="_blank">config.py</a></summary>
+            </details>
+        </details>
+        <summary class="python"><a
+                href="https://github.com/xames3/learn/blob/3cde6df027ebce3f63bb752ef76646714a391393/code/project/__init__.py"
+                target="_blank">__init__.py</a></summary>
+        <summary class="python"><a
+                href="https://github.com/xames3/learn/blob/3cde6df027ebce3f63bb752ef76646714a391393/code/project/config.py"
+                target="_blank">config.py</a></summary>
+        <summary class="python"><a
+                href="https://github.com/xames3/learn/blob/3cde6df027ebce3f63bb752ef76646714a391393/code/project/exceptions.py"
+                target="_blank">exceptions.py</a></summary>
+        <summary class="python"><a
+                href="https://github.com/xames3/learn/blob/3cde6df027ebce3f63bb752ef76646714a391393/code/project/logging.py"
+                target="_blank">logging.py</a></summary>
+        <summary class="python"><a
+                href="https://github.com/xames3/learn/blob/3cde6df027ebce3f63bb752ef76646714a391393/code/project/types.py"
+                target="_blank">types.py</a></summary>
+        <summary class="python"><a
+                href="https://github.com/xames3/learn/blob/3cde6df027ebce3f63bb752ef76646714a391393/code/project/utils.py"
+                target="_blank">utils.py</a></summary>
+        <summary class="python"><a
+                href="https://github.com/xames3/learn/blob/3cde6df027ebce3f63bb752ef76646714a391393/code/project/visualize.py"
+                target="_blank">visualize.py</a></summary>
+    </details>
+</details>
