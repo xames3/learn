@@ -24,14 +24,14 @@ li {
 
 body {
   text-rendering: optimizeLegibility;
+  -webkit-hyphens: auto;
   overflow-x: hidden;
   margin: 0 auto;
-  line-height: 1.7rem;
+  line-height: 1.5;
   color: var(--pst-color-text-base);
-  counter-reset: figure 0;
   text-align: justify;
   hyphens: auto;
-  -webkit-hyphens: auto;
+  counter-reset: figure 0;
 }
 
 h1 {
@@ -112,19 +112,6 @@ td {
   vertical-align: center;
 }
 
-/* Show table vertically when on mobile */
-@media screen and (max-width: 960px) {
-  td {
-    display: block;
-  }
-}
-
-/* Announcement banner */
-.bd-header-announcement {
-  background-color: var(--pst-color-primary);
-}
-
-/* Disable underlining of hyperlinks */
 a,
 a:active,
 a:hover,
@@ -136,100 +123,104 @@ a:visited,
   text-decoration: none;
 }
 
-/* Disable navbar shadow */
-.scrolled .bd-header-article {
-  box-shadow: 0 0 0 0 var(--pst-color-shadow);
-}
-
-/* Hide toggle button when not on mobile */
 label.sidebar-toggle.primary-toggle {
   display: none;
 }
 
-/* Show toggle button when on mobile */
+@media screen and (max-width: 960px) {
+  td {
+    display: block;
+  }
+}
+
+.bd-header-announcement {
+  background-color: var(--pst-color-primary);
+}
+
+.scrolled .bd-header-article {
+  box-shadow: 0 0 0 0 var(--pst-color-shadow);
+}
+
 @media screen and (max-width: 960px) {
   label.sidebar-toggle.primary-toggle {
     display: block;
   }
 }
 
-/* Searchbar font size */
 .search-button__wrapper.show i,
 .search-button__wrapper.show input {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  color: var(--pst-color-muted-highlight);
 }
 
-/* Searchbar magnifying glass left margin */
 .bd-search i.fa-solid.fa-magnifying-glass {
   margin-left: 0.5rem;
 }
 
-/* Searchbar rounded radius setting */
 .bd-search {
   padding-left: 1rem;
   border-radius: 3rem;
 }
 
-/* Searchbar form control */
 .form-control {
   background-color: transparent;
   border: 0;
   border-radius: 0;
   line-height: 1.7;
-  color: var(--pst-color-muted-highlight);
 }
 
-/* Searchbar form control on focus */
 .form-control:focus,
 .form-control:focus-visible {
   outline: 0;
   width: 80%;
 }
 
-/* Change highlighted text color */
 dt:target,
 span.highlighted {
   background-color: transparent;
   border: 0.125rem solid var(--pst-color-success);
 }
 
-/* Disable sidebar border */
 .bd-sidebar-primary {
   border-right: 0;
 }
 
-/* Disable sidebar scrollbars but retain their functionality */
 .bd-sidebar-primary::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
 
-/* Sidebar current disable vertical line */
 nav.bd-links .current>a {
   box-shadow: none;
   text-align: left;
 }
 
-/* Sidebar items left align */
 .navbar-nav li {
   text-align: left;
 }
 
-/* Bold home */
 .navbar-brand .logo__title {
+  display: flex;
+  align-items: center;
   font-weight: bolder;
 }
 
-/* Add logo before the Home title */
-.navbar-brand .logo__title::before {
-  content: url("../img/favicon-32x32.png");
-  top: 1rem;
-  position: absolute;
-  right: 0rem;
+.navbar-brand p {
+  margin: 0;
 }
 
+.sidebar-nav-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+  column-gap: 1rem;
+}
 
-/* Center the hide search button */
+.sidebar-nav-links>a {
+  color: var(--pst-color-black-highlight);
+}
+
 div#searchbox p.highlight-link {
   box-shadow: 0 0 0 0 var(--pst-color-shadow) !important;
   display: flex;
@@ -238,142 +229,148 @@ div#searchbox p.highlight-link {
   margin: 0;
 }
 
-/* Keep font size consistent on mobile */
+.search-button__wrapper.show .search-button__search-container {
+  margin-top: 0;
+}
+
 @media screen and (max-width: 960px) {
   div#searchbox p.highlight-link a {
     font-size: 1rem;
   }
 }
 
-/* Contents inside the hide search button */
 div#searchbox p.highlight-link a {
   padding: 0.5rem 1rem;
   transition: box-shadow .25s ease-out;
   background-color: var(--pst-color-danger);
   border-radius: 0;
-  color: var(--pst-color-background);
+  color: var(--pst-color-muted-highlight);
 }
 
-/* FontAwesome glass before inside the hide search button */
 div#searchbox p.highlight-link a::before {
   content: none;
 }
 
-/* Sidebar logo size settings */
-.navbar-brand img {
+.search-button-field {
+  position: absolute;
+  right: 1rem;
   width: auto;
-  max-width: 30%;
+  margin-left: 1rem;
+  border: 0;
 }
 
-/* Sidebar logo area */
+.search-button-field:hover {
+  background-color: var(--pst-color-surface);
+  border: 0;
+  vertical-align: middle;
+}
+
+.search-button-field:hover::after {
+  content: "Search";
+  position: relative;
+  top: 0.125rem;
+  width: 4rem;
+  font-size: 1rem;
+  font-family: var(--pst-font-family-monospace-system);
+  font-weight: 400;
+  color: var(--pst-color-muted-highlight);
+}
+
 .navbar-brand {
+  display: block;
   align-items: start;
+  width: auto;
   font-size: 1.25rem;
 }
 
-/* Align sidebar icons in center */
 .bd-sidebar-primary .navbar-icon-links {
   display: flex;
   justify-content: center;
 }
 
-/* Sidebar ToC text properties */
 nav.bd-links p.caption {
   font-weight: bold;
 }
 
-/* Sidebar ToC disable underline */
 nav.bd-links li>a:hover {
   text-decoration: none;
 }
 
-/* Table of content indentation */
 .toctree-wrapper>ul {
   padding-left: 2rem;
   counter-reset: item;
 }
 
-/* ToC on index page title */
 span.caption-text {
   font-weight: bolder;
 }
 
-/* Add margin to the contents text */
 .toctree-wrapper p.caption {
-  font-size: 1.5em;
   margin-bottom: 3rem;
+  font-size: 1.5em;
 }
 
-/* Make ToC black */
 div.toctree-wrapper.compound * {
+  overflow: hidden;
+  color: var(--pst-color-text-base);
+  color: var(--pst-color-text-base);
+  overflow: hidden;
   color: var(--pst-color-text-base);
   overflow: hidden;
 }
 
-/* Add space after non-numbered titles */
 div.toctree-wrapper.compound>ul>li {
   margin-bottom: 1rem;
 }
 
-/* Make title in ToC bolder */
 div.toctree-wrapper.compound>ul>li>a {
   font-weight: bolder;
 }
 
-/* Make titles bolder */
 .bd-article-container h1,
 .bd-article-container h2 {
   font-weight: bolder;
 }
 
-/* Disable # URL reference in the title */
 .headerlink {
   display: none;
 }
 
-/* Disable footer border */
 footer.bd-footer-content {
   border-top: 0;
   font-size: 1.3rem;
 }
 
-/* Increase code block font size */
 pre {
   font-size: 1rem;
 }
 
-/* Do not show author name ``By Akshay...`` in footer */
 .component-author {
   display: none;
 }
 
-/* Disable footer content copyright information */
 footer.bd-footer-content .bd-footer-content__inner {
   display: none;
 }
 
-/* Disable footer line */
 .bd-footer {
-  border-top: 0;
-  margin: 1rem auto;
   width: 100%;
+  margin: 1rem auto;
+  border-top: 0;
 }
 
-/* Center copyright information */
 .bd-footer .footer-items__end,
 .bd-footer .footer-items__center,
 .bd-footer .footer-items__start {
   flex-direction: initial;
 }
 
-/* Center last updated below footer */
 .bd-footer .bd-footer__inner {
   display: flex;
   flex-direction: column;
   padding: 0;
 }
 
-/* Remove spaces between footer content */
 .bd-footer .footer-item p {
   margin: 0;
   font-size: 1rem;
@@ -382,18 +379,14 @@ footer.bd-footer-content .bd-footer-content__inner {
   line-height: 1.2rem;
 }
 
-/* Inline code block section */
 code.literal {
-  padding: .2rem .5rem;
   border-radius: 0.5rem;
 }
 
-/* Code block section */
 pre {
   border-radius: .5rem;
 }
 
-/* Epigraph section */
 blockquote.epigraph,
 blockquote.highlights,
 blockquote.pull-quote {
@@ -404,40 +397,37 @@ blockquote.pull-quote {
   font-style: italic;
 }
 
-/* Remove extra margin and padding from Epigraph section and
-centering the text */
 blockquote p {
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-/* Keyboard modifier */
 kbd:not(.compound) {
-  border: 1px solid var(--pst-color-border);
+  box-shadow: 1px 1px 1px var(--pst-color-shadow);
+  box-shadow: 1px 1px 1px var(--pst-color-shadow);
+  border-radius: 0.4rem;
   box-shadow: 1px 1px 1px var(--pst-color-shadow);
   border-radius: 0.4rem;
   margin: 0 .3rem;
   padding: 0 .4rem;
+  border: 1px solid var(--pst-color-border);
+  border-radius: 0.4rem;
   font-family: var(--pst-font-family-keyboard);
   color: var(--pst-color-muted-highlight);
 }
 
-/* Based on the solution provided here: https://stackoverflow.com/a/29849993 */
-/* Centering and prefixing figures */
 figcaption>p {
+  -webkit-hyphens: auto;
   font-size: 1.1rem;
   text-align: justify;
   hyphens: auto;
-  -webkit-hyphens: auto;
 }
 
-/* Increment all the elements which have class "caption-text" by 1 */
 figcaption>p .caption-text {
   counter-increment: figure;
 }
 
-/* Prefix figure number based on the increment */
 figcaption>p .caption-text::before {
   content: "Fig. " counter(figure) ". ";
   font-weight: bold;
@@ -448,41 +438,49 @@ img {
   border-radius: 1rem;
 }
 
-/* Utterances frame resizing */
 .utterances {
   position: relative;
   box-sizing: border-box;
   width: 100%;
   max-width: 960px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
-/* Custom GitHub sponsor button */
 .sponsor-button {
-  height: 2.2rem;
-  width: 7rem;
-  float: right;
+  fill: #656d76;
+  fill: #656d76;
+  background-color: #f6f8fa;
+  border-color: #1f232826;
   fill: #656d76;
   background-color: #f6f8fa;
   border-color: #1f232826;
   box-shadow: 0 0.0625rem 0 #1f23280a;
-  color: #24292f;
+  float: right;
+  width: 7rem;
+  height: 2.2rem;
   margin: auto 0.125rem;
   padding: 0;
+  background-color: #f6f8fa;
+  border-color: #1f232826;
   border-radius: 0.4rem;
-  vertical-align: middle;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.95rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #24292f;
+  vertical-align: middle;
 }
 
-/* Sponsor button color */
 .svg-inline--fa.fa-heart {
   color: #bf3989;
 }
 
-/* Custom X follow button */
 .follow-button {
+  float: right;
+  height: 2.2rem;
+  height: 2.2rem;
+  background-color: #000;
+  float: right;
+  color: #fff;
   height: 2.2rem;
   background-color: #000;
   float: right;
@@ -491,116 +489,106 @@ img {
   padding-top: 0.1875rem;
   padding-right: 0.75rem;
   padding-left: 0.75rem;
-  border-radius: 1.2rem;
-  vertical-align: middle;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.95rem;
+  background-color: #000;
   border-style: none;
+  border-radius: 1.2rem;
+  font-size: 0.95rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  vertical-align: middle;
 }
 
-/* Admonition Settings */
 .admonition,
 div.admonition {
-  border: 0.07rem solid var(--pst-color-border);
-  border-radius: 1rem;
   box-shadow: 0 0 0 0 transparent !important;
+  overflow: hidden;
+  margin: 1.5625em 2rem;
+  margin: 1.5625em 2rem;
+  overflow: hidden;
   margin: 1.5625em 2rem;
   overflow: hidden;
   padding: 0 .6rem .8rem;
+  border: 0.07rem solid var(--pst-color-border);
+  border-radius: 1rem;
 }
 
-/* Admonition title */
 .admonition>.admonition-title,
 div.admonition>.admonition-title,
 .admonition.note>.admonition-title,
 div.admonition.note>.admonition-title {
-  background-color: transparent;
   margin: 0 1rem;
   margin-top: 0.5rem;
+  background-color: transparent;
 }
 
-/* Admonition icon */
 .admonition>.admonition-title::after,
 div.admonition>.admonition-title::after,
 .admonition.note>.admonition-title::after,
 div.admonition.note>.admonition-title::after {
-  margin-left: -0.5rem;
   content: var(--pst-icon-info-circle);
+  margin-left: -0.5rem;
   line-height: initial;
 }
 
-/* Admonition text */
 .admonition p.admonition-title~*,
 div.admonition p.admonition-title~* {
   font-size: 1.2rem;
 }
 
 /* Custom L.E.A.R.N extension CSS classes and properties */
-/* Preface settings */
 .preface-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas:
-    "location-date author-name";
+  grid-template-areas: "location-date author-name";
 }
 
-/* Location and date settings */
 .location-date {
   justify-self: start;
   align-self: center;
   grid-area: location-date;
 }
 
-/* Author name with alignment */
 .author-name {
   justify-self: end;
   grid-area: author-name;
 }
 
-/* Authors root class */
 .learn-authors {
   color: var(--pst-color-text-base);
 }
 
-/* Author class */
 #authors {
-  text-align: center;
   color: var(--pst-color-text-base);
+  text-align: center;
 }
 
-/* Author's name */
 .name-link,
 .name-link>a {
   margin: 0.5rem 0;
   font-size: 1.4rem;
   font-weight: 600;
-  text-decoration: none;
   color: var(--pst-color-text-base);
+  text-decoration: none;
 }
 
-/* Author's affiliation */
 .affiliation,
 p.affiliation-link {
-  text-align: center;
+  margin-bottom: 0.3rem;
   font-size: 1.175rem;
   line-height: 0.8rem;
-  margin-bottom: 0.3rem;
   color: var(--pst-color-text-base);
+  text-align: center;
 }
 
-/* Reduce affiliation font size when on mobile */
 @media screen and (max-width: 960px) {
-
-  .affiliation,
   p.affiliation-link {
     font-size: 1rem;
   }
 }
 
-/* Author's email */
 .email-link,
 .email-link>a {
   margin-bottom: 2rem;
@@ -611,89 +599,76 @@ p.affiliation-link {
   text-decoration: none;
 }
 
-/* Remove margin bottom for email when on mobile */
 @media screen and (max-width: 960px) {
   .email-link {
     margin-bottom: 0;
   }
 }
 
-/* Abstract div class */
 .learn-abstract {
   max-width: 80%;
   margin: 2.5rem auto 2rem auto;
 }
 
-/* Abstract text */
 .abstract {
   margin: auto auto 2rem auto;
   font-weight: 400 !important;
 }
 
-/* Abstract prefix */
 .abstract::before {
   content: "Abstract. ";
   font-weight: bold;
   color: var(--pst-color-text-muted);
 }
 
-/* Keywords div class */
 .learn-keywords {
   max-width: 80%;
   margin: 0 auto 2.5rem auto;
 }
 
-/* Keywords text */
 .keywords {
   margin: auto auto 2rem auto;
   font-weight: 400 !important;
   text-align: left;
 }
 
-/* Keywords prefix */
 .keywords::before {
   content: "Keywords: ";
   font-weight: bold;
   color: var(--pst-color-text-muted);
 }
 
-/* References div class */
 .learn-references ol {
   display: block;
-  text-align: left;
-  font-size: 1.2rem;
   margin-left: 1rem;
+  font-size: 1.2rem;
+  text-align: left;
 }
 
-/* References list items */
 .learn-references>ol>li>p {
-  text-align: left;
   font-size: 1.2rem;
+  text-align: left;
   text-decoration: none;
 }
 
-/* References items border */
 .references-border {
   border: 0.125rem solid var(--pst-color-primary-link);
   font-size: 1.2rem;
   font-family: var(--pst-font-family-monospace-system);
 }
 
-/* Tweets root class */
 .learn-tweet {
   max-width: 550px;
   margin: 2rem auto;
 }
 
-/* Reading prompt root class */
 .learn-reading>p {
-  text-align: center;
+  margin: 0.5rem auto;
   font-size: 1rem;
   color: var(--pst-color-text-base);
-  margin: 0.5rem auto;
+  text-align: center;
 }
 
-/* Reading time prefix */
 .learn-reading>p::before {
   content: "Reading time. ";
   font-weight: bold;
