@@ -5,7 +5,7 @@
 .. _intentions:
 
 :og:description: Author's intentions
-:og:image: https://raw.githubusercontent.com/xames3/learn/main/docs/source/_static/assets/learn-opengraph-intentions-banner.png
+:og:image: https://raw.githubusercontent.com/xames3/learn/main/docs/source/_static/assets/learn-opengraph-intentions-banner.jpg
 :og:image:alt: Author's intentions
 :og:title: Intentions
 

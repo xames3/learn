@@ -5,7 +5,7 @@
 .. _introducing-learn:
 
 :og:description: An introduction to L.E.A.R.N
-:og:image: https://raw.githubusercontent.com/xames3/learn/main/docs/source/_static/assets/learn-opengraph-lets-learn-banner.png
+:og:image: https://raw.githubusercontent.com/xames3/learn/main/docs/source/_static/assets/learn-opengraph-lets-learn-banner.jpg
 :og:image:alt: Let's L.E.A.R.N!
 :og:title: Let's Do It!
 
