@@ -366,8 +366,8 @@ intersphinx_mapping = {
 ogp_description_length = 300
 ogp_enable_meta_description = True
 ogp_image = (
-    "https://raw.githubusercontent.com/xames3/learn/main/docs/"
-    "source/_static/assets/learn-opengraph-home-banner.png"
+    "https://raw.githubusercontent.com/xames3/learn/main/docs/source/"
+    "_static/assets/learn-opengraph-home-banner.jpg"
 )
 ogp_image_alt = _project.alt_title + " Home Banner"
 ogp_site_name = _project.alt_title

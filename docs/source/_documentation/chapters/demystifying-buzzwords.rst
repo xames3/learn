@@ -5,7 +5,7 @@
 .. _demystifying-buzzwords:
 
 :og:description: Exploring the intricacies of AI and Machine Learning.
-:og:image: https://raw.githubusercontent.com/xames3/learn/main/docs/source/_static/assets/learn-opengraph-demystifying-banner.png
+:og:image: https://raw.githubusercontent.com/xames3/learn/main/docs/source/_static/assets/learn-opengraph-demystifying-banner.jpg
 :og:image:alt: Demystifying the Buzzwords
 :og:title: Demystifying the Buzzwords
 

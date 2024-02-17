@@ -5,7 +5,7 @@
 .. _preface:
 
 :og:description: My heartiest gratitude to all!
-:og:image: https://raw.githubusercontent.com/xames3/learn/main/docs/source/_static/assets/learn-opengraph-preface-banner.png
+:og:image: https://raw.githubusercontent.com/xames3/learn/main/docs/source/_static/assets/learn-opengraph-preface-banner.jpg
 :og:image:alt: Preface
 :og:title: Preface
 
