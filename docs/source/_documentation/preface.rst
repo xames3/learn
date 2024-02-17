@@ -1,8 +1,13 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: Wednesday, December 27 2023
-.. Last updated on: Thursday, December 28 2023
+.. Last updated on: Friday, February 16 2024
 
 .. _preface:
+
+:og:description: My heartiest gratitude to all!
+:og:image: https://raw.githubusercontent.com/xames3/learn/main/docs/source/_static/assets/learn-opengraph-preface-banner.png
+:og:image:alt: Preface
+:og:title: Preface
 
 #######
 Preface

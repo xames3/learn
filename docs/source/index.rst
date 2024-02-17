@@ -20,3 +20,4 @@ Learning the Essence of AI, Research and Notations
 
     _documentation/chapters/demystifying-buzzwords
     _documentation/chapters/mathematics-for-ai
+    _documentation/chapters/modelling-neural-networks

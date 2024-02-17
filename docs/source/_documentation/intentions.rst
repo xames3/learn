@@ -1,8 +1,13 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: Thursday, December 28 2023
-.. Last updated on: Thursday, December 28 2023
+.. Last updated on: Friday, February 16 2024
 
 .. _intentions:
+
+:og:description: Author's intentions
+:og:image: https://raw.githubusercontent.com/xames3/learn/main/docs/source/_static/assets/learn-opengraph-intentions-banner.png
+:og:image:alt: Author's intentions
+:og:title: Intentions
 
 ##########
 Intentions
