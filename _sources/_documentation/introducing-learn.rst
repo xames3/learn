@@ -1,8 +1,13 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: Friday, July 21 2023
-.. Last updated on: Wednesday, January 24 2024
+.. Last updated on: Friday, February 16 2024
 
 .. _introducing-learn:
+
+:og:description: An introduction to L.E.A.R.N
+:og:image: https://raw.githubusercontent.com/xames3/learn/main/docs/source/_static/assets/learn-opengraph-lets-learn-banner.png
+:og:image:alt: Let's L.E.A.R.N!
+:og:title: Let's Do It!
 
 ################
 Let's L.E.A.R.N!
@@ -28,12 +33,12 @@ This website is thoughtfully crafted to demystify the intricate mathematical
 underpinnings of AI, Machine Learning, and Data Science, making these complex
 subjects approachable for beginners while retaining the depth required by more
 seasoned enthusiasts. At L.E.A.R.N, each element of the acronym is a portal
-into a different aspect of AI. *Learning* is about the journey we undertake
-together, *Essence* refers to the core concepts and principles that give AI
-its transformative power, *AI* is the broad field we will be exploring,
-*Research* denotes the latest developments and findings in this dynamic field,
-and *Notations* represent the mathematical language through which these
-concepts are expressed and understood.
+into a different aspect of AI. ``Learning`` is about the journey we undertake
+together, ``Essence`` refers to the core concepts and principles that give AI
+its transformative power, ``AI`` is the broad field we will be exploring,
+``Research`` denotes the latest developments and findings in this dynamic
+field, and ``Notations`` represent the mathematical language through which
+these concepts are expressed and understood.
 
 Personal Motivation and Goal
 ############################
@@ -54,7 +59,7 @@ reality, understanding its essence is crucial. This site aims to explore AI's
 multifaceted nature, delving into its applications, implications, and the
 reasons behind its growing ubiquity in our lives.
 
-|tab| As the architect of L.E.A.R.N, my goal transcends beyond merely
+|tab| As the architect of this platform, my goal transcends beyond merely
 presenting information; it is to kindle a genuine understanding and
 appreciation of AI in your minds. By elucidating why AI has become a topic of
 global conversation, I hope to equip you with the knowledge to navigate and
@@ -118,7 +123,7 @@ experience.
 
 |tab| In the dynamic and ever-evolving field of Artificial Intelligence and
 Machine Learning, each day ushers in new revelations and research, prominently
-featured on platforms like `arXiv <recent arxiv_>`_ (pronounced "*archive*").
+featured on platforms like `arXiv <recent arxiv_>`_ (pronounced ``archive``).
 In such a rapidly advancing landscape, the necessity for a robust foundational
 understanding becomes not just beneficial, but imperative. At L.E.A.R.N, I
 endeavor to not only stay abreast of these continual advancements but to
@@ -175,14 +180,14 @@ daunting to the uninitiated. This realization sparked the creation of L.E.A.R.N
 but to transform it into knowledge that empowers. My mission is to guide you
 through the labyrinth of AI, illuminating the paths that lead to not just
 understanding, but mastery of this cool and revolutionary technology. Building
-AI *"correctly"* is a fundamental concept that goes beyond the mere
+AI ``correctly`` is a fundamental concept that goes beyond the mere
 implementation of algorithms; it delves into the understanding of the
 foundational mathematical principles that are the bedrock of AI technology.
 The field of AI, which is often perceived as a convoluted maze of mathematical
 formulas, is demystified at L.E.A.R.N. Here, we unravel the complexities,
 presenting them in a manner that is both comprehensible and engaging. By
 dissecting and reconstructing AI models, I offer a unique perspective |dash|
-a deep dive into the *"why"* and *"how"* behind the algorithms that are
+a deep dive into the ``why`` and ``how`` behind the algorithms that are
 reshaping our world.
 
 Simplifying Complex Concepts

@@ -1,8 +1,13 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: Friday, August 11 2023
-.. Last updated on: Monday, February 12 2024
+.. Last updated on: Friday, February 16 2024
 
 .. _demystifying-buzzwords:
+
+:og:description: Exploring the intricacies of AI and Machine Learning.
+:og:image: https://raw.githubusercontent.com/xames3/learn/main/docs/source/_static/assets/learn-opengraph-demystifying-banner.png
+:og:image:alt: Demystifying the Buzzwords
+:og:title: Demystifying the Buzzwords
 
 ##########################
 Demystifying the Buzzwords
@@ -42,7 +47,7 @@ others. Some of these terms have become increasingly popular since 2010, yet
 I've noticed a mix-up in their usage, both within my professional circle and
 beyond. It's common to hear these terms being used interchangeably, with
 systems labeled as "`AI-based <ai-based companies_>`_" or
-"`ML-based <ml-based companies_>`_", and companies touted as *"AI-first"*. But,
+"`ML-based <ml-based companies_>`_", and companies touted as ``AI-first``. But,
 do these labels accurately reflect their meanings, or is there more to these
 buzzwords than meets the eye?
 
@@ -53,7 +58,7 @@ Introduction
 ************
 
 In pursuit of clarity, my first step is to dissect the meanings of
-*"Intelligence"* and *"Learning"*. Here, my focus is on human intelligence, as
+``Intelligence`` and ``Learning``. Here, my focus is on human intelligence, as
 it provides a crucial reference point for understanding AI. While
 acknowledging that intelligence manifests diversely across different species,
 our primary exploration will center on its human aspect. In the context of
@@ -85,7 +90,7 @@ General Intelligence
 Definition and Context
 ######################
 
-In my exploration of Artificial Intelligence, one term frequently arises: *"Intelligence"*. According to Google...
+In my exploration of Artificial Intelligence, one term frequently arises: ``Intelligence``. According to Google...
 
 .. epigraph:: Intelligence is the ability to acquire and apply knowledge and
     skills to solve a particular problem at hand.
@@ -130,7 +135,7 @@ crucial for a comprehensive understanding of AI and for envisioning how it
 might continue to transform our world. By keeping in mind both the established
 definitions and the progressive nature of intelligence, we can gain a richer,
 more nuanced understanding of what it means for a machine to be
-*"intelligent"*. This exploration is key to appreciating the full scope and
+``intelligent``. This exploration is key to appreciating the full scope and
 potential of AI, as we continue to witness its remarkable journey from a
 concept to a transformative force in our lives. In my experience of what
 intelligence truly means, I've observed a fascinating aspect of our human
@@ -210,7 +215,7 @@ problem, conceptualizing a solution based on past learnings, experimenting,
 and then refining our approach based on feedback. This dynamic, iterative
 process is what I aim to parallel in the world of Artificial Intelligence.
 It's not solely about creating machines that solve problems; it's about
-imbuing them with a level of *"awareness"* and the capacity to learn and
+imbuing them with a level of ``awareness`` and the capacity to learn and
 adapt. This perspective on human intelligence, with its intricate blend of
 cognitive processes and consciousness, forms the foundation of my approach to
 understanding and developing AI. It's a vast and fascinating field, where each
@@ -269,7 +274,7 @@ aspect is crucial, as it allows us to build on past experiences and
 continuously expand our understanding. As I investigate more thoroughly into
 the realm of learning, I see fascinating parallels with how AI systems learn.
 Like us, AI systems gather data (their version of sensory input) and store
-patterns and information. This process enables them to *"learn"* and make
+patterns and information. This process enables them to ``learn`` and make
 informed decisions based on past inputs. In exploring these parallels, I aim
 to shed light on both the human learning process and AI learning mechanisms.
 It's a journey through the multifaceted landscape of cognition, where human and
@@ -330,8 +335,8 @@ Parallels Between Human and AI Learning
 #######################################
 
 In drawing parallels to Artificial Intelligence, I see a reflection of this
-process. AI systems, in their way, *"learn"* by gathering data, processing it,
-and *"remembering"* patterns. This mimicry of human learning and memorization
+process. AI systems, in their way, ``learn`` by gathering data, processing it,
+and ``remembering`` patterns. This mimicry of human learning and memorization
 is fascinating and offers profound insights into the potential of AI. It's a
 reminder that learning, whether in humans or machines, is an intricate
 tapestry woven from experiences, trials, and the continuous process of
@@ -340,7 +345,7 @@ challenges inherent in translating these natural learning processes into AI
 systems. While the parallels between a toddler's learning journey and AI's
 learning mechanisms offer valuable insights, the replication of human-like
 learning in machines presents a unique set of complexities. AI systems, though
-capable of processing and *"remembering"* vast amounts of data, still face
+capable of processing and ``remembering`` vast amounts of data, still face
 limitations in replicating the nuanced and adaptive nature of human learning.
 We need to understand the limitations of AI in mimicking human learning
 processes, such as the understanding of context, the application of learned
@@ -500,7 +505,7 @@ Translating Learning to AI Development
 Drawing parallels from this to my field of AI and ML engineering, I see a
 crucial lesson about the importance of context and purpose in developing
 solutions. As an engineer, it's not just about the technical prowess of
-creating AI or ML systems; it's about understanding the *"why"* behind what
+creating AI or ML systems; it's about understanding the ``why`` behind what
 we're building. Are we developing technology that meets a genuine need, or are
 we simply chasing the novelty of advanced tools? This discernment is vital.
 Just as squirrels and cows have adapted their behaviors to their environments,
@@ -531,7 +536,7 @@ designed to understand and adapt to problems, and then forge a path to solve
 them. Its operation bears similarities to the intelligence we witness in
 living beings, yet it's distinctly different. Unlike humans or animals, AI
 doesn't rely on organic senses for information acquisition. Instead, it
-processes data — vast and varied — as its means of *"sensing"* the world. Its
+processes data — vast and varied — as its means of ``sensing`` the world. Its
 learning process is grounded in algorithms that enable it to test, adapt, and
 evolve. This iterative process is reminiscent of the trial-and-error approach
 inherent in natural learning. In conceptualizing AI, I see it as a system that
@@ -549,7 +554,7 @@ As my inquiry deepens into the realm of Artificial Intelligence, I aim to
 explore how these artificial systems emulate cognitive functions and 
 consider the broader implications of such technology. It's a journey into
 understanding how AI, as a product of human creation, can execute tasks, solve
-problems, and *"learn"*, in ways that are both similar to and distinct from the
+problems, and ``learn``, in ways that are both similar to and distinct from the
 intelligence found in nature. This exploration is not just about technical
 understanding but also about appreciating the nuances and potential of AI as
 it intertwines with the tapestry of human intellect and creativity.
@@ -579,7 +584,7 @@ Artificial Narrow Intelligence
 ******************************
 
 In my endeavor to demystify Artificial Intelligence, I often begin by
-simplifying it to its essence — a system. This term, *"system"*, is broad and
+simplifying it to its essence — a system. This term, ``system``, is broad and
 multifaceted in the context of AI. It could manifest as a computer program
 designed for specific tasks, an intricate network of computers communicating
 with each other, or even a robotic framework tailored for specialized
@@ -639,7 +644,7 @@ The Quest for Artificial General Intelligence
 AGI represents an aspirational frontier in AI research, envisaged as a system
 capable of comprehensive and autonomous problem-solving, akin to a human's
 versatile intelligence. The idea of AGI extends to it having a form of
-*"subconscious"* processing, enabling a profound understanding and ability to
+``subconscious`` processing, enabling a profound understanding and ability to
 debug and solve a wide spectrum of problems. However, as of now, AGI remains a
 concept rather than a reality. While there have been claims, such as those
 from some researchers in the field, suggesting advancements toward AI
@@ -723,7 +728,7 @@ As we delve into the fascinating realm of Machine Learning or ML for short,
 it's akin to embarking on a journey of discovery, not unlike the way we humans
 learn from our experiences. Picture this, just as a child learns to recognize
 shapes and colors by observing and interacting with the world, Machine
-Learning enables computers to *"learn"* and make decisions based on the data
+Learning enables computers to ``learn`` and make decisions based on the data
 they encounter. To put it simply, Machine Learning or in this case, Deep
 Learning is a type of Computer Science where a machine can learn and adapt
 based on data, much like how we learn from our daily experiences. Imagine your
@@ -746,13 +751,13 @@ The Learning Process in Machines
 ********************************
 
 The process starts with input data |dash| this could be anything from pictures
-and texts to sounds. Think of this as the machine's way of *"sensing"* the
+and texts to sounds. Think of this as the machine's way of ``sensing`` the
 world. In the early days of Deep Learning or DL for short, the lack of
 sufficient data was like trying to understand a story with half the pages
 missing. But today, thanks to the internet, data is abundant, which is like a
 vast library of books for the machine to read and learn from. However, just
 having data isn't enough. It's akin to memorizing a recipe without
-understanding the techniques of cooking. Here's where *"computational power"*
+understanding the techniques of cooking. Here's where ``computational power``
 or simply put, the computer's ability to process and make sense of this data
 plays a crucial role. It's like having a quick-thinking brain that can hold
 and analyze large volumes of information.
@@ -763,12 +768,12 @@ and how machines do. Let's take the same example of a toddler from before.
 There's a lot of trial and error involved |dash| crawling, standing, falling,
 and then trying again. Similarly, in Deep Learning, the system or the software
 tries to understand the data, makes mistakes, learns from them, and improves
-over time. This process, known as *"Iterative Learning"*, is fundamental to
+over time. This process, known as ``Iterative Learning``, is fundamental to
 both humans and machines while learning. But how do we know if the machine has
 learned correctly? In our world, we test our knowledge against known facts or
 experiences, some might even say right or wrong answers or behaviors. In the
 world of ML, this is done by comparing the machine's decisions or predictions
-against a set of correct answers, known as *"ground truth"*. When the
+against a set of correct answers, known as ``ground truth``. When the
 machine's predictions match the ground truth, it's a sign that the learning
 has been successful. Now, let's consider real-world applications. From voice
 assistants like Siri and Alexa to recommendation systems on Netflix and
@@ -878,7 +883,7 @@ Importance of Data Diversity in Learning
 Another intriguing aspect is the visual learning analogy. Imagine how we often
 grasp concepts better with visual aids. Similarly, ML or DL algorithms can be
 trained using batches of visual data, such as images or videos, allowing them
-to *"see"* and *"understand"* the world in a way that's remarkably similar to
+to ``see`` and ``understand`` the world in a way that's remarkably similar to
 our visual learning process. The diversity of data is another cornerstone of
 effective ML. Just as a well-rounded education encompasses a variety of
 subjects, ML algorithms thrive on varied datasets. This variety is crucial for
@@ -908,9 +913,9 @@ studying.
 
 |tab| Now, just as I compare my practice answers to the correct ones, the ML
 algorithm does something similar. It compares its results with a known set of
-correct answers or the *"ground truth"*. If the algorithm's predictions
+correct answers or the ``ground truth``. If the algorithm's predictions
 deviate significantly from this ground truth, it's a clear indicator of
-*"loss"* |dash| a term we use in ML to describe the gap in the accuracy of the
+``loss`` |dash| a term we use in ML to describe the gap in the accuracy of the
 learned information. The next step, much like my revising chapters that I
 didn't quite grasp, involves the algorithm revisiting the data. With each
 iteration, it learns from its previous errors, adjusting its approach and
@@ -932,11 +937,11 @@ Understanding Ground Truth and Loss
 
 I often think of the realm of Machine Learning as a journey of continuous
 improvement, much like our own learning experiences. In this journey, two key
-concepts play a pivotal role |dash| *"ground truth"* and *"loss"*. To
-understand these, I like to compare the *"ground truth"* to the answer key of
+concepts play a pivotal role |dash| ``ground truth`` and ``loss``. To
+understand these, I like to compare the ``ground truth`` to the answer key of
 an exam, providing the correct answers against which the ML algorithm's
-predictions are measured. *"Loss"*, then, represents the difference between
-the algorithm's predictions and this *"ground truth"*, much like the gap
+predictions are measured. ``Loss``, then, represents the difference between
+the algorithm's predictions and this ``ground truth``, much like the gap
 between a student's response and the correct answer in a test. One of the most
 relatable examples of this iterative learning process in action is how voice
 recognition software improves over time. With each interaction, it learns from
@@ -1004,7 +1009,7 @@ Impact of Data Quality on Learning Outcomes
 Reflecting on my own experiences, I realize how the quality of learning is
 often influenced by the quality of the sources or teachers we rely on. In the
 realm of Machine Learning, this concept is encapsulated in a principle widely
-recognized as *"garbage in, garbage out."* The essence of this principle is
+recognized as ``garbage in, garbage out``. The essence of this principle is
 strikingly simple yet profound. If the input data fed into an ML algorithm is
 of high quality, accurate and well-structured, the algorithm is more likely to
 yield reliable and effective results. On the other hand, if the input data is
@@ -1035,8 +1040,8 @@ find that the best way to unravel its complexities is through relatable
 analogies from everyday life. Consider, for instance, the process a chef
 undergoes to perfect a recipe, constantly tweaking ingredients based on
 feedback. This is akin to how Deep Learning algorithms refine their
-*"understanding"* through continuous data processing and learning. Reflecting
-on the principle of *"garbage in, garbage out,"* I'm reminded of how vital the
+``understanding`` through continuous data processing and learning. Reflecting
+on the principle of ``garbage in, garbage out``, I'm reminded of how vital the
 quality of input is in determining the outcome. This is vividly illustrated in
 navigation apps like Google Maps, where the accuracy of traffic data and user
 feedback directly influences the effectiveness of route suggestions. Just as

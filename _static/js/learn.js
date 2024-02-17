@@ -82,7 +82,7 @@ var suggestivePlaceholderElement = new suggestivePlaceholder({
     "Data privacy",
     "Crowdsourcing",
     "Supervised learning from labeled data",].map(value => ({ value, sort: Math.random() })).sort((a, b) => a.sort - b.sort).map(({ value }) => value),
-  preText: "Search for ",
+  preText: "",
   stay: 1000,
   speed: 100,
 });

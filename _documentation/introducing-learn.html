@@ -7,14 +7,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../_static/img/android-chrome-192x192.png" sizes="192x192" rel="icon" type="image/png">
+    <link href="../_static/img/android-chrome-512x512.png" sizes="512x512" rel="icon" type="image/png">
+    <link href="../_static/img/apple-touch-icon.png" sizes="180x180" rel="icon" type="image/png">
     <link href="../_static/img/favicon-16x16.png" sizes="16x16" rel="icon" type="image/png">
-    <link href="../_static/img/favicon-32x32.png" sizes="32x32" rel="icon" type="image/png"><meta property="og:title" content="Let’s L.E.A.R.N!" />
+    <link href="../_static/img/favicon-16x16.png" sizes="16x16" rel="icon" type="image/png">
+    <link href="../_static/img/favicon.ico" rel="icon" type="image/x-icon"><meta property="og:title" content="Let’s Do It!" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://learn.mes3.dev/_documentation/introducing-learn.html" />
 <meta property="og:site_name" content="L.E.A.R.N" />
-<meta property="og:description" content="Let’s L.E.A.R.N!: I am immensely proud to introduce you to my latest and most ambitious project, L.E.A.R.N an acronym encapsulating a journey into… Learning the Essence of AI, Research, and Notations 1 Introduction: This website is thoughtfully crafted to demystify the intricate mathematical unde..." />
-<meta property="og:image" content="https://raw.githubusercontent.com/xames3/learn/6473fd1f3a77992ab8d7b2988b9adcf6d26403c8/docs/source/_static/img/learn-banner.png" />
-<meta property="og:image:alt" content="L.E.A.R.N" />
+<meta property="og:description" content="An introduction to L.E.A.R.N" />
+<meta property="og:image" content="https://raw.githubusercontent.com/xames3/learn/main/docs/source/_static/assets/learn-opengraph-lets-learn-banner.png" />
+<meta property="og:image:alt" content="Let’s L.E.A.R.N!" />
 <meta name="description" content="Let’s L.E.A.R.N!: I am immensely proud to introduce you to my latest and most ambitious project, L.E.A.R.N an acronym encapsulating a journey into… Learning the Essence of AI, Research, and Notations 1 Introduction: This website is thoughtfully crafted to demystify the intricate mathematical unde..." />
 
     <title>Let’s L.E.A.R.N! &#8212; Home</title>
@@ -42,7 +46,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
     <link rel="stylesheet" type="text/css" href="../_static/css/defaults.css?v=a1d28d5d" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/learn.css?v=fc407b92" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/learn.css?v=fde82542" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
@@ -60,7 +64,7 @@
     <script src="../_static/design-tabs.js?v=36754332"></script>
     <script async="async" charset="utf-8" src="https://platform.twitter.com/widgets.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '_documentation/introducing-learn';</script>
-    <script src="../_static/js/learn.js?v=c6bd1a31"></script>
+    <script src="../_static/js/learn.js?v=e8c9ff9a"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Demystifying the Buzzwords" href="chapters/demystifying-buzzwords.html" />
@@ -141,7 +145,7 @@
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
 
-  
+
 
 <a class="navbar-brand logo" href="../index.html">
   
@@ -150,20 +154,14 @@
   
   
   
-    <p class="title logo__title">Home</p>
+  <p class="title logo__title">Home
+    <button class="btn navbar-btn search-button-field search-button__button" title="Search"
+      aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+  </p>
   
 </a></div>
-        <div class="sidebar-primary-item">
-
- <script>
- document.write(`
-   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents</span></p>
@@ -210,20 +208,6 @@
       
     </div>
   
-  
-    <div class="header-article-items__end">
-      
-        <div class="header-article-item">
-
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script></div>
-      
-    </div>
   
 </div>
 </div>
@@ -296,7 +280,7 @@ document.write(`
                 <article class="bd-article">
                   
   <section id="let-s-l-e-a-r-n">
-<span id="introducing-learn"></span><h1><span class="sectnum"></span>Let’s L.E.A.R.N!<a class="headerlink" href="#let-s-l-e-a-r-n" title="Link to this heading">#</a></h1>
+<h1><span class="sectnum"></span>Let’s L.E.A.R.N!<a class="headerlink" href="#let-s-l-e-a-r-n" title="Link to this heading">#</a></h1>
 <div class="learn-authors">
     <table id="authors">
         <tr>               
@@ -339,12 +323,12 @@ L.E.A.R.N <span class="raw-html">&mdash;</span> an acronym encapsulating a journ
 underpinnings of AI, Machine Learning, and Data Science, making these complex
 subjects approachable for beginners while retaining the depth required by more
 seasoned enthusiasts. At L.E.A.R.N, each element of the acronym is a portal
-into a different aspect of AI. <em>Learning</em> is about the journey we undertake
-together, <em>Essence</em> refers to the core concepts and principles that give AI
-its transformative power, <em>AI</em> is the broad field we will be exploring,
-<em>Research</em> denotes the latest developments and findings in this dynamic field,
-and <em>Notations</em> represent the mathematical language through which these
-concepts are expressed and understood.</p>
+into a different aspect of AI. <code class="docutils literal notranslate"><span class="pre">Learning</span></code> is about the journey we undertake
+together, <code class="docutils literal notranslate"><span class="pre">Essence</span></code> refers to the core concepts and principles that give AI
+its transformative power, <code class="docutils literal notranslate"><span class="pre">AI</span></code> is the broad field we will be exploring,
+<code class="docutils literal notranslate"><span class="pre">Research</span></code> denotes the latest developments and findings in this dynamic
+field, and <code class="docutils literal notranslate"><span class="pre">Notations</span></code> represent the mathematical language through which
+these concepts are expressed and understood.</p>
 <section id="personal-motivation-and-goal">
 <h3><span class="sectnum">1.1   </span>Personal Motivation and Goal<a class="headerlink" href="#personal-motivation-and-goal" title="Link to this heading">#</a></h3>
 <p>Created from my personal experiences, where I navigated the challenging
@@ -362,7 +346,7 @@ evolving world, where AI is no longer just a futuristic concept but a present
 reality, understanding its essence is crucial. This site aims to explore AI’s
 multifaceted nature, delving into its applications, implications, and the
 reasons behind its growing ubiquity in our lives.</p>
-<p><span class="raw-html">&emsp;</span> As the architect of L.E.A.R.N, my goal transcends beyond merely
+<p><span class="raw-html">&emsp;</span> As the architect of this platform, my goal transcends beyond merely
 presenting information; it is to kindle a genuine understanding and
 appreciation of AI in your minds. By elucidating why AI has become a topic of
 global conversation, I hope to equip you with the knowledge to navigate and
@@ -421,7 +405,7 @@ community of learners and enthusiasts, further enriching the learning
 experience.</p>
 <p><span class="raw-html">&emsp;</span> In the dynamic and ever-evolving field of Artificial Intelligence and
 Machine Learning, each day ushers in new revelations and research, prominently
-featured on platforms like <a class="reference external" href="https://arxiv.org/list/cs.AI/recent">arXiv</a> (pronounced “<em>archive</em>”).
+featured on platforms like <a class="reference external" href="https://arxiv.org/list/cs.AI/recent">arXiv</a> (pronounced <code class="docutils literal notranslate"><span class="pre">archive</span></code>).
 In such a rapidly advancing landscape, the necessity for a robust foundational
 understanding becomes not just beneficial, but imperative. At L.E.A.R.N, I
 endeavor to not only stay abreast of these continual advancements but to
@@ -475,14 +459,14 @@ daunting to the uninitiated. This realization sparked the creation of L.E.A.R.N
 but to transform it into knowledge that empowers. My mission is to guide you
 through the labyrinth of AI, illuminating the paths that lead to not just
 understanding, but mastery of this cool and revolutionary technology. Building
-AI <em>“correctly”</em> is a fundamental concept that goes beyond the mere
+AI <code class="docutils literal notranslate"><span class="pre">correctly</span></code> is a fundamental concept that goes beyond the mere
 implementation of algorithms; it delves into the understanding of the
 foundational mathematical principles that are the bedrock of AI technology.
 The field of AI, which is often perceived as a convoluted maze of mathematical
 formulas, is demystified at L.E.A.R.N. Here, we unravel the complexities,
 presenting them in a manner that is both comprehensible and engaging. By
 dissecting and reconstructing AI models, I offer a unique perspective <span class="raw-html">&mdash;</span>
-a deep dive into the <em>“why”</em> and <em>“how”</em> behind the algorithms that are
+a deep dive into the <code class="docutils literal notranslate"><span class="pre">why</span></code> and <code class="docutils literal notranslate"><span class="pre">how</span></code> behind the algorithms that are
 reshaping our world.</p>
 <section id="simplifying-complex-concepts">
 <h4><span class="sectnum">2.1.1   </span>Simplifying Complex Concepts<a class="headerlink" href="#simplifying-complex-concepts" title="Link to this heading">#</a></h4>
@@ -953,8 +937,26 @@ By Akshay Mestry
     <div class="footer-items__center">
       
         <div class="footer-item">
+<div class="sidebar-nav-links">
+  <a href="https://github.com/xames3/learn" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"
+    data-bs-original-title="GitHub">
+    <i class="fa-brands fa-github"></i>
+  </a>
+  <a href="https://linkedin.com/in/xames3" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"
+    data-bs-original-title="LinkedIn">
+    <i class="fa-brands fa-linkedin-in"></i>
+  </a>
+  <a href="https://x.com/xa_mes3" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"
+    data-bs-original-title="X (Twitter)">
+    <i class="fa-brands fa-x-twitter"></i>
+  </a>
+</div>
+<p class="theme-version">Powered by <img
+    src="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg"
+    alt="Python logo" style="width: 1rem;"></p>
 <p class="theme-version">
-  Based on custom build of <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a>.
+  Based on custom build of <a
+    href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a>.
 </p></div>
       
     </div>
