@@ -4,7 +4,7 @@ Tweets Directive for L.E.A.R.N
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: Sunday, August 20 2023
-Last updated on: Monday, August 21 2023
+Last updated on: Sunday, February 18 2023
 
 This module provides a custom directive for L.E.A.R.N's custom theme,
 that allows authors and contributors to add a link to Twitter or X's
@@ -59,8 +59,8 @@ from docutils import nodes
 from docutils.parsers.rst import Directive
 
 if t.TYPE_CHECKING:
-    from sphinx.application import Sphinx
     from sphinx.addnodes import document
+    from sphinx.application import Sphinx
 
 __all__ = ["Tweet", "embed_twitter_js"]
 
