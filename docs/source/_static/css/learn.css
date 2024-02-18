@@ -343,6 +343,86 @@ footer.bd-footer-content {
 
 pre {
   font-size: 1rem;
+  background-color: none;
+}
+
+pre>span {
+  font-weight: 200;
+}
+
+html[data-theme="light"] .highlight span.linenos {
+  color: var(--pst-color-attention);
+  padding-right: 2rem;
+}
+
+html[data-theme="light"] .highlight {
+  border-radius: 0.5rem;
+}
+
+html[data-theme="light"] .highlight .hll {
+  background-color: #fff8c5;
+}
+
+html[data-theme="light"] .highlight .nc,
+html[data-theme="light"] .highlight .no {
+  color: #953800;
+}
+
+html[data-theme="light"] .highlight .n,
+html[data-theme="light"] .highlight .nv,
+html[data-theme="light"] .highlight .o,
+html[data-theme="light"] .highlight .si {
+  color: var(--pst-color-text-base);
+}
+
+html[data-theme="light"] .highlight .nb,
+html[data-theme="light"] .highlight .nf {
+  color: #8250df !important;
+}
+
+html[data-theme="light"] .highlight .mf,
+html[data-theme="light"] .highlight .mh,
+html[data-theme="light"] .highlight .mi,
+html[data-theme="light"] .highlight .mo,
+html[data-theme="light"] .highlight .sb,
+html[data-theme="light"] .highlight .sc,
+html[data-theme="light"] .highlight .sd,
+html[data-theme="light"] .highlight .s2,
+html[data-theme="light"] .highlight .se,
+html[data-theme="light"] .highlight .sh,
+html[data-theme="light"] .highlight .sx,
+html[data-theme="light"] .highlight .sr,
+html[data-theme="light"] .highlight .s1,
+html[data-theme="light"] .highlight .ss,
+html[data-theme="light"] .highlight .il {
+  color: #0550ae;
+}
+
+div.literal-block-wrapper div.code-block-caption {
+  background-color: #f6f8fa;
+  font-family: var(--pst-font-family-monospace-system);
+  color: var(--pst-color-attention);
+}
+
+div.literal-block-wrapper div.code-block-caption::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 300;
+  content: "\f1c9";
+  margin-left: 1rem;
+  margin-right: 2rem;
+  color: var(--pst-color-attention);
+}
+
+div.literal-block-wrapper {
+  border-radius: 0.5rem;
+}
+
+div.literal-block-wrapper div.code-block-caption {
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+
+div.highlight button.copybtn {
+  font-family: var(--pst-font-family-monospace-system);
 }
 
 .component-author {
