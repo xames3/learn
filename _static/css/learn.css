@@ -257,10 +257,11 @@ div#searchbox p.highlight-link a::before {
   width: auto;
   margin-left: 1rem;
   border: 0;
+  background-color: var(--pst-color-surface-2);
 }
 
 .search-button-field:hover {
-  background-color: var(--pst-color-surface);
+  background-color: var(--pst-color-surface-2);
   border: 0;
   vertical-align: middle;
 }
