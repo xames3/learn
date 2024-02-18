@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: Saturday, February 10 2023
-.. Last updated on: Friday, February 16 2024
+.. Last updated on: Sunday, February 18 2024
 
 .. _mathematics-for-ai:
 
@@ -218,8 +218,9 @@ the landscape of mathematics and programming is far from over. It is a path of
 endless discovery, where each step forward in our understanding of mathematics
 opens new doors for AI innovation. So let's start small, right from the basics.
 
+**********************************************
 Symphony of Numbers in Artificial Intelligence
-##############################################
+**********************************************
 
 Before we delve into the complex algorithms and neural networks that form
 the backbone of AI, it's essential to grasp the basics of the numbers that are
@@ -228,30 +229,53 @@ orchestra of mathematics, different types of numbers play unique roles,
 each contributing its distinct sound to the symphony of AI.
 
 Real Numbers
-************
+############
 
-Real numbers hold a place of paramount importance in the domain of Artificial Intelligence, acting as the bridge between the abstract world of mathematics and the concrete realities AI seeks to understand, interpret, and predict. I often consider real numbers as...
+Real numbers, represented by :math:`\mathbb{R}` (called double-struck capital 
+R) hold a place of paramount importance in the domain of
+Artificial Intelligence, acting as the bridge between the abstract world of
+mathematics and the concrete realities AI seeks to understand, interpret, and
+predict. I often tell people that real numbers are...
 
 .. epigraph:: Mathematical entities which capture the continuum of possibility
 
-Real numbers encompass the entire spectrum of values along the number line, representing both the measurable quantities and the constants that define our universe. From the speed of light to the probability of an event, real numbers provide a way to quantify the infinitely varied aspects of the world. In AI, this capability allows for the precise representation of data. Whether it's the temperature of a room, the price of a stock, or the hue of color in a photo, real numbers map these continuous variables into a form that machines can process and learn from. Machine learning models rely heavily on real numbers for both their input data and the weights within the models themselves. Consider a simple linear regression model, which predicts an outcome based on one or more input variables. The relationship between the input and output is defined by ``parameters`` (weights and biases), all of which are represented by real numbers.
+Real numbers encompass the entire spectrum of values along the number line,
+representing both the measurable quantities and the constants that define our
+universe. From the speed of light to the probability of an event, real numbers
+provide a way to quantify the infinitely varied aspects of the world. In AI,
+this capability allows for the precise representation of data. Whether it's
+the temperature of a room, the price of a stock, or the hue of color in a
+photo, real numbers map these continuous variables into a form that machines
+can process and learn from. Machine learning models rely heavily on real
+numbers for both their input data and the weights within the models
+themselves. Consider a simple linear regression model, which predicts an
+outcome based on one or more input variables. The relationship between the
+input and output is defined by ``parameters`` (weights and biases), all of
+which are represented by real numbers.
+
+|tab| The irrational number, pi (:math:`\pi \approx 3.14159\ldots`) is
+a transcendental number representing the ratio of a circle's circumference to
+its diameter, whereas the Euler's number (:math:`e \approx 2.718\ldots`) is
+the base of natural logarithms. Another classical example is the square root
+of 2, (:math:`\sqrt{2} \approx 1.41421\ldots`), all of them are examples of
+real numbers.
 
 .. code-block:: python
+    :linenos:
+    :caption: real-numbers.py
+    :name: real-numbers
 
-    import numpy as np
-    from sklearn.linear_model import LinearRegression
+    pi = 3.14159
+    e = 2.71828
+    sqrt_of_2 = 1.41421
 
-    # Sample data: hours studied vs exam score
-    X = np.array([[1], [2], [4], [5]])  # hours studied (input)
-    y = np.array([70, 80, 90, 95])      # exam score (output)
-
-    # Create and train the model
-    model = LinearRegression().fit(X, y)
-
-    # Predict the exam score for someone who studied 3 hours
-    predicted_score = model.predict(np.array([[3]]))
-    print(f"Predicted exam score: {predicted_score[0]}")
-
-In this example, the input data (hours studied) and output data (exam scores) are real numbers, as are the model's parameters once it's trained. The model learns the relationship between studying time and exam score, capturing the essence of this relationship in its parameters. The precision offered by real numbers is critical in fields where even the slightest variation can have significant implications, such as in medical diagnoses, financial forecasting, and autonomous vehicle navigation. In these applications, the ability to work with real numbers allows AI systems to make nuanced decisions based on a detailed understanding of the data.
-
-|tab| Deep learning, takes the importance of real numbers even further, using them in complex neural networks that mimic the way the human brain operates. Each neuron in a network processes input data (real numbers) through a series of weighted connections (also real numbers), applying nonlinear transformations to capture complex patterns and relationships in the data. Activation functions in neural networks, such as the ``sigmoid`` or ``ReLU`` functions, use real numbers to determine the output of neurons, introducing nonlinearity into the model and enabling it to learn from complicated data structures. The choice of activation function and the precise tuning of network weights (real numbers) are crucial for the model's performance and accuracy.
+Deep learning, takes the importance of real numbers even further, using them
+in complex neural networks that mimic the way the human brain operates. Each
+neuron in a network processes input data (real numbers) through a series of
+weighted connections (also real numbers), applying nonlinear transformations
+to capture complex patterns and relationships in the data. Activation
+functions in neural networks, such as the ``sigmoid`` or ``ReLU`` functions,
+use real numbers to determine the output of neurons, introducing nonlinearity
+into the model and enabling it to learn from complicated data structures. The
+choice of activation function and the precise tuning of network weights (real
+numbers) are crucial for the model's performance and accuracy.

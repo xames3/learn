@@ -45,8 +45,8 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/defaults.css?v=a1d28d5d" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/learn.css?v=fde82542" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/defaults.css?v=b1387ab8" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/learn.css?v=349ac97f" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
@@ -55,13 +55,14 @@
 
     <script src="../../_static/jquery.js?v=5d32c60e"></script>
     <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="../../_static/documentation_options.js?v=359990d8"></script>
+    <script src="../../_static/documentation_options.js?v=c25c8e6d"></script>
     <script src="../../_static/doctools.js?v=888ff710"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=30646c52"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script async="async" charset="utf-8" src="https://platform.twitter.com/widgets.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '_documentation/chapters/mathematics-for-ai';</script>
     <script src="../../_static/js/learn.js?v=e8c9ff9a"></script>
@@ -70,7 +71,7 @@
     <link rel="prev" title="Demystifying the Buzzwords" href="demystifying-buzzwords.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Feb 17, 2024"/>
+    <meta name="docbuild:last-update" content="Feb 18, 2024"/>
   </head>
   
   
@@ -233,10 +234,10 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#from-numbers-to-neural-networks"><span class="sectnum">3   </span>From Numbers to Neural Networks</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-fundamentals"><span class="sectnum">3.1   </span>The Fundamentals</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#power-of-algorithms-and-their-sustainability"><span class="sectnum">3.2   </span>Power of Algorithms and their Sustainability</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#symphony-of-numbers-in-artificial-intelligence"><span class="sectnum">3.3   </span>Symphony of Numbers in Artificial Intelligence</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#real-numbers"><span class="sectnum">3.3.1   </span>Real Numbers</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#symphony-of-numbers-in-artificial-intelligence"><span class="sectnum">4   </span>Symphony of Numbers in Artificial Intelligence</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#real-numbers"><span class="sectnum">4.1   </span>Real Numbers</a></li>
 </ul>
 </li>
 </ul>
@@ -466,37 +467,61 @@ the landscape of mathematics and programming is far from over. It is a path of
 endless discovery, where each step forward in our understanding of mathematics
 opens new doors for AI innovation. So let’s start small, right from the basics.</p>
 </section>
+</section>
 <section id="symphony-of-numbers-in-artificial-intelligence">
-<h3><span class="sectnum">3.3   </span>Symphony of Numbers in Artificial Intelligence<a class="headerlink" href="#symphony-of-numbers-in-artificial-intelligence" title="Link to this heading">#</a></h3>
+<h2><span class="sectnum">4   </span>Symphony of Numbers in Artificial Intelligence<a class="headerlink" href="#symphony-of-numbers-in-artificial-intelligence" title="Link to this heading">#</a></h2>
 <p>Before we delve into the complex algorithms and neural networks that form
 the backbone of AI, it’s essential to grasp the basics of the numbers that are
 the building blocks of mathematical logic and computation. In the grand
 orchestra of mathematics, different types of numbers play unique roles,
 each contributing its distinct sound to the symphony of AI.</p>
 <section id="real-numbers">
-<h4><span class="sectnum">3.3.1   </span>Real Numbers<a class="headerlink" href="#real-numbers" title="Link to this heading">#</a></h4>
-<p>Real numbers hold a place of paramount importance in the domain of Artificial Intelligence, acting as the bridge between the abstract world of mathematics and the concrete realities AI seeks to understand, interpret, and predict. I often consider real numbers as…</p>
+<h3><span class="sectnum">4.1   </span>Real Numbers<a class="headerlink" href="#real-numbers" title="Link to this heading">#</a></h3>
+<p>Real numbers, represented by <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> (called double-struck capital
+R) hold a place of paramount importance in the domain of
+Artificial Intelligence, acting as the bridge between the abstract world of
+mathematics and the concrete realities AI seeks to understand, interpret, and
+predict. I often tell people that real numbers are…</p>
 <blockquote class="epigraph">
 <div><p>Mathematical entities which capture the continuum of possibility</p>
 </div></blockquote>
-<p>Real numbers encompass the entire spectrum of values along the number line, representing both the measurable quantities and the constants that define our universe. From the speed of light to the probability of an event, real numbers provide a way to quantify the infinitely varied aspects of the world. In AI, this capability allows for the precise representation of data. Whether it’s the temperature of a room, the price of a stock, or the hue of color in a photo, real numbers map these continuous variables into a form that machines can process and learn from. Machine learning models rely heavily on real numbers for both their input data and the weights within the models themselves. Consider a simple linear regression model, which predicts an outcome based on one or more input variables. The relationship between the input and output is defined by <code class="docutils literal notranslate"><span class="pre">parameters</span></code> (weights and biases), all of which are represented by real numbers.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
-
-<span class="c1"># Sample data: hours studied vs exam score</span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">]])</span>  <span class="c1"># hours studied (input)</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">70</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">95</span><span class="p">])</span>      <span class="c1"># exam score (output)</span>
-
-<span class="c1"># Create and train the model</span>
-<span class="n">model</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-
-<span class="c1"># Predict the exam score for someone who studied 3 hours</span>
-<span class="n">predicted_score</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">]]))</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Predicted exam score: </span><span class="si">{</span><span class="n">predicted_score</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<p>Real numbers encompass the entire spectrum of values along the number line,
+representing both the measurable quantities and the constants that define our
+universe. From the speed of light to the probability of an event, real numbers
+provide a way to quantify the infinitely varied aspects of the world. In AI,
+this capability allows for the precise representation of data. Whether it’s
+the temperature of a room, the price of a stock, or the hue of color in a
+photo, real numbers map these continuous variables into a form that machines
+can process and learn from. Machine learning models rely heavily on real
+numbers for both their input data and the weights within the models
+themselves. Consider a simple linear regression model, which predicts an
+outcome based on one or more input variables. The relationship between the
+input and output is defined by <code class="docutils literal notranslate"><span class="pre">parameters</span></code> (weights and biases), all of
+which are represented by real numbers.</p>
+<p><span class="raw-html">&emsp;</span> The irrational number, pi (<span class="math notranslate nohighlight">\(\pi \approx 3.14159\ldots\)</span>) is
+a transcendental number representing the ratio of a circle’s circumference to
+its diameter, whereas the Euler’s number (<span class="math notranslate nohighlight">\(e \approx 2.718\ldots\)</span>) is
+the base of natural logarithms. Another classical example is the square root
+of 2, (<span class="math notranslate nohighlight">\(\sqrt{2} \approx 1.41421\ldots\)</span>), all of them are examples of
+real numbers.</p>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">real-numbers.py</span><a class="headerlink" href="#id1" title="Link to this code">#</a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">pi</span> <span class="o">=</span> <span class="nn">3</span><span class="nf">.14159</span>
+<span class="linenos">2</span><span class="n">e</span> <span class="o">=</span> <span class="nn">2</span><span class="nf">.71828</span>
+<span class="linenos">3</span><span class="n">sqrt_of_2</span> <span class="o">=</span> <span class="nn">1</span><span class="nf">.41421</span>
 </pre></div>
 </div>
-<p>In this example, the input data (hours studied) and output data (exam scores) are real numbers, as are the model’s parameters once it’s trained. The model learns the relationship between studying time and exam score, capturing the essence of this relationship in its parameters. The precision offered by real numbers is critical in fields where even the slightest variation can have significant implications, such as in medical diagnoses, financial forecasting, and autonomous vehicle navigation. In these applications, the ability to work with real numbers allows AI systems to make nuanced decisions based on a detailed understanding of the data.</p>
-<p><span class="raw-html">&emsp;</span> Deep learning, takes the importance of real numbers even further, using them in complex neural networks that mimic the way the human brain operates. Each neuron in a network processes input data (real numbers) through a series of weighted connections (also real numbers), applying nonlinear transformations to capture complex patterns and relationships in the data. Activation functions in neural networks, such as the <code class="docutils literal notranslate"><span class="pre">sigmoid</span></code> or <code class="docutils literal notranslate"><span class="pre">ReLU</span></code> functions, use real numbers to determine the output of neurons, introducing nonlinearity into the model and enabling it to learn from complicated data structures. The choice of activation function and the precise tuning of network weights (real numbers) are crucial for the model’s performance and accuracy.</p>
+</div>
+<p>Deep learning, takes the importance of real numbers even further, using them
+in complex neural networks that mimic the way the human brain operates. Each
+neuron in a network processes input data (real numbers) through a series of
+weighted connections (also real numbers), applying nonlinear transformations
+to capture complex patterns and relationships in the data. Activation
+functions in neural networks, such as the <code class="docutils literal notranslate"><span class="pre">sigmoid</span></code> or <code class="docutils literal notranslate"><span class="pre">ReLU</span></code> functions,
+use real numbers to determine the output of neurons, introducing nonlinearity
+into the model and enabling it to learn from complicated data structures. The
+choice of activation function and the precise tuning of network weights (real
+numbers) are crucial for the model’s performance and accuracy.</p>
 <script src="https://giscus.app/client.js"
      data-repo="xames3/learn"
      data-repo-id="R_kgDOJgeVyA"
@@ -519,7 +544,6 @@ each contributing its distinct sound to the symphony of AI.</p>
 <a href="https://twitter.com/xa_mes3" target="_blank" title="Follow @xa_mes3">
       <button class="follow-button"><i class="fa-brands fa-x-twitter"></i>&nbsp;Follow</button>
 </a></section>
-</section>
 </section>
 </section>
 
@@ -562,7 +586,7 @@ By Akshay Mestry
   </div>
   
   <div class="footer-item">
-    <p class="last-updated">Website last updated on Feb 17, 2024.</p>
+    <p class="last-updated">Website last updated on Feb 18, 2024.</p>
   </div>
   
   <div class="footer-item">
@@ -629,7 +653,7 @@ By Akshay Mestry
   
     <div class="footer-items__end">
       
-        <div class="footer-item"><p class="last-updated">Website last updated on Feb 17, 2024.</p></div>
+        <div class="footer-item"><p class="last-updated">Website last updated on Feb 18, 2024.</p></div>
       
     </div>
   
