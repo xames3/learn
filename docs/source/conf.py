@@ -297,7 +297,6 @@ release = _project.release
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.githubpages",
-    "sphinx.ext.imgmath",
     "sphinx.ext.intersphinx",
     "sphinx.ext.learn",
     "sphinx.ext.mathjax",
