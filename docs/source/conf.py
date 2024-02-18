@@ -4,7 +4,7 @@ L.E.A.R.N Sphinx Configuration
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: Wednesday, April 12 2023
-Last updated on: Friday, February 16 2024
+Last updated on: Sunday, February 18 2024
 
 This file contains the configuration settings for building the L.E.A.R.N
 documentation using Sphinx, a popular Python documentation tool. Sphinx
@@ -38,6 +38,9 @@ see the official Sphinx documentation here: https://shorturl.at/iwBZ5
 .. versionadded:: 1.0.6
     Sphinx theme version to the footer alongside the copyright.
 
+.. versionadded:: 1.0.7
+    Correct support for Pygment's GitHub Light Theme in code blocks.
+
 :copyright: (c) 2024 Akshay Mestry. All rights reserved.
 :license: MIT, see LICENSE for more details.
 """
@@ -56,7 +59,13 @@ from docutils import nodes
 from docutils.transforms import Transform
 from docutils.transforms import parts
 from docutils.writers import _html_base
+from pygments.lexer import bygroups
+from pygments.lexer import inherit
+from pygments.lexers.python import PythonLexer
+from pygments.token import Keyword
+from pygments.token import Name
 from sphinx.builders.html import StandaloneHTMLBuilder
+from sphinx.highlighting import lexers
 from sphinx.locale import __
 from sphinx.registry import *
 
@@ -212,6 +221,33 @@ class MoreSpacedHTMLTranslator(nodes.NodeVisitor):
             raise nodes.SkipNode
 
 
+class GitHubThemedPythonLexer(PythonLexer):
+    """Custom python lexer themed after GitHub Light Theme.
+
+    .. versionadded:: 1.0.7
+        Support for classical GitHub Light color theme.
+    """
+
+    tokens = {
+        "root": [
+            (
+                r"(from\s+)([\w\.]+)(\s+import\s+)([\w\.]+)",
+                bygroups(
+                    Keyword.Namespace,
+                    Name.Namespace,
+                    Keyword.Namespace,
+                    Name.Class,
+                ),
+            ),
+            (r"\b[A-Z_][A-Z0-9_]*\b(?!\()", Name.Constant),
+            (r"\b[A-Za-z0-9_]+(?=\.)", Name.Namespace),
+            (r"\b([A-Z]\w*)", bygroups(Name.Class)),
+            (r"\.\w+", Name.Function),
+            inherit,
+        ],
+    }
+
+
 SphinxComponentRegistry.load_extension = load_extension  # type: ignore
 StandaloneHTMLBuilder.supported_image_types = [
     "image/svg+xml",
@@ -221,6 +257,8 @@ StandaloneHTMLBuilder.supported_image_types = [
 ]
 _html_base.HTMLTranslator.visit_generated = MoreSpacedHTMLTranslator.padding
 parts.SectNum.update_section_numbers = NoTitleSectNum.update_section_numbers
+
+lexers["python"] = GitHubThemedPythonLexer(startinline=True)
 
 
 class LearnProject(t.NamedTuple):
@@ -307,6 +345,7 @@ html_theme_options = {
     "footer_end": ["last-updated"],
     "footer_start": ["copyright"],
     "navigation_with_keys": True,
+    "pygment_light_style": "github-light",
     "repository_url": _project.url,
     "secondary_sidebar_items": [],
     "show_prev_next": False,

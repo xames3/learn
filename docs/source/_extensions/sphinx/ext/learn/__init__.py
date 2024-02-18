@@ -77,6 +77,10 @@ quickly.
 .. versionadded:: 1.0.6
     Added support for ``reading`` directive to add reading time prompt
     for the L.E.A.R.N document.
+
+.. versionadded:: 1.0.7
+    Added support for custom Python code ``lexing`` using Pygments color
+    theme for the L.E.A.R.N document.
 """
 
 from __future__ import annotations
@@ -92,7 +96,7 @@ from .tweet import embed_twitter_js
 if t.TYPE_CHECKING:
     from sphinx.application import Sphinx
 
-__version__: str = "1.0.6"
+__version__: str = "1.0.7"
 
 this = p.dirname(__file__)
 directives: list[str] = [

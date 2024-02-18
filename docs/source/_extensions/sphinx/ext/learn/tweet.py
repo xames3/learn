@@ -4,7 +4,7 @@ Tweets Directive for L.E.A.R.N
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: Sunday, August 20 2023
-Last updated on: Sunday, February 18 2023
+Last updated on: Sunday, February 18 2024
 
 This module provides a custom directive for L.E.A.R.N's custom theme,
 that allows authors and contributors to add a link to Twitter or X's
