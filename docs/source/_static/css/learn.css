@@ -410,7 +410,7 @@ div.literal-block-wrapper div.code-block-caption::before {
   font-weight: 300;
   content: "\f1c9";
   margin-left: 1rem;
-  margin-right: 2rem;
+  margin-right: 1.5rem;
   color: var(--pst-color-attention);
 }
 
