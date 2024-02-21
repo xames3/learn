@@ -23,11 +23,14 @@
         crossorigin="anonymous"
         async>
    </script>
-   <a href="https://github.com/sponsors/xames3?o=esb" target="_blank" title="Sponsor @xames3">
-         <button class="sponsor-button"><i class="fa-regular fa-heart"></i>&nbsp;Sponsor</button>
+   <a href="https://github.com/sponsors/xames3?o=esb" target="_blank" title="Sponsor @xames3 on GitHub">
+         <button class="github-sponsor-button"><i class="fa-regular fa-heart"></i>&nbsp;Sponsor</button>
    </a>
-   <a href="https://twitter.com/xa_mes3" target="_blank" title="Follow @xa_mes3">
-         <button class="follow-button"><i class="fa-brands fa-x-twitter"></i>&nbsp;Follow</button>
+   <a href="https://twitter.com/xa_mes3" target="_blank" title="Follow @xa_mes3 on X">
+         <button class="x-follow-button"><i class="fa-brands fa-x-twitter"></i>&nbsp;Follow</button>
+   </a>
+   <a href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=xames3" target="_blank" title="Follow Akshay on LinkedIn">
+         <button class="linkedin-follow-button"><i class="fa-brands fa-linkedin"></i></i>&nbsp;Connect</button>
    </a>
 
 .. _github pr: https://github.com/xames3/learn/pulls
