@@ -171,8 +171,8 @@ span.caption-text {
 }
 
 div.toctree-wrapper.compound * {
-  color: var(--pst-color-text-base);
   overflow: hidden;
+  color: var(--pst-color-text-base);
   text-align: left;
 }
 
@@ -190,8 +190,8 @@ footer.bd-footer-content {
 }
 
 pre {
-  font-size: 1rem;
   background-color: none;
+  font-size: 1rem;
 }
 
 pre>span {
@@ -199,8 +199,8 @@ pre>span {
 }
 
 html[data-theme="light"] .highlight span.linenos {
-  color: var(--pst-color-attention);
   padding-right: 2rem;
+  color: var(--pst-color-attention);
 }
 
 html[data-theme="light"] .highlight {
@@ -253,11 +253,11 @@ div.literal-block-wrapper div.code-block-caption {
 }
 
 div.literal-block-wrapper div.code-block-caption::before {
+  content: "\f1c9";
+  margin-right: 1.5rem;
+  margin-left: 1rem;
   font-family: "Font Awesome 5 Free";
   font-weight: 300;
-  content: "\f1c9";
-  margin-left: 1rem;
-  margin-right: 1.5rem;
   color: var(--pst-color-attention);
 }
 
@@ -303,9 +303,6 @@ blockquote p {
 
 kbd:not(.compound) {
   box-shadow: 1px 1px 1px var(--pst-color-shadow);
-  border-radius: 0.4rem;
-  box-shadow: 1px 1px 1px var(--pst-color-shadow);
-  border-radius: 0.4rem;
   margin: 0 .3rem;
   padding: 0 .4rem;
   border: 1px solid var(--pst-color-border);
@@ -338,8 +335,8 @@ img {
 .admonition,
 div.admonition {
   box-shadow: 0 0 0 0 transparent !important;
-  margin: 1.5625em 2rem;
   overflow: hidden;
+  margin: 1.5625em 2rem;
   padding: 0 .6rem .8rem;
   border: 0.07rem solid var(--pst-color-border);
   border-radius: 1rem;
@@ -369,6 +366,7 @@ div.admonition p.admonition-title~* {
 }
 
 @media screen and (max-width: 60rem) {
+
   td {
     display: block;
   }
@@ -395,16 +393,17 @@ div.admonition p.admonition-title~* {
 }
 
 @media (min-width: 75rem) {
+
   #pst-back-to-top {
-      display: block !important;
+    display: block !important;
   }
 }
 
 #pst-back-to-top {
-  font-family: var(--pst-font-family-monospace-system);
-  right: 0vw;
   left: auto;
+  right: 0vw;
   background-color: #dc3545;
+  padding-top: 0.5rem;
 }
 
 .bd-header-announcement {
@@ -431,8 +430,8 @@ div.admonition p.admonition-title~* {
 
 .sidebar-nav-links {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: stretch;
   column-gap: 1rem;
 }
@@ -466,8 +465,8 @@ div.admonition p.admonition-title~* {
   right: 1rem;
   width: auto;
   margin-left: 1rem;
-  border: 0;
   background-color: var(--pst-color-surface-2);
+  border: 0;
 }
 
 .search-button-field:hover {
@@ -561,18 +560,16 @@ div.admonition p.admonition-title~* {
 
 .github-sponsor-button {
   fill: #656d76;
-  background-color: #f6f8fa;
-  border-color: #1f232826;
   box-shadow: 0 0.0625rem 0 #1f23280a;
-  width: 7rem;
+  width: 6rem;
   height: 2.2rem;
   margin: auto 0.125rem;
   padding: 0;
   background-color: #f6f8fa;
   border-color: #1f232826;
   border-radius: 0.4rem;
-  font-size: 0.95rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  font-family: "SF Pro Text", Helvetica, sans-serif;
   color: #24292f;
   vertical-align: middle;
 }
@@ -582,43 +579,45 @@ div.admonition p.admonition-title~* {
 }
 
 .x-follow-button {
+  float: right;
   height: 2.2rem;
-  background-color: #000;
-  color: #fff;
   margin: auto 0.125rem;
   padding-top: 0.1875rem;
   padding-right: 0.75rem;
   padding-left: 0.75rem;
+  background-color: #000;
   border-style: none;
   border-radius: 1.2rem;
-  font-size: 0.95rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  font-family: "SF Pro Text", Helvetica, sans-serif;
+  color: #fff;
   vertical-align: middle;
 }
 
 .linkedin-follow-button {
+  float: right;
   height: 2.2rem;
-  background-color: #0a66c2;
-  color: #fff;
   margin: auto 0.125rem;
   padding-top: 0.1875rem;
   padding-right: 0.75rem;
   padding-left: 0.75rem;
+  background-color: #0a66c2;
   border-style: none;
   border-radius: 1.2rem;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-family: "SF Pro Text", Helvetica, sans-serif;
+  color: #fff;
   vertical-align: middle;
 }
 
 /* Custom L.E.A.R.N extension CSS classes and properties */
 .preface-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
   gap: 0px 0px;
-  grid-auto-flow: row;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas: "location-date author-name";
+  grid-auto-flow: row;
 }
 
 .location-date {

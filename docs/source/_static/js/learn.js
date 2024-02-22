@@ -105,18 +105,21 @@ window.onload = function () {
   const wordsPerMinute = 275;
   let result;
   let totalWordCount = 0;
-  var elements = document.getElementsByClassName('sectnum');
   var section = document.querySelector('section');
   var paragraphs = section.querySelectorAll('p');
-
+  
   paragraphs.forEach(p => {
     const words = p.textContent.trim().split(' ');
     totalWordCount += words.length;
   });
-
+  
   if (totalWordCount > 0) {
     let value = Math.ceil(totalWordCount / wordsPerMinute);
     result = `${value} mins read`;
   }
   document.getElementById('readingTime').innerText = result;
+}
+
+window.onload = function () {
+  document.getElementById('pst-back-to-top').innerHTML= '<i class="fa-solid fa-caret-up"></i>';
 }
