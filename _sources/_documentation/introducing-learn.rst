@@ -23,7 +23,7 @@ Let's L.E.A.R.N!
 I am immensely proud to introduce you to my latest and most ambitious project,
 L.E.A.R.N |dash| an acronym encapsulating a journey into...
 
-.. epigraph:: Learning the Essence of AI, Research, and Notations
+.. epigraph:: Learning the Essence of AI, Research and Notations
 
 ************
 Introduction
