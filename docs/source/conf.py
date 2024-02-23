@@ -269,7 +269,7 @@ class LearnProject(t.NamedTuple):
     author: str = "Akshay Mestry"
     copyright: str = f"{date.today().year}, Akshay Mestry"
     default_language: str = "en"
-    main_title: str = "Learning the Essence of AI, Research, and Notations"
+    main_title: str = "Learning the Essence of AI, Research and Notations"
     release: str = learn.__version__
     short_title: str = "Home"
     theme: str = "sphinx_book_theme"

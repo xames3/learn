@@ -1,7 +1,7 @@
 L.E.A.R.N
 =========
 
-Learning the Essence of AI, Research, and Notations, read more `here <https://learn.mes3.dev/>`_.
+Learning the Essence of AI, Research and Notations, read more `here <https://learn.mes3.dev/>`_.
 
 Contents
 ########
