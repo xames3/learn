@@ -64,3 +64,12 @@
 .. _chunk based learning: https://www.verywellmind.com/chunking-how-can-this-technique-improve-your-memory-2794969
 .. _aws ml vs dl: https://aws.amazon.com/compare/the-difference-between-machine-learning-and-deep-learning/#:~:text=Deep%20learning%20and%20ML%20both,experts%20both%20understand%20statistics%20well.
 .. _garbage in garbage out wikipedia: https://en.wikipedia.org/wiki/Garbage_in,_garbage_out
+.. _transcendental number: https://mathworld.wolfram.com/TranscendentalNumber.html
+.. _another transcendental number: https://www.britannica.com/science/transcendental-number
+.. _real numbers wikipedia: https://en.wikipedia.org/wiki/Real_number
+.. _another real numbers: https://www.mathsisfun.com/numbers/real-numbers.html
+.. _complex numbers wikipedia: https://en.wikipedia.org/wiki/Complex_number
+.. _another complex numbers: https://www.mathsisfun.com/numbers/complex-numbers.html
+.. _fourier transform: https://www.thefouriertransform.com/
+.. _complex fourier transform pdf: https://www.analog.com/media/en/technical-documentation/dsp-book/dsp_book_Ch31.pdf
+.. _why do fourier transforms use complex numbers: https://math.stackexchange.com/questions/275115/why-do-fourier-transforms-use-complex-numbers
