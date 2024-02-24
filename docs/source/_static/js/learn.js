@@ -118,8 +118,5 @@ window.onload = function () {
     result = `${value} mins read`;
   }
   document.getElementById('readingTime').innerText = result;
-}
-
-window.onload = function () {
   document.getElementById('pst-back-to-top').innerHTML= '<i class="fa-solid fa-caret-up"></i>';
 }
