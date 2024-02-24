@@ -65,13 +65,13 @@
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script async="async" charset="utf-8" src="https://platform.twitter.com/widgets.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '_documentation/chapters/mathematics-for-ai';</script>
-    <script src="../../_static/js/learn.js?v=39921720"></script>
+    <script src="../../_static/js/learn.js?v=48e3b099"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="prev" title="Demystifying the Buzzwords" href="demystifying-buzzwords.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Feb 23, 2024"/>
+    <meta name="docbuild:last-update" content="Feb 24, 2024"/>
   </head>
   
   
@@ -240,6 +240,8 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#real-numbers"><span class="sectnum">4.1   </span>Real Numbers</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complex-numbers"><span class="sectnum">4.2   </span>Complex Numbers</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rational-numbers"><span class="sectnum">4.3   </span>Rational Numbers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#irrational-numbers"><span class="sectnum">4.4   </span>Irrational Numbers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integers"><span class="sectnum">4.5   </span>Integers</a></li>
 </ul>
 </li>
 </ul>
@@ -634,6 +636,114 @@ modern AI algorithms, simple and exact mathematical concepts retain a place of
 importance. Through rational numbers, we can precisely model and solve
 problems, paving the way for advances that are as grounded in mathematical
 rigor as they are in innovative thinking.</p>
+</section>
+<section id="irrational-numbers">
+<h3><span class="sectnum">4.4   </span>Irrational Numbers<a class="headerlink" href="#irrational-numbers" title="Link to this heading">#</a></h3>
+<p>Irrational numbers emerge as enigmatic and profound melodies that echo the
+infinite complexity of the universe. Unlike their more straightforward
+counterparts <span class="raw-html">&mdash;</span> the integers and rational numbers <span class="raw-html">&mdash;</span> irrational
+numbers cannot be expressed as a simple fraction of two integers. Their
+decimal representations are endless and non-repeating, stretching into
+infinity without ever settling into a repeating pattern. This category
+includes the famous constants <span class="math notranslate nohighlight">\(\pi\)</span> (pi), the ratio of a circle’s
+circumference to its diameter, and <span class="math notranslate nohighlight">\(e\)</span> (Euler’s number), the base of
+natural logarithms, among others. These numbers play pivotal roles not only in
+mathematics but also in the realm of Artificial Intelligence and Machine
+Learning.</p>
+<p><span class="raw-html">&emsp;</span> In AI and ML, irrational numbers often represent continuous values in
+calculations and models. While the precise values of irrational numbers cannot
+be fully captured, approximations are used to represent concepts such as
+growth rates (using <span class="math notranslate nohighlight">\(e\)</span>) or geometric calculations (using <span class="math notranslate nohighlight">\(\pi\)</span>).
+These approximations allow for the modeling of natural phenomena with a high
+degree of accuracy. Certain algorithms, especially those involving
+optimization and search techniques, leverage properties of irrational numbers.
+For instance, the use of <span class="math notranslate nohighlight">\(\pi\)</span> and <span class="math notranslate nohighlight">\(e\)</span> can be found in algorithms
+that require complex calculations of areas, volumes, or natural growth
+patterns, enabling more precise and effective models. Irrational numbers also
+find application in encryption algorithms within the realm of cybersecurity in
+AI. The unpredictable nature of their decimal expansions can contribute to
+creating more secure encryption keys, making it harder for unauthorized
+entities to decipher protected information.</p>
+<div class="literal-block-wrapper docutils container" id="id4">
+<div class="code-block-caption"><span class="caption-text">irrational-numbers.py</span><a class="headerlink" href="#id4" title="Link to this code">#</a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kn">import</span> <span class="nn">math</span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="c1"># Accessing irrational numbers π and e</span>
+<span class="linenos">4</span><span class="n">pi</span> <span class="o">=</span> <span class="nn">math</span><span class="nf">.pi</span>
+<span class="linenos">5</span><span class="n">e</span> <span class="o">=</span> <span class="nn">math</span><span class="nf">.e</span>
+</pre></div>
+</div>
+</div>
+<p>Irrational numbers, with their endless, non-repeating decimals, offer a
+glimpse into the infinite. They contribute depth and complexity, enabling
+models and algorithms to more closely mirror the intricacies of the world.
+Their approximations provide the tools needed to explore, model, and
+understand continuous processes and natural phenomena, making them
+indispensable in the ongoing quest to advance AI and ML. Through the
+calculated use of these numbers, we can achieve greater precision and insight,
+allowing technology to better serve humanity’s quest for knowledge and
+innovation.</p>
+</section>
+<section id="integers">
+<h3><span class="sectnum">4.5   </span>Integers<a class="headerlink" href="#integers" title="Link to this heading">#</a></h3>
+<p>Integers, represented by <span class="math notranslate nohighlight">\(\mathbb{Z}\)</span> (called double-struck
+capital Z), are the quintessence of discrete data representation. In AI and
+ML, many scenarios necessitate a straightforward, uncomplicated expression of
+quantity—be it the count of occurrences, indexing of arrays, or the labeling
+of categories. For instance, in a dataset, each category or class might be
+assigned an integer value, transforming qualitative data into a form that
+algorithms can efficiently process and learn from. The bedrock of AI and ML is
+constituted of algorithms, where integers frequently govern the flow of
+execution. Whether it’s the number of iterations in training loops, steps in
+optimization algorithms, or layers in deep neural networks, integers serve as
+the controlling variables that guide the procedural logic and iterative
+processes critical to learning from data.</p>
+<p><span class="raw-html">&emsp;</span> In the realm of cybersecurity, integral to the safe and ethical use of
+AI, integers play a key role in encoding and encryption algorithms. The
+transformation of data into secure formats often relies on integer-based
+computations, ensuring that information remains confidential and tamper-proof,
+a paramount concern in AI applications handling sensitive or personal data.
+When it comes to computational tasks, integers are preferred for their
+efficiency. Operations on integers are typically faster than those on
+floating-point numbers, making them advantageous for performance-critical
+applications in AI and ML, such as real-time processing and analysis where
+rapid execution is crucial. Python, a lingua franca of AI and ML, treats
+integers as a fundamental data type, enabling direct and intuitive
+interaction. Integers in Python are represented simply by numeric literals
+without a decimal point, accommodating a wide range of values without explicit
+limits, only bounded by the machine’s memory.</p>
+<div class="literal-block-wrapper docutils container" id="id5">
+<div class="code-block-caption"><span class="caption-text">integers.py</span><a class="headerlink" href="#id5" title="Link to this code">#</a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># Example of Integers in Python for AI/ML Applications</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="c1"># Number of features in a dataset</span>
+<span class="linenos"> 4</span><span class="n">num_features</span> <span class="o">=</span> <span class="mi">64</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="c1"># Total samples in a dataset</span>
+<span class="linenos"> 7</span><span class="n">total_samples</span> <span class="o">=</span> <span class="mi">10000</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="c1"># Samples to be used for training (80% of the total)</span>
+<span class="linenos">10</span><span class="n">train_samples</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">total_samples</span> <span class="o">*</span> <span class="nn">0</span><span class="nf">.8</span><span class="p">)</span>
+<span class="linenos">11</span>
+<span class="linenos">12</span><span class="c1"># Iterating over a fixed number of epochs for model training</span>
+<span class="linenos">13</span><span class="n">epochs</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="linenos">14</span><span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">epochs</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+<span class="linenos">15</span>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Training epoch </span><span class="si">{</span><span class="n">epoch</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">epochs</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
+<span class="linenos">16</span>
+<span class="linenos">17</span><span class="c1"># Calculating the number of samples not used in training</span>
+<span class="linenos">18</span><span class="n">test_samples</span> <span class="o">=</span> <span class="n">total_samples</span> <span class="o">-</span> <span class="n">train_samples</span>
+<span class="linenos">19</span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Training samples: </span><span class="si">{</span><span class="n">train_samples</span><span class="si">}</span><span class="s2">, Test samples: </span><span class="si">{</span><span class="n">test_samples</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>Integers are the rhythmic backbone, essential for structuring data, guiding
+algorithmic processes, and ensuring computational efficiency. Their
+straightforward, discrete nature makes them indispensable in the orchestration
+of AI and ML, from the most fundamental tasks to the most advanced
+computational processes. As we delve deeper into the mathematical melodies
+that power AI, the role of integers <span class="raw-html">&mdash;</span> as the fundamental notes that
+resonate through the fabric of algorithms <span class="raw-html">&mdash;</span> remains ever crucial, shaping
+the harmony of Artificial Intelligence.</p>
 <div class="learn-references">
     <h2>References</h2>
     <ol>
@@ -751,7 +861,7 @@ By Akshay Mestry
   </div>
   
   <div class="footer-item">
-    <p class="last-updated">Website last updated on Feb 23, 2024.</p>
+    <p class="last-updated">Website last updated on Feb 24, 2024.</p>
   </div>
   
   <div class="footer-item">
@@ -818,7 +928,7 @@ By Akshay Mestry
   
     <div class="footer-items__end">
       
-        <div class="footer-item"><p class="last-updated">Website last updated on Feb 23, 2024.</p></div>
+        <div class="footer-item"><p class="last-updated">Website last updated on Feb 24, 2024.</p></div>
       
     </div>
   

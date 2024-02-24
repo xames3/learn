@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: Saturday, February 10 2023
-.. Last updated on: Friday, February 23 2024
+.. Last updated on: Saturday, February 24 2024
 
 .. _mathematics-for-ai:
 
@@ -397,6 +397,122 @@ modern AI algorithms, simple and exact mathematical concepts retain a place of
 importance. Through rational numbers, we can precisely model and solve
 problems, paving the way for advances that are as grounded in mathematical
 rigor as they are in innovative thinking.
+
+Irrational Numbers
+##################
+
+Irrational numbers emerge as enigmatic and profound melodies that echo the
+infinite complexity of the universe. Unlike their more straightforward
+counterparts |dash| the integers and rational numbers |dash| irrational
+numbers cannot be expressed as a simple fraction of two integers. Their
+decimal representations are endless and non-repeating, stretching into
+infinity without ever settling into a repeating pattern. This category
+includes the famous constants :math:`\pi` (pi), the ratio of a circle's
+circumference to its diameter, and :math:`e` (Euler's number), the base of
+natural logarithms, among others. These numbers play pivotal roles not only in
+mathematics but also in the realm of Artificial Intelligence and Machine
+Learning.
+
+|tab| In AI and ML, irrational numbers often represent continuous values in
+calculations and models. While the precise values of irrational numbers cannot
+be fully captured, approximations are used to represent concepts such as
+growth rates (using :math:`e`) or geometric calculations (using :math:`\pi`).
+These approximations allow for the modeling of natural phenomena with a high
+degree of accuracy. Certain algorithms, especially those involving
+optimization and search techniques, leverage properties of irrational numbers.
+For instance, the use of :math:`\pi` and :math:`e` can be found in algorithms
+that require complex calculations of areas, volumes, or natural growth
+patterns, enabling more precise and effective models. Irrational numbers also
+find application in encryption algorithms within the realm of cybersecurity in
+AI. The unpredictable nature of their decimal expansions can contribute to
+creating more secure encryption keys, making it harder for unauthorized
+entities to decipher protected information.
+
+.. code-block:: python
+    :linenos:
+    :caption: irrational-numbers.py
+    :name: irrational-numbers
+
+    import math
+
+    # Accessing irrational numbers π and e
+    pi = math.pi
+    e = math.e
+
+Irrational numbers, with their endless, non-repeating decimals, offer a
+glimpse into the infinite. They contribute depth and complexity, enabling
+models and algorithms to more closely mirror the intricacies of the world.
+Their approximations provide the tools needed to explore, model, and
+understand continuous processes and natural phenomena, making them
+indispensable in the ongoing quest to advance AI and ML. Through the
+calculated use of these numbers, we can achieve greater precision and insight,
+allowing technology to better serve humanity's quest for knowledge and
+innovation.
+
+Integers
+########
+
+Integers, represented by :math:`\mathbb{Z}` (called double-struck
+capital Z), are the quintessence of discrete data representation. In AI and
+ML, many scenarios necessitate a straightforward, uncomplicated expression of
+quantity—be it the count of occurrences, indexing of arrays, or the labeling
+of categories. For instance, in a dataset, each category or class might be
+assigned an integer value, transforming qualitative data into a form that
+algorithms can efficiently process and learn from. The bedrock of AI and ML is
+constituted of algorithms, where integers frequently govern the flow of
+execution. Whether it's the number of iterations in training loops, steps in
+optimization algorithms, or layers in deep neural networks, integers serve as
+the controlling variables that guide the procedural logic and iterative
+processes critical to learning from data.
+
+|tab| In the realm of cybersecurity, integral to the safe and ethical use of
+AI, integers play a key role in encoding and encryption algorithms. The
+transformation of data into secure formats often relies on integer-based
+computations, ensuring that information remains confidential and tamper-proof,
+a paramount concern in AI applications handling sensitive or personal data.
+When it comes to computational tasks, integers are preferred for their
+efficiency. Operations on integers are typically faster than those on
+floating-point numbers, making them advantageous for performance-critical
+applications in AI and ML, such as real-time processing and analysis where
+rapid execution is crucial. Python, a lingua franca of AI and ML, treats
+integers as a fundamental data type, enabling direct and intuitive
+interaction. Integers in Python are represented simply by numeric literals
+without a decimal point, accommodating a wide range of values without explicit
+limits, only bounded by the machine's memory.
+
+.. code-block:: python
+    :linenos:
+    :caption: integers.py
+    :name: integers
+
+    # Example of Integers in Python for AI/ML Applications
+
+    # Number of features in a dataset
+    num_features = 64
+
+    # Total samples in a dataset
+    total_samples = 10000
+
+    # Samples to be used for training (80% of the total)
+    train_samples = int(total_samples * 0.8)
+
+    # Iterating over a fixed number of epochs for model training
+    epochs = 10
+    for epoch in range(1, epochs + 1):
+        print(f"Training epoch {epoch}/{epochs}...")
+
+    # Calculating the number of samples not used in training
+    test_samples = total_samples - train_samples
+    print(f"Training samples: {train_samples}, Test samples: {test_samples}")
+
+Integers are the rhythmic backbone, essential for structuring data, guiding
+algorithmic processes, and ensuring computational efficiency. Their
+straightforward, discrete nature makes them indispensable in the orchestration
+of AI and ML, from the most fundamental tasks to the most advanced
+computational processes. As we delve deeper into the mathematical melodies
+that power AI, the role of integers |dash| as the fundamental notes that
+resonate through the fabric of algorithms |dash| remains ever crucial, shaping
+the harmony of Artificial Intelligence.
 
 .. references::
 
