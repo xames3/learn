@@ -71,7 +71,7 @@
     <link rel="prev" title="Demystifying the Buzzwords" href="demystifying-buzzwords.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Feb 22, 2024"/>
+    <meta name="docbuild:last-update" content="Feb 23, 2024"/>
   </head>
   
   
@@ -238,6 +238,8 @@
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#symphony-of-numbers-in-artificial-intelligence"><span class="sectnum">4   </span>Symphony of Numbers in Artificial Intelligence</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#real-numbers"><span class="sectnum">4.1   </span>Real Numbers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complex-numbers"><span class="sectnum">4.2   </span>Complex Numbers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rational-numbers"><span class="sectnum">4.3   </span>Rational Numbers</a></li>
 </ul>
 </li>
 </ul>
@@ -478,51 +480,211 @@ each contributing its distinct sound to the symphony of AI.</p>
 <section id="real-numbers">
 <h3><span class="sectnum">4.1   </span>Real Numbers<a class="headerlink" href="#real-numbers" title="Link to this heading">#</a></h3>
 <p>Real numbers, represented by <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> (called double-struck capital
-R) hold a place of paramount importance in the domain of
-Artificial Intelligence, acting as the bridge between the abstract world of
-mathematics and the concrete realities AI seeks to understand, interpret, and
-predict. I often tell people that real numbers are…</p>
+R), play the part of the vast, continuous spectrum that underpins the universe
+of computation and modeling. Within the realms of Artificial Intelligence and
+Machine Learning, the significance of real numbers cannot be overstated. They
+form the very fabric upon which the intricate patterns of data and algorithms
+are woven, enabling a multitude of applications that span from the simplest of
+calculations to the most complex of predictive models. I often tell people
+that real numbers are…</p>
 <blockquote class="epigraph">
 <div><p>Mathematical entities which capture the continuum of possibility</p>
 </div></blockquote>
-<p>Real numbers encompass the entire spectrum of values along the number line,
-representing both the measurable quantities and the constants that define our
-universe. From the speed of light to the probability of an event, real numbers
-provide a way to quantify the infinitely varied aspects of the world. In AI,
-this capability allows for the precise representation of data. Whether it’s
-the temperature of a room, the price of a stock, or the hue of color in a
-photo, real numbers map these continuous variables into a form that machines
-can process and learn from. Machine learning models rely heavily on real
-numbers for both their input data and the weights within the models
-themselves. Consider a simple linear regression model, which predicts an
-outcome based on one or more input variables. The relationship between the
-input and output is defined by <code class="docutils literal notranslate"><span class="pre">parameters</span></code> (weights and biases), all of
-which are represented by real numbers.</p>
-<p><span class="raw-html">&emsp;</span> The irrational number, pi (<span class="math notranslate nohighlight">\(\pi \approx 3.14159\ldots\)</span>) is
-a transcendental number representing the ratio of a circle’s circumference to
-its diameter, whereas the Euler’s number (<span class="math notranslate nohighlight">\(e \approx 2.718\ldots\)</span>) is
-the base of natural logarithms. Another classical example is the square root
-of 2, (<span class="math notranslate nohighlight">\(\sqrt{2} \approx 1.41421\ldots\)</span>), all of them are examples of
-real numbers.</p>
+<p>Real numbers are all the numbers that can be found on the number line,
+encompassing both the rational numbers (such as <span class="math notranslate nohighlight">\(1/2\)</span> or
+<span class="math notranslate nohighlight">\(2.\overline{79797979\ldots}\)</span>) and irrational numbers (such as
+<span class="math notranslate nohighlight">\(\sqrt{2}\)</span> or <span class="math notranslate nohighlight">\(\pi\)</span>). This includes integers and fractions, as
+well as numbers that cannot be precisely expressed as a fraction of two
+integers. Real numbers represent quantities along a continuous scale, making
+them indispensable for measuring and representing quantities in the physical
+world, such as distance, time, temperature, and probability.</p>
+<p><span class="raw-html">&emsp;</span> In AI and ML, real numbers are the cornerstone of data representation.
+They are used to quantify and encode information about the world, serving as
+inputs and outputs for models that learn from data. Whether it’s the pixels in
+an image, the frequencies in a sound recording, or the features of a dataset
+describing housing prices, real numbers capture the nuances of information in
+a form that machines can process and learn from. Moreover, real numbers are
+pivotal in the formulation of models themselves. The weights in neural
+networks, the coefficients in regression models, and the distances in
+clustering algorithms are all expressed as real numbers. The optimization
+algorithms that train these models, seeking to minimize error or maximize
+accuracy, operate in the realm of real numbers, navigating the complex
+landscapes of high-dimensional spaces to find the best parameters for the task
+at hand.</p>
 <div class="literal-block-wrapper docutils container" id="id1">
 <div class="code-block-caption"><span class="caption-text">real-numbers.py</span><a class="headerlink" href="#id1" title="Link to this code">#</a></div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">pi</span> <span class="o">=</span> <span class="nn">3</span><span class="nf">.14159</span>
-<span class="linenos">2</span><span class="n">e</span> <span class="o">=</span> <span class="nn">2</span><span class="nf">.71828</span>
-<span class="linenos">3</span><span class="n">sqrt_of_2</span> <span class="o">=</span> <span class="nn">1</span><span class="nf">.41421</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">π</span> <span class="o">=</span> <span class="nn">3</span><span class="nf">.14159</span>  <span class="c1"># An approximation of Pi</span>
+<span class="linenos">2</span><span class="n">e</span> <span class="o">=</span> <span class="nn">2</span><span class="nf">.71828</span>  <span class="c1"># An approximation of Euler&#39;s number</span>
 </pre></div>
 </div>
 </div>
-<p>Deep learning, takes the importance of real numbers even further, using them
-in complex neural networks that mimic the way the human brain operates. Each
-neuron in a network processes input data (real numbers) through a series of
-weighted connections (also real numbers), applying nonlinear transformations
-to capture complex patterns and relationships in the data. Activation
-functions in neural networks, such as the <code class="docutils literal notranslate"><span class="pre">sigmoid</span></code> or <code class="docutils literal notranslate"><span class="pre">ReLU</span></code> functions,
-use real numbers to determine the output of neurons, introducing nonlinearity
-into the model and enabling it to learn from complicated data structures. The
-choice of activation function and the precise tuning of network weights (real
-numbers) are crucial for the model’s performance and accuracy.</p>
-<script src="https://giscus.app/client.js"
+<p>The role of real numbers in AI and ML is akin to the air that musicians
+breathe is invisible, yet utterly essential. They allow for the encoding of
+complex, continuous phenomena in a manner that computational models can
+understand and act upon. The precision and continuity of real numbers
+facilitate the modeling of intricate patterns and relationships in data,
+making possible the development of technologies that can predict, automate,
+and augment human capabilities. As we continue to explore the various members
+of the numerical orchestra in AI, the versatility and omnipresence of real
+numbers underscore their critical role in composing the future of intelligent
+systems.</p>
+</section>
+<section id="complex-numbers">
+<h3><span class="sectnum">4.2   </span>Complex Numbers<a class="headerlink" href="#complex-numbers" title="Link to this heading">#</a></h3>
+<p>Complex numbers, represented by <span class="math notranslate nohighlight">\(\mathbb{C}\)</span> (called double-struck
+capital C), are an elegant solution to equations that cannot be solved using
+real numbers alone. A complex number is typically represented as
+<span class="math notranslate nohighlight">\(a + bi\)</span>, where <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span> are real numbers, and <span class="math notranslate nohighlight">\(i\)</span>
+is the imaginary unit, satisfying the equation <span class="math notranslate nohighlight">\(i^2 = -1\)</span>. This
+structure allows complex numbers to express an astonishing range of phenomena,
+from the oscillations of waves to the behavior of quantum particles. In AI and
+ML, complex numbers find their use in several advanced algorithms and data
+processing techniques. For example, they are pivotal in the Fourier transform,
+a mathematical technique that transforms a function of time (or space) into a
+function of frequency. This transformation is instrumental in signal
+processing, enabling computers to understand and manipulate audio, images, and
+other data types in ways that would be cumbersome, if not impossible, with
+real numbers alone.</p>
+<p><span class="raw-html">&emsp;</span> Moreover, complex numbers facilitate computations in neural networks,
+particularly those that deal with waveforms or oscillatory data. By encoding
+information in both the magnitude and phase of a complex number, AI systems
+can capture patterns and relationships in data that might be missed when using
+only real numbers. The use of imaginary numbers extends beyond the mere
+theoretical into the very fabric of algorithms that shape our digital world.
+In AI and ML, these numbers are not figments of fantasy but tools of immense
+practical utility. Moreover, in the realm of neural networks <span class="raw-html">&mdash;</span>
+a fundamental building block of machine learning <span class="raw-html">&mdash;</span> imaginary numbers
+contribute to the optimization of complex functions. These networks, akin to a
+simplified model of the human brain, learn from vast datasets. The
+incorporation of complex numbers (which include both real and imaginary parts)
+can significantly enhance the capacity of neural networks to model intricate
+patterns and dynamics. This is particularly evident in tasks involving
+sequences and time series data, such as speech recognition, music generation,
+and predictive modeling, where the temporal dynamics are crucial.</p>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">complex-numbers.py</span><a class="headerlink" href="#id2" title="Link to this code">#</a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">complex_number</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span><span class="n">j</span>                             <span class="c1"># (3+4j)</span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="n">real</span> <span class="o">=</span> <span class="nn">complex_number</span><span class="nf">.real</span>                          <span class="c1"># 3.0</span>
+<span class="linenos">4</span><span class="n">imaginary</span> <span class="o">=</span> <span class="nn">complex_number</span><span class="nf">.imag</span>                     <span class="c1"># 4.0</span>
+<span class="linenos">5</span>
+<span class="linenos">6</span><span class="n">sum_of_complex_numbers</span> <span class="o">=</span> <span class="n">complex_number</span> <span class="o">+</span> <span class="p">(</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">3</span><span class="n">j</span><span class="p">)</span>  <span class="c1"># (5+1j)</span>
+</pre></div>
+</div>
+</div>
+<p>Understanding complex numbers and their applications in AI and ML opens up a
+world of possibilities. From the processing of natural phenomena to the
+enhancement of algorithms, complex numbers allow us to approach problems from
+a multidimensional perspective, offering solutions that are as elegant as they
+are effective. They allow us to venture beyond the limitations of the real
+number line, embracing a multidimensional perspective that is essential for
+tackling the complex challenges of today’s technology. Through their use, we
+can unlock new possibilities and enhance the capabilities of AI systems,
+making them more powerful, efficient, and versatile.</p>
+</section>
+<section id="rational-numbers">
+<h3><span class="sectnum">4.3   </span>Rational Numbers<a class="headerlink" href="#rational-numbers" title="Link to this heading">#</a></h3>
+<p>Rational numbers, represented by <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span> (called double-struck
+capital Q), are familiar to us from our earliest days of mathematics and play
+yet critical role in the domains of Artificial Intelligence and Machine
+Learning. Unlike their mysterious counterparts, the complex numbers, rational
+numbers might seem mundane at first glance. Yet, their utility and
+significance in AI and ML are profound, offering a bridge between abstract
+mathematical concepts and the tangible, quantifiable world we seek to
+understand and manipulate through technology. Rational numbers are defined as
+any number that can be expressed as the quotient or fraction
+<span class="math notranslate nohighlight">\(\frac{p}{q}\)</span> of two integers, where <span class="math notranslate nohighlight">\(p\)</span> is the numerator,
+<span class="math notranslate nohighlight">\(q\)</span> is the denominator, and <span class="math notranslate nohighlight">\(q \neq 0\)</span>. This definition
+encapsulates all integers, as every integer <span class="math notranslate nohighlight">\(z\)</span> can be represented as
+<span class="math notranslate nohighlight">\(\frac{z}{1}\)</span>, and extends to fractions that represent precise values
+such as <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span>, <span class="math notranslate nohighlight">\(\frac{3}{4}\)</span>, and so on. Rational numbers
+fill the number line densely, between any two rational numbers lies another,
+offering an infinity of precision that is both a boon and a challenge in
+computational contexts.</p>
+<p><span class="raw-html">&emsp;</span> In AI and ML, rational numbers serve as the bedrock for representing and
+processing data. They are crucial in algorithms that require precise, exact
+calculations, such as those found in operations research, linear programming,
+and optimization problems where decisions must be made under constraints.
+Rational numbers help in representing proportions, probabilities, and
+statistical measures with exactitude, facilitating nuanced analysis and
+decision-making processes. Furthermore, rational numbers are indispensable in
+the training of machine learning models, especially in supervised learning
+where features and labels are quantified. Their precision allows for the
+accurate measurement of model performance, error rates, and improvements over
+time, enabling researchers and practitioners to fine-tune algorithms with a
+high degree of control.</p>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">rational-numbers.py</span><a class="headerlink" href="#id3" title="Link to this code">#</a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kn">from </span><span class="nn">fractions</span><span class="kn"> import </span><span class="nc">Fraction</span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="c1"># Without using Fraction</span>
+<span class="linenos">4</span><span class="n">rational_1</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="mi">2</span>           <span class="c1"># Prints 0.5</span>
+<span class="linenos">5</span><span class="n">rational_2</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">/</span> <span class="mi">4</span>           <span class="c1"># Prints 0.75</span>
+<span class="linenos">6</span>
+<span class="linenos">7</span><span class="c1"># With Fraction</span>
+<span class="linenos">8</span><span class="n">fraction_1</span> <span class="o">=</span> <span class="nc">Fraction</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>  <span class="c1"># Represents 3/4</span>
+<span class="linenos">9</span><span class="n">fraction_2</span> <span class="o">=</span> <span class="nc">Fraction</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>  <span class="c1"># Represents 5/6</span>
+</pre></div>
+</div>
+</div>
+<p>Rational numbers, with their precise and interpretable nature, act as a
+foundational element in the vast and varied landscape of Artificial
+Intelligence. They remind us that amidst the complexity and sophistication of
+modern AI algorithms, simple and exact mathematical concepts retain a place of
+importance. Through rational numbers, we can precisely model and solve
+problems, paving the way for advances that are as grounded in mathematical
+rigor as they are in innovative thinking.</p>
+<div class="learn-references">
+    <h2>References</h2>
+    <ol>
+        
+            <li>
+                <p>Transcendental numbers are important in the history of mathematics because their investigation provided the first proof that circle squaring, one of the geometric problems of antiquity that had baffled mathematicians for more than 2000 years was, in fact, insoluble,&nbsp;<a href="https://mathworld.wolfram.com/TranscendentalNumber.html" target="_blank"
+                    class="references-border">https://mathworld.wolfram.com/TranscendentalNumber.html</a></p>
+            </li>
+        
+            <li>
+                <p>Transcendental number, a number that is not algebraic, in the sense that it is not the solution of an algebraic equation with rational-number coefficients. Transcendental numbers are irrational, but not all irrational numbers are transcendental,&nbsp;<a href="https://www.britannica.com/science/transcendental-number" target="_blank"
+                    class="references-border">https://www.britannica.com/science/transcendental-number</a></p>
+            </li>
+        
+            <li>
+                <p>In mathematics, a real number is a number that can be used to measure a continuous one-dimensional quantity such as a distance, duration or temperature. Here, continuous means that pairs of values can have arbitrarily small differences. Every real number can be almost uniquely represented by an infinite decimal expansion,&nbsp;<a href="https://en.wikipedia.org/wiki/Real_number" target="_blank"
+                    class="references-border">https://en.wikipedia.org/wiki/Real_number</a></p>
+            </li>
+        
+            <li>
+                <p>The Real Numbers had no name before Imaginary Numbers were thought of. They got called “Real” because they were not Imaginary. That is the actual answer!,&nbsp;<a href="https://www.mathsisfun.com/numbers/real-numbers.html" target="_blank"
+                    class="references-border">https://www.mathsisfun.com/numbers/real-numbers.html</a></p>
+            </li>
+        
+            <li>
+                <p>In mathematics, a complex number is an element of a number system that extends the real numbers with a specific element denoted i, called the imaginary unit,&nbsp;<a href="https://en.wikipedia.org/wiki/Complex_number" target="_blank"
+                    class="references-border">https://en.wikipedia.org/wiki/Complex_number</a></p>
+            </li>
+        
+            <li>
+                <p>A Complex Number is a combination of a Real Number and an Imaginary Number,&nbsp;<a href="https://www.mathsisfun.com/numbers/complex-numbers.html" target="_blank"
+                    class="references-border">https://www.mathsisfun.com/numbers/complex-numbers.html</a></p>
+            </li>
+        
+            <li>
+                <p>The Fourier Transform is a tool that breaks a waveform (a function or signal) into an alternate representation, characterized by the sine and cosine functions of varying frequencies,&nbsp;<a href="https://www.thefouriertransform.com/" target="_blank"
+                    class="references-border">https://www.thefouriertransform.com/</a></p>
+            </li>
+        
+            <li>
+                <p>All four members of the Fourier transform family (DFT, DTFT, Fourier Transform & Fourier Series) can be carried out with either real numbers or complex numbers,&nbsp;<a href="https://www.analog.com/media/en/technical-documentation/dsp-book/dsp_book_Ch31.pdf" target="_blank"
+                    class="references-border">https://www.analog.com/media/en/technical-documentation/dsp-book/dsp_book_Ch31.pdf</a></p>
+            </li>
+        
+            <li>
+                <p>We want to transfer the signal from the space or time domain to another domain - the frequency domain. In this domain, the signal has two “properties” - magnitude and phase. If we want to get only the signal’s “power” in a specific frequency bin, we indeed only need to take the absolute value of the Fourier transform, which is real. But, the Fourier transform gives the phase of each frequency as well,&nbsp;<a href="https://math.stackexchange.com/questions/275115/why-do-fourier-transforms-use-complex-numbers" target="_blank"
+                    class="references-border">https://math.stackexchange.com/questions/275115/why-do-fourier-transforms-use-complex-numbers</a></p>
+            </li>
+        
+    </ol>
+    </div><script src="https://giscus.app/client.js"
      data-repo="xames3/learn"
      data-repo-id="R_kgDOJgeVyA"
      data-category="Ideas"
@@ -589,7 +751,7 @@ By Akshay Mestry
   </div>
   
   <div class="footer-item">
-    <p class="last-updated">Website last updated on Feb 22, 2024.</p>
+    <p class="last-updated">Website last updated on Feb 23, 2024.</p>
   </div>
   
   <div class="footer-item">
@@ -656,7 +818,7 @@ By Akshay Mestry
   
     <div class="footer-items__end">
       
-        <div class="footer-item"><p class="last-updated">Website last updated on Feb 22, 2024.</p></div>
+        <div class="footer-item"><p class="last-updated">Website last updated on Feb 23, 2024.</p></div>
       
     </div>
   
