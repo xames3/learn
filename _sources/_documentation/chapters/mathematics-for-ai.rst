@@ -455,11 +455,11 @@ Integers
 Integers, represented by :math:`\mathbb{Z}` (called double-struck
 capital Z), are the quintessence of discrete data representation. In AI and
 ML, many scenarios necessitate a straightforward, uncomplicated expression of
-quantity—be it the count of occurrences, indexing of arrays, or the labeling
-of categories. For instance, in a dataset, each category or class might be
-assigned an integer value, transforming qualitative data into a form that
-algorithms can efficiently process and learn from. The bedrock of AI and ML is
-constituted of algorithms, where integers frequently govern the flow of
+quantity |dash| be it the count of occurrences, indexing of arrays, or the
+labeling of categories. For instance, in a dataset, each category or class
+might be assigned an integer value, transforming qualitative data into a form
+that algorithms can efficiently process and learn from. The bedrock of AI and
+ML is constituted of algorithms, where integers frequently govern the flow of
 execution. Whether it's the number of iterations in training loops, steps in
 optimization algorithms, or layers in deep neural networks, integers serve as
 the controlling variables that guide the procedural logic and iterative
