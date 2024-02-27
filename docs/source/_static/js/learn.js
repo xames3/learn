@@ -89,6 +89,7 @@ var suggestivePlaceholderElement = new suggestivePlaceholder({
 
 window.addEventListener('load', (event) => {
   suggestivePlaceholderElement.init();
+  document.getElementById('pst-back-to-top').innerHTML= '<i class="fa-solid fa-caret-up"></i>';
 })
 
 // StackOverflow solution here: https://stackoverflow.com/a/22425498
@@ -118,5 +119,4 @@ window.onload = function () {
     result = `${value} mins read`;
   }
   document.getElementById('readingTime').innerText = result;
-  document.getElementById('pst-back-to-top').innerHTML= '<i class="fa-solid fa-caret-up"></i>';
 }
