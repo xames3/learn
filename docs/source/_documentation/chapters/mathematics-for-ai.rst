@@ -436,7 +436,7 @@ entities to decipher protected information.
     import math
 
     # Accessing irrational numbers π and e
-    pi = math.pi
+    π = math.pi
     e = math.e
 
 Irrational numbers, with their endless, non-repeating decimals, offer a
