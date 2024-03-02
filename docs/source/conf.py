@@ -4,7 +4,7 @@ L.E.A.R.N Sphinx Configuration
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: Wednesday, April 12 2023
-Last updated on: Sunday, February 18 2024
+Last updated on: Saturday, March 02 2024
 
 This file contains the configuration settings for building the L.E.A.R.N
 documentation using Sphinx, a popular Python documentation tool. Sphinx
@@ -48,6 +48,7 @@ see the official Sphinx documentation here: https://shorturl.at/iwBZ5
 from __future__ import annotations
 
 import importlib
+import os
 import subprocess
 import sys
 import typing as t
@@ -339,6 +340,11 @@ html_show_sourcelink = False
 html_theme = _project.theme
 html_title = _project.short_title
 html_theme_options = {
+    "analytics": {
+        "google_analytics_id": os.environ.get(
+            "GOOGLE_ANALYTICS_ID", "G-XXXXXXXXXX"
+        )
+    },
     "article_header_end": [],
     "footer_center": ["theme-version"],
     "footer_end": ["last-updated"],
