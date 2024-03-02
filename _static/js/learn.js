@@ -89,7 +89,7 @@ var suggestivePlaceholderElement = new suggestivePlaceholder({
 
 window.addEventListener('load', (event) => {
   suggestivePlaceholderElement.init();
-  document.getElementById('pst-back-to-top').innerHTML= '<i class="fa-solid fa-caret-up"></i>';
+  document.getElementById('pst-back-to-top').innerHTML = '<i class="fa-solid fa-caret-up"></i>';
 })
 
 // StackOverflow solution here: https://stackoverflow.com/a/22425498
@@ -108,12 +108,12 @@ window.onload = function () {
   let totalWordCount = 0;
   var section = document.querySelector('section');
   var paragraphs = section.querySelectorAll('p');
-  
+
   paragraphs.forEach(p => {
     const words = p.textContent.trim().split(' ');
     totalWordCount += words.length;
   });
-  
+
   if (totalWordCount > 0) {
     let value = Math.ceil(totalWordCount / wordsPerMinute);
     result = `${value} mins read`;
