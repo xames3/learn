@@ -340,9 +340,7 @@ html_show_sourcelink = False
 html_theme = _project.theme
 html_title = _project.short_title
 html_theme_options = {
-    "analytics": {
-        "google_analytics_id": os.environ.get("GOOGLE_ANALYTICS_ID", "")
-    },
+    "analytics": {"google_analytics_id": "G-EH4C3J17BC"},
     "article_header_end": [],
     "footer_center": ["theme-version"],
     "footer_end": ["last-updated"],
