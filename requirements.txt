@@ -9,7 +9,7 @@ contourpy==1.2.0
 cycler==0.12.1
 docutils==0.20.1
 fonttools==4.49.0
-idna==3.6
+idna==3.15
 imagesize==1.4.1
 jellyfish==1.0.3
 Jinja2==3.1.5
