@@ -31,7 +31,7 @@ requests==2.32.2
 segtok==1.5.11
 six==1.16.0
 snowballstemmer==2.2.0
-soupsieve==2.5
+soupsieve==2.8.4
 Sphinx==7.2.6
 sphinx-book-theme==1.1.2
 sphinx-copybutton==0.5.2
